@@ -262,6 +262,97 @@ const SleepApneaSurvey: React.FC = () => {
           </p>
         </div>
 
+        {/* Did You Know Section */}
+        <div className="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6 mb-8">
+          <div className="flex items-start space-x-3">
+            <div className="text-2xl">🧠</div>
+            <div className="text-left">
+              <h3 className="font-semibold text-purple-900 mb-3">
+                Did You Know?
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Sleep apnea doesn't just affect your sleep — it can impact your
+                memory, energy, and even your weight.
+              </p>
+              <p className="text-gray-700">
+                At our practice, we treat the <strong>whole patient</strong> —
+                because airway health is vital to dental health.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Risk Factors Section */}
+        <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8 text-left">
+          <h3 className="font-semibold text-gray-900 mb-3">
+            Additional Risk Factors That May Be Linked to Sleep Apnea
+          </h3>
+          <p className="text-gray-600 text-sm mb-4 italic">
+            *(Check any that apply to you):*
+          </p>
+
+          <div className="space-y-3">
+            {/* General Risk Factors */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {[
+                'Depression',
+                'Anxiety',
+                'Chronic Pain',
+                'Difficulty with memory',
+                'ADD/ADHD',
+                'Family history (relative with sleep apnea or snoring)',
+                'Dry mouth',
+                'Morning headaches',
+                'High caffeine intake (>1–2 cups/day)',
+                'Use of sleep medications',
+                'Trouble losing weight',
+              ].map((factor, index) => (
+                <label
+                  key={index}
+                  className="flex items-center space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded transition-colors"
+                >
+                  <input
+                    type="checkbox"
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                  />
+                  <span className="text-gray-700 text-sm">{factor}</span>
+                </label>
+              ))}
+            </div>
+
+            {/* Female-Specific Section */}
+            <div className="mt-6 pt-4 border-t border-gray-200">
+              <h4 className="font-semibold text-gray-900 mb-3">
+                Female Patients:
+              </h4>
+              <div className="space-y-3">
+                {['PCOS (Polycystic Ovarian Syndrome)', 'Post-menopausal'].map(
+                  (factor, index) => (
+                    <label
+                      key={index}
+                      className="flex items-center space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded transition-colors"
+                    >
+                      <input
+                        type="checkbox"
+                        className="w-4 h-4 text-pink-600 bg-gray-100 border-gray-300 rounded focus:ring-pink-500 focus:ring-2"
+                      />
+                      <span className="text-gray-700 text-sm">{factor}</span>
+                    </label>
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Privacy Note */}
+          <div className="mt-6 pt-4 border-t border-gray-200">
+            <p className="text-xs text-gray-500 italic">
+              Your selections will be shared privately with the care team to
+              help understand your unique case.
+            </p>
+          </div>
+        </div>
+
         {/* Risk Level Explanation */}
         <div className="bg-gray-50 rounded-lg p-6 mb-8 text-left">
           <h3 className="font-semibold text-gray-900 mb-3">What this means:</h3>
@@ -312,7 +403,7 @@ const SleepApneaSurvey: React.FC = () => {
             >
               <path
                 fillRule="evenodd"
-                d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zM5 14H4v-3h12v3h-1a2 2 0 01-2 2H7a2 2 0 01-2-2z"
+                d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm-8 10H4v-3h12v3h-1a2 2 0 01-2 2H7a2 2 0 01-2-2z"
                 clipRule="evenodd"
               />
             </svg>
