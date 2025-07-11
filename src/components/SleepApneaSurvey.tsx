@@ -1768,185 +1768,307 @@ const SleepApneaSurvey: React.FC = () => {
   });
 
   return (
-    <div
-      className="max-w-4xl mx-auto p-6 bg-gray-50 min-h-screen"
-      data-oid=":fseh6y"
-    >
-      <div className="mb-8" data-oid="asu8mb5">
-        <h1
-          className="text-3xl font-bold text-gray-900 mb-2"
-          data-oid="a.88fig"
-        >
-          STOP-Bang Sleep Apnea Survey
-        </h1>
-        <p className="text-gray-600" data-oid="p5edinq">
-          This questionnaire helps assess your risk for obstructive sleep apnea.
-          Please answer all questions honestly.
-        </p>
+    <div className="bg-white min-h-screen" data-oid=":fseh6y">
+      {/* Page Header Section */}
+      <div className="bg-blue-50 border-b border-blue-100" data-oid="zgdolhi">
         <div
-          className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg"
-          data-oid="-a0gj:-"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+          data-oid="-yabgo:"
         >
-          <p className="text-sm text-blue-800" data-oid="9lld3jk">
-            <strong data-oid=".4bhko5">Privacy Notice:</strong> Your information
-            is confidential and will only be used for medical assessment
-            purposes.
-          </p>
+          <div className="text-center" data-oid="qv:ye1k">
+            <h1
+              className="text-4xl font-bold text-gray-900 mb-4"
+              data-oid="a.88fig"
+            >
+              Sleep Apnea Assessment
+            </h1>
+            <p
+              className="text-xl text-gray-600 max-w-3xl mx-auto mb-6"
+              data-oid="p5edinq"
+            >
+              Complete our STOP-BANG questionnaire to assess your risk for
+              obstructive sleep apnea. This screening tool helps our dental team
+              provide you with personalized care recommendations.
+            </p>
+            <div
+              className="bg-white p-4 rounded-lg shadow-sm border border-blue-200 max-w-2xl mx-auto"
+              data-oid="-a0gj:-"
+            >
+              <div
+                className="flex items-center justify-center space-x-3"
+                data-oid="sghm9v3"
+              >
+                <svg
+                  className="w-6 h-6 text-blue-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  data-oid="w-v5oyd"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                    data-oid="o:rtzr3"
+                  />
+                </svg>
+                <div className="text-left" data-oid="on-2sch">
+                  <p
+                    className="text-sm font-semibold text-blue-900"
+                    data-oid="9lld3jk"
+                  >
+                    Your Privacy is Protected
+                  </p>
+                  <p className="text-xs text-blue-700" data-oid="qox6jew">
+                    All information is confidential and used solely for medical
+                    assessment purposes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="space-y-6"
-        autoComplete="off"
-        noValidate
-        data-oid="feg5s4."
+      {/* Survey Content */}
+      <div
+        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+        data-oid="asu8mb5"
       >
-        <div
-          className="bg-white p-4 rounded-lg shadow-sm border border-gray-200 sticky top-6 z-10"
-          data-oid="lhr-uev"
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-6"
+          autoComplete="off"
+          noValidate
+          data-oid="feg5s4."
         >
           <div
-            className="flex justify-between items-center mb-2"
-            data-oid="vcpu898"
-          >
-            <span
-              className="text-sm font-medium text-gray-700"
-              data-oid="l3tzumx"
-            >
-              Survey Progress
-            </span>
-            <span className="text-sm text-gray-600" data-oid="4_gu82w">
-              Complete all sections
-            </span>
-          </div>
-          <div
-            className="w-full bg-gray-200 rounded-full h-2"
-            data-oid="615zc4p"
+            className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-6 z-10 mb-8"
+            data-oid="lhr-uev"
           >
             <div
-              className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full w-0"
-              data-oid="a8gfmhv"
-            ></div>
-          </div>
-          <p className="text-xs text-gray-500 mt-1" data-oid="vjx-5pd">
-            Answer all questions to see your STOP-Bang score
-          </p>
-        </div>
-
-        <YesNoQuestion
-          name="snoring"
-          title="S - Snoring"
-          description="Do you snore loudly (loud enough to be heard through closed doors or your bed-partner elbows you)?"
-          data-oid="naki48o"
-        />
-
-        <YesNoQuestion
-          name="tired"
-          title="T - Tired"
-          description="Do you often feel tired, fatigued, or sleepy during the day?"
-          data-oid="bo5ch9g"
-        />
-
-        <YesNoQuestion
-          name="observed"
-          title="O - Observed"
-          description="Has anyone observed you stop breathing or gasping during sleep?"
-          data-oid=".gb_6e4"
-        />
-
-        <YesNoQuestion
-          name="pressure"
-          title="P - Pressure"
-          description="Do you have or are you being treated for high blood pressure?"
-          data-oid="m6-autm"
-        />
-
-        <BMISection data-oid="spqj2t." />
-
-        <AgeInput data-oid="hc0l-zt" />
-
-        <NeckSizeInput data-oid="sciqzb4" />
-
-        <YesNoQuestion
-          name="genderMale"
-          title="G - Gender"
-          description="Are you male?"
-          data-oid="v1x7q.7"
-        />
-
-        <ContactFields data-oid="ib:ooin" />
-
-        <div
-          className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm border border-blue-200"
-          data-oid="z_1av7-"
-        >
-          <div className="text-center mb-4" data-oid="kj_djo8">
-            <h3
-              className="text-lg font-semibold text-gray-900 mb-2"
-              data-oid="qmg:j61"
+              className="flex justify-between items-center mb-3"
+              data-oid="vcpu898"
             >
-              Ready to Submit?
-            </h3>
-            <p className="text-gray-600 text-sm" data-oid="_.p04:c">
-              Please review your answers before submitting your survey.
+              <div className="flex items-center space-x-3" data-oid="3ikznw:">
+                <div
+                  className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                  data-oid="j6:j_-2"
+                >
+                  <svg
+                    className="w-4 h-4 text-blue-600"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    data-oid="dr-kohi"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clipRule="evenodd"
+                      data-oid="fu7ha9q"
+                    />
+                  </svg>
+                </div>
+                <span
+                  className="text-lg font-semibold text-gray-900"
+                  data-oid="l3tzumx"
+                >
+                  Assessment Progress
+                </span>
+              </div>
+              <span
+                className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
+                data-oid="4_gu82w"
+              >
+                Complete all sections
+              </span>
+            </div>
+            <div
+              className="w-full bg-gray-200 rounded-full h-3 mb-2"
+              data-oid="615zc4p"
+            >
+              <div
+                className="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-300 w-0"
+                data-oid="a8gfmhv"
+              ></div>
+            </div>
+            <p
+              className="text-sm text-gray-600 flex items-center"
+              data-oid="vjx-5pd"
+            >
+              <svg
+                className="w-4 h-4 mr-2 text-blue-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                data-oid="068jv_z"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clipRule="evenodd"
+                  data-oid="609ylms"
+                />
+              </svg>
+              Answer all questions to receive your personalized STOP-BANG
+              assessment
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4" data-oid="2.d-7f-">
-            <button
-              type="button"
-              onClick={restartSurvey}
-              className="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors duration-200 flex items-center justify-center"
-              data-oid="ltgkexr"
-            >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                data-oid="cg4vo1o"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                  clipRule="evenodd"
-                  data-oid="yg9yxtc"
-                />
-              </svg>
-              Start Over
-            </button>
+          <YesNoQuestion
+            name="snoring"
+            title="S - Snoring"
+            description="Do you snore loudly (loud enough to be heard through closed doors or your bed-partner elbows you)?"
+            data-oid="naki48o"
+          />
 
-            <button
-              type="submit"
-              className="flex-1 py-4 px-6 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
-              data-oid="fl45n4i"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                data-oid="1i-jtgo"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
-                  clipRule="evenodd"
-                  data-oid="8vp3bgw"
-                />
-              </svg>
-              <span data-oid="my.jel5">Submit Sleep Apnea Survey</span>
-            </button>
-          </div>
+          <YesNoQuestion
+            name="tired"
+            title="T - Tired"
+            description="Do you often feel tired, fatigued, or sleepy during the day?"
+            data-oid="bo5ch9g"
+          />
 
-          <p
-            className="mt-3 text-xs text-gray-500 text-center"
-            data-oid="j6.btpw"
+          <YesNoQuestion
+            name="observed"
+            title="O - Observed"
+            description="Has anyone observed you stop breathing or gasping during sleep?"
+            data-oid=".gb_6e4"
+          />
+
+          <YesNoQuestion
+            name="pressure"
+            title="P - Pressure"
+            description="Do you have or are you being treated for high blood pressure?"
+            data-oid="m6-autm"
+          />
+
+          <BMISection data-oid="spqj2t." />
+
+          <AgeInput data-oid="hc0l-zt" />
+
+          <NeckSizeInput data-oid="sciqzb4" />
+
+          <YesNoQuestion
+            name="genderMale"
+            title="G - Gender"
+            description="Are you male?"
+            data-oid="v1x7q.7"
+          />
+
+          <ContactFields data-oid="ib:ooin" />
+
+          <div
+            className="bg-white p-8 rounded-lg shadow-lg border border-gray-200"
+            data-oid="z_1av7-"
           >
-            By submitting, you acknowledge that the information provided is
-            accurate to the best of your knowledge.
-          </p>
-        </div>
-      </form>
+            <div className="text-center mb-6" data-oid="kj_djo8">
+              <div
+                className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                data-oid="rdj0b3z"
+              >
+                <svg
+                  className="w-8 h-8 text-blue-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  data-oid="_n3cimd"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                    data-oid=":oqkk8d"
+                  />
+                </svg>
+              </div>
+              <h3
+                className="text-2xl font-bold text-gray-900 mb-2"
+                data-oid="qmg:j61"
+              >
+                Complete Your Assessment
+              </h3>
+              <p className="text-gray-600" data-oid="_.p04:c">
+                Review your responses and submit to receive your personalized
+                sleep apnea risk assessment from our dental team.
+              </p>
+            </div>
+
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+              data-oid="2.d-7f-"
+            >
+              <button
+                type="button"
+                onClick={restartSurvey}
+                className="px-8 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-all duration-200 flex items-center justify-center font-medium shadow-md hover:shadow-lg"
+                data-oid="ltgkexr"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  data-oid="cg4vo1o"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                    clipRule="evenodd"
+                    data-oid="yg9yxtc"
+                  />
+                </svg>
+                Start Over
+              </button>
+
+              <button
+                type="submit"
+                className="px-8 py-4 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 text-lg"
+                data-oid="fl45n4i"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  data-oid="1i-jtgo"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
+                    clipRule="evenodd"
+                    data-oid="8vp3bgw"
+                  />
+                </svg>
+                <span data-oid="my.jel5">Submit Assessment</span>
+              </button>
+            </div>
+
+            <div
+              className="mt-6 pt-6 border-t border-gray-200"
+              data-oid="cgj23me"
+            >
+              <div
+                className="flex items-center justify-center space-x-2 text-sm text-gray-600"
+                data-oid="j7.uy9w"
+              >
+                <svg
+                  className="w-4 h-4 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  data-oid="ziq4peq"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                    data-oid="y6cyeko"
+                  />
+                </svg>
+                <span data-oid="j6.btpw">
+                  Your information is secure and will be reviewed by our dental
+                  professionals
+                </span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
