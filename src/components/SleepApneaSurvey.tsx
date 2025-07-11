@@ -1957,113 +1957,292 @@ const SleepApneaSurvey: React.FC = () => {
           <ContactFields data-oid="ib:ooin" />
 
           <div
-            className="bg-white p-8 rounded-lg shadow-lg border border-gray-200"
+            className="bg-gradient-to-br from-white to-blue-50 p-10 rounded-xl shadow-2xl border border-blue-100 relative overflow-hidden"
             data-oid="z_1av7-"
           >
-            <div className="text-center mb-6" data-oid="kj_djo8">
+            {/* Subtle background pattern */}
+            <div className="absolute inset-0 opacity-5" data-oid="6d8nrx0">
               <div
-                className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
-                data-oid="rdj0b3z"
-              >
-                <svg
-                  className="w-8 h-8 text-blue-600"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  data-oid="_n3cimd"
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234F46E5' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                  backgroundSize: "30px 30px",
+                }}
+                data-oid="0lx53wv"
+              ></div>
+            </div>
+
+            <div className="relative z-10" data-oid="xb:r0jx">
+              <div className="text-center mb-8" data-oid="kj_djo8">
+                {/* Medical icon with professional styling */}
+                <div
+                  className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg"
+                  data-oid="rdj0b3z"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                    data-oid=":oqkk8d"
-                  />
-                </svg>
+                  <svg
+                    className="w-10 h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="_n3cimd"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                      data-oid="-n5g22x"
+                    />
+                  </svg>
+                </div>
+
+                <h3
+                  className="text-3xl font-bold text-gray-900 mb-3 tracking-tight"
+                  data-oid="qmg:j61"
+                >
+                  Ready to Submit Your Assessment
+                </h3>
+                <p
+                  className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed"
+                  data-oid="_.p04:c"
+                >
+                  Please review your responses carefully before submitting. Our
+                  dental professionals will analyze your results and provide
+                  personalized recommendations for your sleep health.
+                </p>
               </div>
-              <h3
-                className="text-2xl font-bold text-gray-900 mb-2"
-                data-oid="qmg:j61"
-              >
-                Complete Your Assessment
-              </h3>
-              <p className="text-gray-600" data-oid="_.p04:c">
-                Review your responses and submit to receive your personalized
-                sleep apnea risk assessment from our dental team.
-              </p>
-            </div>
 
-            <div
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-              data-oid="2.d-7f-"
-            >
-              <button
-                type="button"
-                onClick={restartSurvey}
-                className="px-8 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-all duration-200 flex items-center justify-center font-medium shadow-md hover:shadow-lg"
-                data-oid="ltgkexr"
-              >
-                <svg
-                  className="w-5 h-5 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  data-oid="cg4vo1o"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                    clipRule="evenodd"
-                    data-oid="yg9yxtc"
-                  />
-                </svg>
-                Start Over
-              </button>
-
-              <button
-                type="submit"
-                className="px-8 py-4 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 text-lg"
-                data-oid="fl45n4i"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  data-oid="1i-jtgo"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
-                    clipRule="evenodd"
-                    data-oid="8vp3bgw"
-                  />
-                </svg>
-                <span data-oid="my.jel5">Submit Assessment</span>
-              </button>
-            </div>
-
-            <div
-              className="mt-6 pt-6 border-t border-gray-200"
-              data-oid="cgj23me"
-            >
+              {/* Professional info cards */}
               <div
-                className="flex items-center justify-center space-x-2 text-sm text-gray-600"
-                data-oid="j7.uy9w"
+                className="grid md:grid-cols-3 gap-4 mb-8"
+                data-oid="n_nrcp4"
               >
-                <svg
-                  className="w-4 h-4 text-green-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  data-oid="ziq4peq"
+                <div
+                  className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
+                  data-oid="rdgm3lc"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                    data-oid="y6cyeko"
-                  />
-                </svg>
-                <span data-oid="j6.btpw">
-                  Your information is secure and will be reviewed by our dental
-                  professionals
-                </span>
+                  <div
+                    className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2"
+                    data-oid="89bf0-k"
+                  >
+                    <svg
+                      className="w-4 h-4 text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="0ag_y2u"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                        data-oid="n._lk2w"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    className="font-semibold text-gray-900 text-sm mb-1"
+                    data-oid="kcsl4ri"
+                  >
+                    HIPAA Compliant
+                  </h4>
+                  <p className="text-xs text-gray-600" data-oid="fzce5fo">
+                    Your data is protected
+                  </p>
+                </div>
+
+                <div
+                  className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
+                  data-oid="lhd3ltr"
+                >
+                  <div
+                    className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2"
+                    data-oid="olfs3em"
+                  >
+                    <svg
+                      className="w-4 h-4 text-green-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="pu9gfoa"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                        data-oid="ku3twq7"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    className="font-semibold text-gray-900 text-sm mb-1"
+                    data-oid="m.x0o01"
+                  >
+                    Clinically Validated
+                  </h4>
+                  <p className="text-xs text-gray-600" data-oid="ffc.sl9">
+                    Evidence-based screening
+                  </p>
+                </div>
+
+                <div
+                  className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
+                  data-oid="1sckcqz"
+                >
+                  <div
+                    className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2"
+                    data-oid="7hhd4bq"
+                  >
+                    <svg
+                      className="w-4 h-4 text-purple-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="wmtsw8y"
+                    >
+                      <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                        data-oid="6:u5n:5"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    className="font-semibold text-gray-900 text-sm mb-1"
+                    data-oid="57q3:ya"
+                  >
+                    Expert Review
+                  </h4>
+                  <p className="text-xs text-gray-600" data-oid="phim6g5">
+                    Reviewed by specialists
+                  </p>
+                </div>
+              </div>
+
+              <div
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-6"
+                data-oid="2.d-7f-"
+              >
+                <button
+                  type="button"
+                  onClick={restartSurvey}
+                  className="px-8 py-3 bg-white text-gray-700 border-2 border-gray-300 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 flex items-center justify-center font-medium shadow-sm hover:shadow-md"
+                  data-oid="ltgkexr"
+                >
+                  <svg
+                    className="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    data-oid="cg4vo1o"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                      clipRule="evenodd"
+                      data-oid="yg9yxtc"
+                    />
+                  </svg>
+                  Start Over
+                </button>
+
+                <button
+                  type="submit"
+                  className="px-10 py-4 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center justify-center space-x-3 text-lg transform hover:scale-105 focus:ring-4 focus:ring-blue-200"
+                  data-oid="fl45n4i"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="1i-jtgo"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                      data-oid="z-zu95e"
+                    />
+                  </svg>
+                  <span data-oid="my.jel5">Submit Assessment</span>
+                </button>
+              </div>
+
+              {/* Professional footer with credentials */}
+              <div className="pt-6 border-t border-blue-200" data-oid="cgj23me">
+                <div className="text-center space-y-3" data-oid="xjfobv0">
+                  <div
+                    className="flex items-center justify-center space-x-2 text-sm text-gray-700"
+                    data-oid="j7.uy9w"
+                  >
+                    <svg
+                      className="w-5 h-5 text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="ziq4peq"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                        data-oid="y6cyeko"
+                      />
+                    </svg>
+                    <span className="font-medium" data-oid="j6.btpw">
+                      Secure Medical Assessment Platform
+                    </span>
+                  </div>
+
+                  <p
+                    className="text-xs text-gray-600 max-w-lg mx-auto"
+                    data-oid="0wgereg"
+                  >
+                    This assessment will be reviewed by licensed dental
+                    professionals. Results and recommendations will be provided
+                    within 24-48 hours via secure communication.
+                  </p>
+
+                  <div
+                    className="flex items-center justify-center space-x-4 text-xs text-gray-500"
+                    data-oid="lap4lf_"
+                  >
+                    <span className="flex items-center" data-oid="d_07mc1">
+                      <svg
+                        className="w-3 h-3 mr-1"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="7-:ay89"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                          clipRule="evenodd"
+                          data-oid="qb-xhfh"
+                        />
+                      </svg>
+                      SSL Encrypted
+                    </span>
+                    <span className="flex items-center" data-oid="y_-c3i5">
+                      <svg
+                        className="w-3 h-3 mr-1"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="97t-:9t"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                          data-oid="813wx_e"
+                        />
+                      </svg>
+                      HIPAA Compliant
+                    </span>
+                    <span className="flex items-center" data-oid="ex2ilyh">
+                      <svg
+                        className="w-3 h-3 mr-1"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="jmn1rgm"
+                      >
+                        <path
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          data-oid="4ts8q3v"
+                        />
+                      </svg>
+                      Clinically Validated
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
