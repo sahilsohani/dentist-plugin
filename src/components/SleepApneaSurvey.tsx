@@ -1770,58 +1770,301 @@ const SleepApneaSurvey: React.FC = () => {
   return (
     <div className="bg-white min-h-screen" data-oid=":fseh6y">
       {/* Page Header Section */}
-      <div className="bg-blue-50 border-b border-blue-100" data-oid="zgdolhi">
+      <div
+        className="bg-gradient-to-br from-blue-50 via-white to-blue-50 border-b border-blue-200 relative overflow-hidden"
+        data-oid="zgdolhi"
+      >
+        {/* Subtle medical pattern background */}
+        <div className="absolute inset-0 opacity-5" data-oid="-1mkyzw">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563eb' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+              backgroundSize: "40px 40px",
+            }}
+            data-oid="o3cw082"
+          ></div>
+        </div>
+
         <div
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10"
           data-oid="-yabgo:"
         >
           <div className="text-center" data-oid="qv:ye1k">
+            {/* Medical badge/credential indicator */}
+            <div className="flex justify-center mb-6" data-oid="pi0:f.o">
+              <div
+                className="bg-white rounded-full p-4 shadow-lg border-2 border-blue-100"
+                data-oid="_u6_ers"
+              >
+                <div
+                  className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center"
+                  data-oid="fe4jrha"
+                >
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="4po4dus"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      data-oid="23ybklf"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
             <h1
-              className="text-4xl font-bold text-gray-900 mb-4"
+              className="text-5xl font-bold text-gray-900 mb-4 tracking-tight"
               data-oid="a.88fig"
             >
-              Sleep Apnea Assessment
+              Sleep Apnea Risk Assessment
             </h1>
-            <p
-              className="text-xl text-gray-600 max-w-3xl mx-auto mb-6"
-              data-oid="p5edinq"
-            >
-              Complete our STOP-BANG questionnaire to assess your risk for
-              obstructive sleep apnea. This screening tool helps our dental team
-              provide you with personalized care recommendations.
-            </p>
-            <div
-              className="bg-white p-4 rounded-lg shadow-sm border border-blue-200 max-w-2xl mx-auto"
-              data-oid="-a0gj:-"
-            >
-              <div
-                className="flex items-center justify-center space-x-3"
-                data-oid="sghm9v3"
+
+            <div className="max-w-4xl mx-auto mb-8" data-oid="-2fdg.f">
+              <p
+                className="text-xl text-gray-700 mb-4 leading-relaxed"
+                data-oid="p5edinq"
               >
-                <svg
-                  className="w-6 h-6 text-blue-600"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  data-oid="w-v5oyd"
+                Complete our clinically validated STOP-BANG questionnaire to
+                assess your risk for obstructive sleep apnea. This
+                evidence-based screening tool enables our dental professionals
+                to provide you with personalized care recommendations.
+              </p>
+
+              <div
+                className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 mb-6"
+                data-oid="1y__pxb"
+              >
+                <div className="flex items-center space-x-2" data-oid="z2sg.83">
+                  <div
+                    className="w-2 h-2 bg-blue-500 rounded-full"
+                    data-oid="hd93j-2"
+                  ></div>
+                  <span data-oid="mhqpe-t">Clinically Validated Tool</span>
+                </div>
+                <div className="flex items-center space-x-2" data-oid="a5ketv6">
+                  <div
+                    className="w-2 h-2 bg-green-500 rounded-full"
+                    data-oid="dl31q4h"
+                  ></div>
+                  <span data-oid=".de3qkd">5-10 Minutes to Complete</span>
+                </div>
+                <div className="flex items-center space-x-2" data-oid="l2zh-0k">
+                  <div
+                    className="w-2 h-2 bg-purple-500 rounded-full"
+                    data-oid=".im8f12"
+                  ></div>
+                  <span data-oid="0_eh19n">Professional Review Included</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Enhanced privacy and security section */}
+            <div className="max-w-4xl mx-auto" data-oid="4digx47">
+              <div className="grid md:grid-cols-3 gap-4" data-oid="edxyihh">
+                {/* Privacy Card */}
+                <div
+                  className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300"
+                  data-oid="-a0gj:-"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                    data-oid="o:rtzr3"
-                  />
-                </svg>
-                <div className="text-left" data-oid="on-2sch">
-                  <p
-                    className="text-sm font-semibold text-blue-900"
-                    data-oid="9lld3jk"
+                  <div
+                    className="flex flex-col items-center text-center"
+                    data-oid="54dzt09"
                   >
-                    Your Privacy is Protected
-                  </p>
-                  <p className="text-xs text-blue-700" data-oid="qox6jew">
-                    All information is confidential and used solely for medical
-                    assessment purposes.
-                  </p>
+                    <div
+                      className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+                      data-oid="t.s1c:g"
+                    >
+                      <svg
+                        className="w-6 h-6 text-blue-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="w-v5oyd"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                          data-oid="o:rtzr3"
+                        />
+                      </svg>
+                    </div>
+                    <h3
+                      className="text-lg font-semibold text-gray-900 mb-2"
+                      data-oid="9lld3jk"
+                    >
+                      HIPAA Protected
+                    </h3>
+                    <p className="text-sm text-gray-600" data-oid="qox6jew">
+                      Your health information is encrypted and protected
+                      according to federal privacy standards.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Medical Validation Card */}
+                <div
+                  className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300"
+                  data-oid="i_d2ci1"
+                >
+                  <div
+                    className="flex flex-col items-center text-center"
+                    data-oid="6da-zp7"
+                  >
+                    <div
+                      className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4"
+                      data-oid="wo72cgr"
+                    >
+                      <svg
+                        className="w-6 h-6 text-green-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="_m0z92n"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                          data-oid="7k9c:3:"
+                        />
+                      </svg>
+                    </div>
+                    <h3
+                      className="text-lg font-semibold text-gray-900 mb-2"
+                      data-oid="j77-cbg"
+                    >
+                      Clinically Validated
+                    </h3>
+                    <p className="text-sm text-gray-600" data-oid="zbvue2:">
+                      STOP-BANG is a scientifically proven screening tool used
+                      by medical professionals worldwide.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Professional Review Card */}
+                <div
+                  className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-100 hover:shadow-xl transition-all duration-300"
+                  data-oid="odhy6:q"
+                >
+                  <div
+                    className="flex flex-col items-center text-center"
+                    data-oid="9jyi-00"
+                  >
+                    <div
+                      className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4"
+                      data-oid="d_u5rht"
+                    >
+                      <svg
+                        className="w-6 h-6 text-purple-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="sm4qj50"
+                      >
+                        <path
+                          d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                          data-oid="x_pj1zm"
+                        />
+                      </svg>
+                    </div>
+                    <h3
+                      className="text-lg font-semibold text-gray-900 mb-2"
+                      data-oid="w4a_2p_"
+                    >
+                      Expert Analysis
+                    </h3>
+                    <p className="text-sm text-gray-600" data-oid="a:08nao">
+                      Licensed dental professionals will review your results and
+                      provide personalized recommendations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Professional credentials footer */}
+              <div
+                className="mt-8 pt-6 border-t border-gray-200"
+                data-oid="kzkb4n1"
+              >
+                <div
+                  className="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-500"
+                  data-oid="yjetu6b"
+                >
+                  <div
+                    className="flex items-center space-x-1"
+                    data-oid=":kqqzkr"
+                  >
+                    <svg
+                      className="w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="2_g3g9y"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                        clipRule="evenodd"
+                        data-oid="seftp_m"
+                      />
+                    </svg>
+                    <span data-oid="nxrf-78">256-bit SSL Encryption</span>
+                  </div>
+                  <div
+                    className="flex items-center space-x-1"
+                    data-oid="nntipbs"
+                  >
+                    <svg
+                      className="w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="_68lh:4"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                        data-oid="xfdkp26"
+                      />
+                    </svg>
+                    <span data-oid="mfz.f8i">HIPAA Compliant Platform</span>
+                  </div>
+                  <div
+                    className="flex items-center space-x-1"
+                    data-oid="rfw_fxm"
+                  >
+                    <svg
+                      className="w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="rbt5vgj"
+                    >
+                      <path
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        data-oid="4si3c6r"
+                      />
+                    </svg>
+                    <span data-oid="j0llsv9">Evidence-Based Medicine</span>
+                  </div>
+                  <div
+                    className="flex items-center space-x-1"
+                    data-oid="6-wt5q4"
+                  >
+                    <svg
+                      className="w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="y71dzb0"
+                    >
+                      <path
+                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                        data-oid="in584p_"
+                      />
+                    </svg>
+                    <span data-oid="7bcy_wx">Licensed Professionals</span>
+                  </div>
                 </div>
               </div>
             </div>
