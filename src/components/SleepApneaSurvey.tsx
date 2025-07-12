@@ -648,7 +648,7 @@ const SleepApneaSurvey: React.FC = () => {
                 >
                   {/* Background pattern */}
                   <div
-                    className="absolute top-2 right-2 w-24 h-24 opacity-10"
+                    className="absolute top-0 right-0 w-32 h-32 opacity-10"
                     data-oid="zxja0z-"
                   >
                     <svg
@@ -659,7 +659,7 @@ const SleepApneaSurvey: React.FC = () => {
                       <circle
                         cx="50"
                         cy="50"
-                        r="45"
+                        r="40"
                         fill="currentColor"
                         className={classNames(
                           results.riskLevel === "Low Risk"
