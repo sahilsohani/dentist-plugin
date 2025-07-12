@@ -253,28 +253,28 @@ const SleepApneaSurvey: React.FC = () => {
   }> = ({ results }) => (
     <div
       className="max-w-4xl mx-auto p-6 bg-gray-50 min-h-screen"
-      data-oid="kukkh7h"
+      data-oid="1p5_isz"
     >
       <div
         className="bg-white rounded-lg shadow-lg p-8 text-center"
-        data-oid="42p541g"
+        data-oid="65dw9-h"
       >
         {/* Success Icon */}
         <div
           className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6"
-          data-oid="5i:w06v"
+          data-oid="ruhf_y_"
         >
           <svg
             className="h-8 w-8 text-green-600"
             fill="currentColor"
             viewBox="0 0 20 20"
-            data-oid="4k.yyvx"
+            data-oid="l30-l26"
           >
             <path
               fillRule="evenodd"
               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
               clipRule="evenodd"
-              data-oid="vjna.t."
+              data-oid="l15yiqn"
             />
           </svg>
         </div>
@@ -282,23 +282,23 @@ const SleepApneaSurvey: React.FC = () => {
         {/* Thank You Message */}
         <h1
           className="text-3xl font-bold text-gray-900 mb-2"
-          data-oid="zq5ug2y"
+          data-oid="wrymtuj"
         >
           ✅ Thank you, {results.name}!
         </h1>
 
         {/* Score Display */}
-        <div className="mb-6" data-oid="ehvh70l">
-          <p className="text-xl text-gray-700 mb-4" data-oid="taf9ts8">
+        <div className="mb-6" data-oid="pk-utlo">
+          <p className="text-xl text-gray-700 mb-4" data-oid="3k2qf1s">
             Your STOP-BANG score:
           </p>
           <div
             className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-blue-100 border-4 border-blue-200 mb-4"
-            data-oid="794rd-k"
+            data-oid="4uj8f2_"
           >
             <span
               className="text-3xl font-bold text-blue-600"
-              data-oid=".1emg9c"
+              data-oid="qvuf4oi"
             >
               {results.score}/8
             </span>
@@ -306,8 +306,8 @@ const SleepApneaSurvey: React.FC = () => {
         </div>
 
         {/* Risk Level */}
-        <div className="mb-8" data-oid="i5lov4q">
-          <p className="text-lg text-gray-700 mb-3" data-oid="6ejmeje">
+        <div className="mb-8" data-oid="bl-9s5b">
+          <p className="text-lg text-gray-700 mb-3" data-oid="a6y270-">
             You may be at
           </p>
           <div
@@ -315,11 +315,11 @@ const SleepApneaSurvey: React.FC = () => {
               "inline-block px-6 py-3 rounded-lg border-2 font-semibold text-lg",
               getRiskColor(results.riskLevel),
             )}
-            data-oid="ndfq6sp"
+            data-oid="r7sv49c"
           >
             {results.riskLevel}
           </div>
-          <p className="text-lg text-gray-700 mt-3" data-oid="5yky4xg">
+          <p className="text-lg text-gray-700 mt-3" data-oid="-1q2x69">
             for Obstructive Sleep Apnea.
           </p>
         </div>
@@ -327,26 +327,26 @@ const SleepApneaSurvey: React.FC = () => {
         {/* Did You Know Section */}
         <div
           className="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6 mb-8"
-          data-oid="j9zet1j"
+          data-oid="_le2pht"
         >
-          <div className="flex items-start space-x-3" data-oid="a93fhdv">
-            <div className="text-2xl" data-oid="ou-8vns">
+          <div className="flex items-start space-x-3" data-oid="hcd87v1">
+            <div className="text-2xl" data-oid="e-d8g2.">
               🧠
             </div>
-            <div className="text-left" data-oid="r7-fs:y">
+            <div className="text-left" data-oid="ng2qmf5">
               <h3
                 className="font-semibold text-purple-900 mb-3"
-                data-oid="2u.rb0j"
+                data-oid=":3_6g8e"
               >
                 Did You Know?
               </h3>
-              <p className="text-gray-700 mb-3" data-oid="ch:ovay">
+              <p className="text-gray-700 mb-3" data-oid=".xr-o1b">
                 Sleep apnea doesn't just affect your sleep — it can impact your
                 memory, energy, and even your weight.
               </p>
-              <p className="text-gray-700" data-oid="675ue6j">
+              <p className="text-gray-700" data-oid="tx0r5f:">
                 At our practice, we treat the{" "}
-                <strong data-oid="7_gv068">whole patient</strong> — because
+                <strong data-oid="fpwtoo6">whole patient</strong> — because
                 airway health is vital to dental health.
               </p>
             </div>
@@ -356,20 +356,20 @@ const SleepApneaSurvey: React.FC = () => {
         {/* Additional Risk Factors Section */}
         <div
           className="bg-white border border-gray-200 rounded-lg p-6 mb-8 text-left"
-          data-oid="xt:k072"
+          data-oid="p2saik8"
         >
-          <h3 className="font-semibold text-gray-900 mb-3" data-oid="9ru.sg.">
+          <h3 className="font-semibold text-gray-900 mb-3" data-oid="2l_-llx">
             Additional Risk Factors That May Be Linked to Sleep Apnea
           </h3>
-          <p className="text-gray-600 text-sm mb-4 italic" data-oid="u4hpcl-">
+          <p className="text-gray-600 text-sm mb-4 italic" data-oid="6tjtpkc">
             *(Check any that apply to you):*
           </p>
 
-          <div className="space-y-3" data-oid="vcgt6tq">
+          <div className="space-y-3" data-oid="wqrtmkl">
             {/* General Risk Factors */}
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-3"
-              data-oid="nue84p:"
+              data-oid="3ys6fw9"
             >
               {[
                 "Depression",
@@ -387,15 +387,15 @@ const SleepApneaSurvey: React.FC = () => {
                 <label
                   key={index}
                   className="flex items-center space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded transition-colors"
-                  data-oid="7_kd8pb"
+                  data-oid="evd_w1m"
                 >
                   <input
                     type="checkbox"
                     className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
-                    data-oid="6dp2izb"
+                    data-oid="3o_94ey"
                   />
 
-                  <span className="text-gray-700 text-sm" data-oid="sl_wf8o">
+                  <span className="text-gray-700 text-sm" data-oid="se3y_g9">
                     {factor}
                   </span>
                 </label>
@@ -405,31 +405,31 @@ const SleepApneaSurvey: React.FC = () => {
             {/* Female-Specific Section */}
             <div
               className="mt-6 pt-4 border-t border-gray-200"
-              data-oid="kxder-a"
+              data-oid="7745f.g"
             >
               <h4
                 className="font-semibold text-gray-900 mb-3"
-                data-oid="7muah7x"
+                data-oid="7tax2yu"
               >
                 Female Patients:
               </h4>
-              <div className="space-y-3" data-oid="nk:dvcl">
+              <div className="space-y-3" data-oid="r7iv:::">
                 {["PCOS (Polycystic Ovarian Syndrome)", "Post-menopausal"].map(
                   (factor, index) => (
                     <label
                       key={index}
                       className="flex items-center space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded transition-colors"
-                      data-oid="r5i49kn"
+                      data-oid="ui7jgm-"
                     >
                       <input
                         type="checkbox"
                         className="w-4 h-4 text-pink-600 bg-gray-100 border-gray-300 rounded focus:ring-pink-500 focus:ring-2"
-                        data-oid="t37vj5s"
+                        data-oid="gd3wnn9"
                       />
 
                       <span
                         className="text-gray-700 text-sm"
-                        data-oid="uatbeod"
+                        data-oid="ze8-g6c"
                       >
                         {factor}
                       </span>
@@ -443,9 +443,9 @@ const SleepApneaSurvey: React.FC = () => {
           {/* Privacy Note */}
           <div
             className="mt-6 pt-4 border-t border-gray-200"
-            data-oid="cyh080e"
+            data-oid="5g:7o03"
           >
-            <p className="text-xs text-gray-500 italic" data-oid="n_rs6dm">
+            <p className="text-xs text-gray-500 italic" data-oid="9h75qsm">
               Your selections will be shared privately with the care team to
               help understand your unique case.
             </p>
@@ -455,13 +455,13 @@ const SleepApneaSurvey: React.FC = () => {
         {/* Risk Level Explanation */}
         <div
           className="bg-gray-50 rounded-lg p-6 mb-8 text-left"
-          data-oid="kc6xywp"
+          data-oid="flcqw8q"
         >
-          <h3 className="font-semibold text-gray-900 mb-3" data-oid="buy.whl">
+          <h3 className="font-semibold text-gray-900 mb-3" data-oid="6beln38">
             What this means:
           </h3>
           {results.riskLevel === "Low Risk" && (
-            <p className="text-gray-700" data-oid="-eh7a5-">
+            <p className="text-gray-700" data-oid="t9imb27">
               Your score suggests a lower probability of having moderate to
               severe obstructive sleep apnea. However, if you continue to
               experience sleep-related symptoms, consider discussing them with
@@ -469,14 +469,14 @@ const SleepApneaSurvey: React.FC = () => {
             </p>
           )}
           {results.riskLevel === "Intermediate Risk" && (
-            <p className="text-gray-700" data-oid="4_un29b">
+            <p className="text-gray-700" data-oid="r9reskm">
               Your score suggests an intermediate probability of having moderate
               to severe obstructive sleep apnea. We recommend discussing these
               results with your healthcare provider for further evaluation.
             </p>
           )}
           {results.riskLevel === "High Risk" && (
-            <p className="text-gray-700" data-oid="x:37g7j">
+            <p className="text-gray-700" data-oid="ehi4-l0">
               Your score suggests a high probability of having moderate to
               severe obstructive sleep apnea. We strongly recommend discussing
               these results with your healthcare provider for comprehensive
@@ -488,36 +488,36 @@ const SleepApneaSurvey: React.FC = () => {
         {/* Next Steps */}
         <div
           className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8"
-          data-oid="l1pyxrz"
+          data-oid="s640c_n"
         >
-          <h3 className="font-semibold text-blue-900 mb-3" data-oid="5ly1dyq">
+          <h3 className="font-semibold text-blue-900 mb-3" data-oid="al_h.h9">
             Next Steps:
           </h3>
-          <p className="text-blue-800" data-oid="mjk99fz">
+          <p className="text-blue-800" data-oid="_sarrx-">
             A member of our team will reach out to you shortly to discuss your
             results and care options.
           </p>
         </div>
 
         {/* Email Toggle */}
-        <div className="mb-6" data-oid="eogxif_">
+        <div className="mb-6" data-oid="sa0ht99">
           <label
             className="flex items-center justify-center space-x-3 cursor-pointer bg-gray-50 hover:bg-gray-100 p-4 rounded-lg border border-gray-200 transition-colors"
-            data-oid="y.ftcuj"
+            data-oid="mahfoys"
           >
             <input
               type="checkbox"
               checked={emailResults}
               onChange={(e) => setEmailResults(e.target.checked)}
               className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
-              data-oid="igso_19"
+              data-oid="ouw7qpm"
             />
 
-            <div className="flex items-center space-x-2" data-oid="4i2q.uw">
-              <span className="text-lg" data-oid="iublib_">
+            <div className="flex items-center space-x-2" data-oid="xaeorap">
+              <span className="text-lg" data-oid="rgip4.c">
                 📩
               </span>
-              <span className="text-gray-700 font-medium" data-oid="wnv9a5h">
+              <span className="text-gray-700 font-medium" data-oid=":vypufb">
                 Email me a copy of my results
               </span>
             </div>
@@ -525,10 +525,10 @@ const SleepApneaSurvey: React.FC = () => {
           {emailResults && (
             <p
               className="text-xs text-blue-600 mt-2 text-center"
-              data-oid="iqy1egg"
+              data-oid="folnsiy"
             >
               Results will be sent to the email address you provided:{" "}
-              <strong data-oid="vw988kq">{results.name}</strong>
+              <strong data-oid="zfzvyun">{results.name}</strong>
             </p>
           )}
         </div>
@@ -536,24 +536,24 @@ const SleepApneaSurvey: React.FC = () => {
         {/* Action Buttons */}
         <div
           className="flex flex-col sm:flex-row gap-4 justify-center"
-          data-oid="w-ydu9-"
+          data-oid="dr5bmex"
         >
           <button
             onClick={() => window.print()}
             className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center"
-            data-oid="8a9vtp2"
+            data-oid="n_2il:q"
           >
             <svg
               className="w-5 h-5 mr-2"
               fill="currentColor"
               viewBox="0 0 20 20"
-              data-oid="rel5_h9"
+              data-oid="kukawco"
             >
               <path
                 fillRule="evenodd"
                 d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zM5 14H4v-3h1v3zm4 0h2v2H9v-2zM15 11h1v3h-1v-3z"
                 clipRule="evenodd"
-                data-oid="8fdmu52"
+                data-oid="ye7y9c9"
               />
             </svg>
             Print Results
@@ -562,19 +562,19 @@ const SleepApneaSurvey: React.FC = () => {
           <button
             onClick={restartSurvey}
             className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
-            data-oid="l7jr10b"
+            data-oid="bfpti4d"
           >
             <svg
               className="w-5 h-5 mr-2"
               fill="currentColor"
               viewBox="0 0 20 20"
-              data-oid="jmf6917"
+              data-oid="v.dn9qw"
             >
               <path
                 fillRule="evenodd"
                 d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
                 clipRule="evenodd"
-                data-oid="imkj47w"
+                data-oid="0.fmytv"
               />
             </svg>
             Retake Survey
@@ -582,9 +582,9 @@ const SleepApneaSurvey: React.FC = () => {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-8 pt-6 border-t border-gray-200" data-oid="tvkz3mv">
-          <p className="text-xs text-gray-500" data-oid="m3qygc0">
-            <strong data-oid="gyyn_h:">Disclaimer:</strong> This assessment is
+        <div className="mt-8 pt-6 border-t border-gray-200" data-oid="hbg1we-">
+          <p className="text-xs text-gray-500" data-oid="9u1nd_m">
+            <strong data-oid="g_-wgvd">Disclaimer:</strong> This assessment is
             for screening purposes only and does not replace professional
             medical advice. Please consult with a healthcare provider for proper
             diagnosis and treatment.
@@ -596,7 +596,7 @@ const SleepApneaSurvey: React.FC = () => {
 
   // Show results if survey is completed
   if (showResults && surveyResults) {
-    return <ResultsDisplay results={surveyResults} data-oid="i.acz7d" />;
+    return <ResultsDisplay results={surveyResults} data-oid="8-g.3io" />;
   }
 
   // Rest of the original components (YesNoQuestion, BMICalculator, etc.)
@@ -620,41 +620,41 @@ const SleepApneaSurvey: React.FC = () => {
             "shadow-md": isAnswered,
           },
         )}
-        data-oid=".p_9_9o"
+        data-oid=":-op0q7"
       >
         <div
           className="flex items-start justify-between mb-2"
-          data-oid="tfm--zc"
+          data-oid="e58ttdx"
         >
           <h3
             className="text-lg font-semibold text-gray-900"
-            data-oid="m.wkr78"
+            data-oid="_fa.2v4"
           >
             {title}
           </h3>
           {isAnswered && (
             <div
               className="flex items-center text-sm text-green-600 bg-green-100 px-2 py-1 rounded-full"
-              data-oid="8hjo-pj"
+              data-oid="xhb_ww6"
             >
               <svg
                 className="w-4 h-4 mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                data-oid="33._255"
+                data-oid="qkqmv6:"
               >
                 <path
                   fillRule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clipRule="evenodd"
-                  data-oid="o6uyrau"
+                  data-oid="vewjevn"
                 />
               </svg>
               Answered
             </div>
           )}
         </div>
-        <p className="text-gray-600 mb-4" data-oid="8k2-j2f">
+        <p className="text-gray-600 mb-4" data-oid="vdji5h6">
           {description}
         </p>
 
@@ -665,7 +665,7 @@ const SleepApneaSurvey: React.FC = () => {
             validate: (value) => value !== null || "This question is required",
           }}
           render={({ field }) => (
-            <div className="flex space-x-4" data-oid="yq:52qs">
+            <div className="flex space-x-4" data-oid="lj8mb.z">
               <label
                 className={classNames(
                   "flex items-center space-x-3 cursor-pointer p-4 rounded-lg border-2 transition-all duration-200 flex-1",
@@ -677,7 +677,7 @@ const SleepApneaSurvey: React.FC = () => {
                     "opacity-50 cursor-not-allowed": disabled,
                   },
                 )}
-                data-oid="n3izq85"
+                data-oid="u3w76yh"
               >
                 <input
                   type="radio"
@@ -690,7 +690,7 @@ const SleepApneaSurvey: React.FC = () => {
                   }}
                   disabled={disabled}
                   className="sr-only"
-                  data-oid="-vi7t2y"
+                  data-oid="t9jj70r"
                 />
 
                 <div
@@ -701,12 +701,12 @@ const SleepApneaSurvey: React.FC = () => {
                       "border-gray-400": field.value !== true,
                     },
                   )}
-                  data-oid="g57oivp"
+                  data-oid="t.s4kuq"
                 >
                   {field.value === true && (
                     <div
                       className="w-2 h-2 bg-white rounded-full animate-pulse"
-                      data-oid="h41t7d5"
+                      data-oid="b1pv4kg"
                     />
                   )}
                 </div>
@@ -718,7 +718,7 @@ const SleepApneaSurvey: React.FC = () => {
                       "text-gray-900": field.value !== true,
                     },
                   )}
-                  data-oid="figzcxo"
+                  data-oid="1-m8r1z"
                 >
                   Yes
                 </span>
@@ -735,7 +735,7 @@ const SleepApneaSurvey: React.FC = () => {
                     "opacity-50 cursor-not-allowed": disabled,
                   },
                 )}
-                data-oid="u0n4hqd"
+                data-oid="lwtfzrm"
               >
                 <input
                   type="radio"
@@ -748,7 +748,7 @@ const SleepApneaSurvey: React.FC = () => {
                   }}
                   disabled={disabled}
                   className="sr-only"
-                  data-oid="abe8yh5"
+                  data-oid="2iy0zm:"
                 />
 
                 <div
@@ -759,12 +759,12 @@ const SleepApneaSurvey: React.FC = () => {
                       "border-gray-400": field.value !== false,
                     },
                   )}
-                  data-oid="hqx3lbk"
+                  data-oid="3f5p8et"
                 >
                   {field.value === false && (
                     <div
                       className="w-2 h-2 bg-white rounded-full animate-pulse"
-                      data-oid="v_jah2o"
+                      data-oid="k2huno9"
                     />
                   )}
                 </div>
@@ -776,43 +776,43 @@ const SleepApneaSurvey: React.FC = () => {
                       "text-gray-900": field.value !== false,
                     },
                   )}
-                  data-oid="bddnih5"
+                  data-oid="3ji9u:o"
                 >
                   No
                 </span>
               </label>
             </div>
           )}
-          data-oid="p4dw3s4"
+          data-oid="rci8fd."
         />
 
         {errors[name] && (
           <div
             className="mt-3 p-3 bg-red-50 border border-red-200 rounded-md"
-            data-oid="ej0c4zb"
+            data-oid="tfuhzr3"
           >
             <p
               className="text-sm text-red-600 flex items-center"
-              data-oid="_656zej"
+              data-oid="r.ung:z"
             >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                data-oid="ovsdjvo"
+                data-oid="jjo3z5t"
               >
                 <path
                   fillRule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                   clipRule="evenodd"
-                  data-oid="k5iatiy"
+                  data-oid="-rp6.6l"
                 />
               </svg>
               {errors[name]?.message}
             </p>
           </div>
         )}
-        {!errors[name] && <div className="mt-3 h-0" data-oid=".m9j_3x" />}
+        {!errors[name] && <div className="mt-3 h-0" data-oid="ugeer86" />}
       </div>
     );
   });
@@ -865,55 +865,55 @@ const SleepApneaSurvey: React.FC = () => {
     return (
       <div
         className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-        data-oid="1bph2-0"
+        data-oid="u48pe_r"
       >
         <h3
           className="text-lg font-semibold text-gray-900 mb-2"
-          data-oid="_l4lbw7"
+          data-oid="3s2mo3h"
         >
           BMI Calculator
         </h3>
-        <p className="text-gray-600 mb-4" data-oid="oz_bawo">
+        <p className="text-gray-600 mb-4" data-oid="jny:70v">
           Calculate your BMI to determine if it's over 35.
         </p>
 
-        <div className="mb-4" data-oid="nkamy8r">
+        <div className="mb-4" data-oid="14o.txh">
           <p
             className="text-sm font-medium text-gray-700 mb-2"
-            data-oid="6bsf5q9"
+            data-oid="d-nob_l"
           >
             Select units:
           </p>
-          <div className="flex space-x-4" data-oid="mrtm44z">
+          <div className="flex space-x-4" data-oid="9ooqb1e">
             <label
               className="flex items-center space-x-2 cursor-pointer"
-              data-oid="w_g.:6w"
+              data-oid="e4cmga."
             >
               <input
                 type="radio"
                 checked={units === "metric"}
                 onChange={() => setUnits("metric")}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500"
-                data-oid="0sfa1qg"
+                data-oid="n-x.tf8"
               />
 
-              <span className="text-gray-900" data-oid="6qq_ub-">
+              <span className="text-gray-900" data-oid="ovhd8_8">
                 cm / kg
               </span>
             </label>
             <label
               className="flex items-center space-x-2 cursor-pointer"
-              data-oid="x3y6w0-"
+              data-oid="c..tk.o"
             >
               <input
                 type="radio"
                 checked={units === "imperial"}
                 onChange={() => setUnits("imperial")}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500"
-                data-oid="d3unlju"
+                data-oid="zic87se"
               />
 
-              <span className="text-gray-900" data-oid="hs986pc">
+              <span className="text-gray-900" data-oid="f-06:yd">
                 in / lb
               </span>
             </label>
@@ -922,12 +922,12 @@ const SleepApneaSurvey: React.FC = () => {
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4"
-          data-oid="0so74qy"
+          data-oid="3g3xhue"
         >
-          <div data-oid="c22jm41">
+          <div data-oid="xfra63m">
             <label
               className="block text-sm font-medium text-gray-700 mb-1"
-              data-oid="yfrrpo5"
+              data-oid=".tq570o"
             >
               Height ({units === "metric" ? "cm" : "in"})
             </label>
@@ -940,14 +940,14 @@ const SleepApneaSurvey: React.FC = () => {
               value={height}
               onChange={(e) => setHeight(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="6pcobjm"
+              data-oid="vqzdd5w"
             />
           </div>
 
-          <div data-oid="q:wkb5w">
+          <div data-oid="v6smwvm">
             <label
               className="block text-sm font-medium text-gray-700 mb-1"
-              data-oid="mnil1i."
+              data-oid="u2svwui"
             >
               Weight ({units === "metric" ? "kg" : "lb"})
             </label>
@@ -960,12 +960,12 @@ const SleepApneaSurvey: React.FC = () => {
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="8w4fe_p"
+              data-oid="4d5tyc:"
             />
           </div>
         </div>
 
-        <div className="mb-4" data-oid="o1_6nu8">
+        <div className="mb-4" data-oid="l3cm86e">
           <button
             type="button"
             onClick={calculateBMI}
@@ -979,7 +979,7 @@ const SleepApneaSurvey: React.FC = () => {
                   !height || !weight,
               },
             )}
-            data-oid="z69sv.k"
+            data-oid="byp0b0r"
           >
             Calculate BMI
           </button>
@@ -988,7 +988,7 @@ const SleepApneaSurvey: React.FC = () => {
               type="button"
               onClick={resetCalculator}
               className="px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium"
-              data-oid="9ezqccq"
+              data-oid="xvj675r"
             >
               Reset
             </button>
@@ -996,16 +996,16 @@ const SleepApneaSurvey: React.FC = () => {
         </div>
 
         {showBMI && localBMI && (
-          <div className="bg-blue-50 p-4 rounded-lg mb-4" data-oid="ogc4tqu">
-            <p className="text-sm font-medium text-blue-900" data-oid="xtlqhxl">
+          <div className="bg-blue-50 p-4 rounded-lg mb-4" data-oid="so-40zc">
+            <p className="text-sm font-medium text-blue-900" data-oid=".bjqz0f">
               Your BMI:{" "}
-              <span className="text-lg font-bold" data-oid="v74.5jd">
+              <span className="text-lg font-bold" data-oid="2aw7fyg">
                 {localBMI}
               </span>
             </p>
-            <p className="text-sm text-blue-700 mt-1" data-oid="is-du2h">
+            <p className="text-sm text-blue-700 mt-1" data-oid="uqg7x8l">
               BMI over 35:{" "}
-              <span className="font-semibold" data-oid="-jh1fh3">
+              <span className="font-semibold" data-oid="29na:s5">
                 {localBMI > 35 ? "Yes" : "No"}
               </span>
             </p>
@@ -1049,20 +1049,20 @@ const SleepApneaSurvey: React.FC = () => {
           <BMICalculator
             onBMICalculated={handleBMICalculated}
             onReset={handleReset}
-            data-oid="rzu8oyl"
+            data-oid="cvq8g-z"
           />
 
           <div
             className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mt-6"
-            data-oid="aewa4g0"
+            data-oid="fr_zd2q"
           >
             <h3
               className="text-lg font-semibold text-gray-900 mb-2"
-              data-oid=":85v_l9"
+              data-oid="rgd85nr"
             >
               BMI &gt; 35
             </h3>
-            <p className="text-gray-600 mb-4" data-oid="e9u4i7c">
+            <p className="text-gray-600 mb-4" data-oid="9__pqkl">
               Is your BMI over 35?
             </p>
 
@@ -1074,7 +1074,7 @@ const SleepApneaSurvey: React.FC = () => {
                   value !== null || "This question is required",
               }}
               render={({ field }) => (
-                <div className="flex space-x-4" data-oid="blxe5o_">
+                <div className="flex space-x-4" data-oid="h._fwf5">
                   <label
                     className={classNames(
                       "flex items-center space-x-2 cursor-pointer p-3 rounded-lg border-2 transition-all",
@@ -1085,7 +1085,7 @@ const SleepApneaSurvey: React.FC = () => {
                         "opacity-50 cursor-not-allowed": isDisabled,
                       },
                     )}
-                    data-oid="71:q17u"
+                    data-oid="rq_id.q"
                   >
                     <input
                       type="radio"
@@ -1093,7 +1093,7 @@ const SleepApneaSurvey: React.FC = () => {
                       onChange={() => !isDisabled && field.onChange(true)}
                       disabled={isDisabled}
                       className="sr-only"
-                      data-oid="3wsnhr3"
+                      data-oid="plzz2tw"
                     />
 
                     <div
@@ -1104,18 +1104,18 @@ const SleepApneaSurvey: React.FC = () => {
                           "border-gray-300": field.value !== true,
                         },
                       )}
-                      data-oid="zdtworv"
+                      data-oid="zm98hmp"
                     >
                       {field.value === true && (
                         <div
                           className="w-2 h-2 bg-white rounded-full"
-                          data-oid="o0hb_fn"
+                          data-oid="7sh5f7_"
                         />
                       )}
                     </div>
                     <span
                       className="font-medium text-gray-900"
-                      data-oid=".n4.pmn"
+                      data-oid="njv7.cv"
                     >
                       Yes
                     </span>
@@ -1131,7 +1131,7 @@ const SleepApneaSurvey: React.FC = () => {
                         "opacity-50 cursor-not-allowed": isDisabled,
                       },
                     )}
-                    data-oid="33xlw85"
+                    data-oid="h.52inv"
                   >
                     <input
                       type="radio"
@@ -1139,7 +1139,7 @@ const SleepApneaSurvey: React.FC = () => {
                       onChange={() => !isDisabled && field.onChange(false)}
                       disabled={isDisabled}
                       className="sr-only"
-                      data-oid="9lncm5f"
+                      data-oid="mxbrv5q"
                     />
 
                     <div
@@ -1150,40 +1150,40 @@ const SleepApneaSurvey: React.FC = () => {
                           "border-gray-300": field.value !== false,
                         },
                       )}
-                      data-oid="8gpj_n7"
+                      data-oid=".s:_cbo"
                     >
                       {field.value === false && (
                         <div
                           className="w-2 h-2 bg-white rounded-full"
-                          data-oid="k:pvd::"
+                          data-oid="y0.lwi2"
                         />
                       )}
                     </div>
                     <span
                       className="font-medium text-gray-900"
-                      data-oid="5d4u_ja"
+                      data-oid="8pv52:-"
                     >
                       No
                     </span>
                   </label>
                 </div>
               )}
-              data-oid="09qxdi:"
+              data-oid="m0doalq"
             />
 
             {errors.bmiOver35 && (
-              <div className="mt-2 h-6" data-oid="cb3bsap">
-                <p className="text-sm text-red-600" data-oid="doqc82x">
+              <div className="mt-2 h-6" data-oid="r0e-l0k">
+                <p className="text-sm text-red-600" data-oid="i3cistg">
                   {errors.bmiOver35?.message}
                 </p>
               </div>
             )}
             {!errors.bmiOver35 && (
-              <div className="mt-2 h-6" data-oid="dcw-hq5" />
+              <div className="mt-2 h-6" data-oid="76ctcmv" />
             )}
 
             {bmiCalculated && (
-              <p className="text-xs text-gray-500 mt-2" data-oid="73g79e3">
+              <p className="text-xs text-gray-500 mt-2" data-oid="rzn-0xd">
                 * This question has been automatically set based on your
                 calculated BMI
               </p>
@@ -1198,22 +1198,22 @@ const SleepApneaSurvey: React.FC = () => {
       control={control}
       setValue={setValue}
       errors={errors}
-      data-oid="ak7wuti"
+      data-oid="j:61ejp"
     />
   ));
 
   const AgeInput: React.FC = React.memo(() => (
     <div
       className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-      data-oid="hpt_wx_"
+      data-oid="mtw47ks"
     >
       <h3
         className="text-lg font-semibold text-gray-900 mb-2"
-        data-oid="mjyalcd"
+        data-oid="7qvk2qw"
       >
         Age
       </h3>
-      <p className="text-gray-600 mb-4" data-oid="zeum7g2">
+      <p className="text-gray-600 mb-4" data-oid="5j-k:a2">
         Please enter your age.
       </p>
 
@@ -1239,14 +1239,14 @@ const SleepApneaSurvey: React.FC = () => {
             }}
             onBlur={field.onBlur}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
-            data-oid="elxsbx5"
+            data-oid="8xk--00"
           />
         )}
-        data-oid="0x:w-vg"
+        data-oid="zs5w:-_"
       />
 
       {errors.age && (
-        <p className="mb-4 text-sm text-red-600" data-oid="9za_g8:">
+        <p className="mb-4 text-sm text-red-600" data-oid="x8gihwo">
           {errors.age.message}
         </p>
       )}
@@ -1256,7 +1256,7 @@ const SleepApneaSurvey: React.FC = () => {
         title="Age > 50"
         description="Are you over 50 years old?"
         disabled={true}
-        data-oid="v7myhsn"
+        data-oid="x:nvsfl"
       />
     </div>
   ));
@@ -1264,19 +1264,19 @@ const SleepApneaSurvey: React.FC = () => {
   const NeckSizeInput: React.FC = React.memo(() => (
     <div
       className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-      data-oid="sm9i.z."
+      data-oid="vitx75l"
     >
       <h3
         className="text-lg font-semibold text-gray-900 mb-2"
-        data-oid="qo4v9v-"
+        data-oid="3ivn40c"
       >
         Neck Size
       </h3>
-      <p className="text-gray-600 mb-4" data-oid="k:q2qdj">
+      <p className="text-gray-600 mb-4" data-oid="cd0oq2c">
         Please measure your neck circumference.
       </p>
 
-      <div className="flex space-x-2 mb-4" data-oid="xs_.o9d">
+      <div className="flex space-x-2 mb-4" data-oid="bfj3w4t">
         <Controller
           name="neckSize"
           control={control}
@@ -1301,10 +1301,10 @@ const SleepApneaSurvey: React.FC = () => {
               }}
               onBlur={field.onBlur}
               className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="hq-1nvf"
+              data-oid="kre6cjs"
             />
           )}
-          data-oid="xjup_8x"
+          data-oid="h0ftmpt"
         />
 
         <Controller
@@ -1321,21 +1321,21 @@ const SleepApneaSurvey: React.FC = () => {
                 );
               }}
               className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="fxpx0wq"
+              data-oid="2in26qk"
             >
-              <option value="inches" data-oid="o7vgv4k">
+              <option value="inches" data-oid="zgfdtj1">
                 inches
               </option>
-              <option value="cm" data-oid="y.y69-q">
+              <option value="cm" data-oid="b5exjuv">
                 cm
               </option>
             </select>
           )}
-          data-oid="zutpcw2"
+          data-oid="dsqpcxl"
         />
       </div>
       {errors.neckSize && (
-        <p className="mb-4 text-sm text-red-600" data-oid="nl_.:68">
+        <p className="mb-4 text-sm text-red-600" data-oid=":38zpz2">
           {errors.neckSize.message}
         </p>
       )}
@@ -1345,7 +1345,7 @@ const SleepApneaSurvey: React.FC = () => {
         title="Neck Size > 16 inches"
         description="Is your neck circumference greater than 16 inches (40cm)?"
         disabled={true}
-        data-oid="rjelqbv"
+        data-oid="hhysi02"
       />
     </div>
   ));
@@ -1443,49 +1443,49 @@ const SleepApneaSurvey: React.FC = () => {
     return (
       <div
         className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-        data-oid="5xin479"
+        data-oid="f28uzu5"
       >
-        <div className="flex items-center mb-4" data-oid="c1t4q5t">
+        <div className="flex items-center mb-4" data-oid="4y-jo:0">
           <div
             className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
-            data-oid="pf6x_tg"
+            data-oid="xrk1dim"
           >
             <svg
               className="w-4 h-4 text-blue-600"
               fill="currentColor"
               viewBox="0 0 20 20"
-              data-oid="o4n1c1i"
+              data-oid="1tdfxw7"
             >
               <path
                 fillRule="evenodd"
                 d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                 clipRule="evenodd"
-                data-oid="-qmdxcd"
+                data-oid="33z22ws"
               />
             </svg>
           </div>
-          <div data-oid="lxmntiw">
+          <div data-oid="lj69:dr">
             <h3
               className="text-lg font-semibold text-gray-900"
-              data-oid="4tn92ij"
+              data-oid="u-0zphv"
             >
               Contact Information
             </h3>
-            <p className="text-gray-600 text-sm" data-oid="rhm-1lz">
+            <p className="text-gray-600 text-sm" data-oid="6mbyu::">
               Your details are kept confidential and secure
             </p>
           </div>
         </div>
 
-        <div className="space-y-6" data-oid="js-j3a9">
-          <div data-oid="c8msxgi">
+        <div className="space-y-6" data-oid="mlo_opy">
+          <div data-oid="jhq0ubc">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="9i3piu-"
+              data-oid="ns8sgpr"
             >
               Full Name *
             </label>
-            <div className="relative" data-oid="ce:4po:">
+            <div className="relative" data-oid="rofni6j">
               <input
                 type="text"
                 placeholder="Enter your full name"
@@ -1506,43 +1506,43 @@ const SleepApneaSurvey: React.FC = () => {
                       getFieldStatus("fullName", fullName) === "success",
                   },
                 )}
-                data-oid="s2ebzsa"
+                data-oid="ebh6buk"
               />
 
               <div
                 className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                data-oid="72mvfy_"
+                data-oid="juv61_r"
               >
                 <svg
                   className="h-5 w-5 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="tgdcf_6"
+                  data-oid="52l4hls"
                 >
                   <path
                     fillRule="evenodd"
                     d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                     clipRule="evenodd"
-                    data-oid="j26vf4q"
+                    data-oid="2msivmm"
                   />
                 </svg>
               </div>
               {getFieldStatus("fullName", fullName) === "success" && (
                 <div
                   className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  data-oid="77bfaku"
+                  data-oid="i-09-2k"
                 >
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="wiw9b5r"
+                    data-oid="6:sqz4:"
                   >
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
-                      data-oid="9pw96x9"
+                      data-oid="um4_0bg"
                     />
                   </svg>
                 </div>
@@ -1551,37 +1551,37 @@ const SleepApneaSurvey: React.FC = () => {
             {errors.fullName && (
               <div
                 className="mt-2 flex items-center text-sm text-red-600"
-                data-oid="awvd79q"
+                data-oid="6zt21jv"
               >
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="qh23_:-"
+                  data-oid="whx21hg"
                 >
                   <path
                     fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                     clipRule="evenodd"
-                    data-oid="rjle6nk"
+                    data-oid="fq3jzep"
                   />
                 </svg>
                 {errors.fullName}
               </div>
             )}
             {!errors.fullName && (
-              <div className="mt-2 h-5" data-oid="lv0h66-" />
+              <div className="mt-2 h-5" data-oid="8k3ptth" />
             )}
           </div>
 
-          <div data-oid=":ddkjcl">
+          <div data-oid="8rw1_5l">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="41:1xa3"
+              data-oid="2y5n083"
             >
               Email Address *
             </label>
-            <div className="relative" data-oid="ca2iq.k">
+            <div className="relative" data-oid="87b6f0y">
               <input
                 type="email"
                 placeholder="Enter your email address"
@@ -1602,46 +1602,46 @@ const SleepApneaSurvey: React.FC = () => {
                       getFieldStatus("email", email) === "success",
                   },
                 )}
-                data-oid="j8pbkwz"
+                data-oid="fuzuago"
               />
 
               <div
                 className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                data-oid=":b:kl5p"
+                data-oid="-6la0g0"
               >
                 <svg
                   className="h-5 w-5 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="x36bpq5"
+                  data-oid="ru1qsvu"
                 >
                   <path
                     d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                    data-oid="_lk4aom"
+                    data-oid="g4a5m03"
                   />
 
                   <path
                     d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                    data-oid="g:xktpj"
+                    data-oid="1zig7ah"
                   />
                 </svg>
               </div>
               {getFieldStatus("email", email) === "success" && (
                 <div
                   className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  data-oid="pwv-n7g"
+                  data-oid=":8-e:1h"
                 >
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="0zx:60z"
+                    data-oid="rx81vem"
                   >
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
-                      data-oid="rbgs4vt"
+                      data-oid="hlr:rbr"
                     />
                   </svg>
                 </div>
@@ -1650,35 +1650,35 @@ const SleepApneaSurvey: React.FC = () => {
             {errors.email && (
               <div
                 className="mt-2 flex items-center text-sm text-red-600"
-                data-oid=".emwvnj"
+                data-oid="j6b6b09"
               >
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="2lsyjpv"
+                  data-oid="wx.nlg:"
                 >
                   <path
                     fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                     clipRule="evenodd"
-                    data-oid="b:9zezp"
+                    data-oid="f699pwy"
                   />
                 </svg>
                 {errors.email}
               </div>
             )}
-            {!errors.email && <div className="mt-2 h-5" data-oid="5pdu9z4" />}
+            {!errors.email && <div className="mt-2 h-5" data-oid="4wb9vqi" />}
           </div>
 
-          <div data-oid="4xql11o">
+          <div data-oid="jxlxrb:">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="g2rjd:z"
+              data-oid="1.gq5c6"
             >
               Phone Number *
             </label>
-            <div className="relative" data-oid="3qgwq7k">
+            <div className="relative" data-oid="i7a3do.">
               <input
                 type="tel"
                 placeholder="Enter your phone number"
@@ -1699,41 +1699,41 @@ const SleepApneaSurvey: React.FC = () => {
                       getFieldStatus("phone", phone) === "success",
                   },
                 )}
-                data-oid="v_4:4lk"
+                data-oid="22qoflo"
               />
 
               <div
                 className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                data-oid="ocmvgf9"
+                data-oid="0250t-6"
               >
                 <svg
                   className="h-5 w-5 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="9o0wsny"
+                  data-oid="oakju:i"
                 >
                   <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                    data-oid=":lqb5tn"
+                    data-oid="3_3fru8"
                   />
                 </svg>
               </div>
               {getFieldStatus("phone", phone) === "success" && (
                 <div
                   className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  data-oid="y33zzra"
+                  data-oid="17ine4b"
                 >
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="l:s3r3-"
+                    data-oid="g3eqgak"
                   >
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
-                      data-oid="2slck0c"
+                      data-oid="s.0js0:"
                     />
                   </svg>
                 </div>
@@ -1742,25 +1742,25 @@ const SleepApneaSurvey: React.FC = () => {
             {errors.phone && (
               <div
                 className="mt-2 flex items-center text-sm text-red-600"
-                data-oid="tio5odi"
+                data-oid="wzb.gq-"
               >
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="8xjn7yt"
+                  data-oid="5dj6l3_"
                 >
                   <path
                     fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                     clipRule="evenodd"
-                    data-oid="dncoc6."
+                    data-oid="v0bf__h"
                   />
                 </svg>
                 {errors.phone}
               </div>
             )}
-            {!errors.phone && <div className="mt-2 h-5" data-oid="xf:_wi2" />}
+            {!errors.phone && <div className="mt-2 h-5" data-oid="wlek791" />}
           </div>
         </div>
       </div>
@@ -1768,48 +1768,48 @@ const SleepApneaSurvey: React.FC = () => {
   });
 
   return (
-    <div className="bg-white min-h-screen" data-oid=":fseh6y">
+    <div className="bg-white min-h-screen" data-oid="7jadcli">
       {/* Page Header Section */}
       <div
         className="bg-gradient-to-br from-blue-50 via-white to-blue-50 border-b border-blue-200 relative overflow-hidden"
-        data-oid="zgdolhi"
+        data-oid="-jil:xm"
       >
         {/* Subtle medical pattern background */}
-        <div className="absolute inset-0 opacity-5" data-oid="-1mkyzw">
+        <div className="absolute inset-0 opacity-5" data-oid="_cw.6qu">
           <div
             className="absolute inset-0"
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563eb' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
               backgroundSize: "40px 40px",
             }}
-            data-oid="o3cw082"
+            data-oid="gh0oht9"
           ></div>
         </div>
 
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10"
-          data-oid="-yabgo:"
+          data-oid="ipd.bix"
         >
-          <div className="text-center" data-oid="qv:ye1k">
+          <div className="text-center" data-oid="wpf5c92">
             {/* Medical badge/credential indicator */}
-            <div className="flex justify-center mb-6" data-oid="pi0:f.o">
+            <div className="flex justify-center mb-6" data-oid="n.dowa9">
               <div
                 className="bg-white rounded-full p-4 shadow-lg border-2 border-blue-100"
-                data-oid="_u6_ers"
+                data-oid="q_mrwrr"
               >
                 <div
                   className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center"
-                  data-oid="fe4jrha"
+                  data-oid="q2zdfuu"
                 >
                   <svg
                     className="w-8 h-8 text-white"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="4po4dus"
+                    data-oid="idxv9a7"
                   >
                     <path
                       d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      data-oid="23ybklf"
+                      data-oid=".g8c:kz"
                     />
                   </svg>
                 </div>
@@ -1818,15 +1818,15 @@ const SleepApneaSurvey: React.FC = () => {
 
             <h1
               className="text-5xl font-bold text-gray-900 mb-4 tracking-tight"
-              data-oid="a.88fig"
+              data-oid="q6hriub"
             >
               Sleep Apnea Risk Assessment
             </h1>
 
-            <div className="max-w-4xl mx-auto mb-8" data-oid="-2fdg.f">
+            <div className="max-w-4xl mx-auto mb-8" data-oid="slb-sxa">
               <p
                 className="text-xl text-gray-700 mb-4 leading-relaxed"
-                data-oid="p5edinq"
+                data-oid="1ij6n9w"
               >
                 Complete our clinically validated STOP-BANG questionnaire to
                 assess your risk for obstructive sleep apnea. This
@@ -1836,69 +1836,69 @@ const SleepApneaSurvey: React.FC = () => {
 
               <div
                 className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 mb-6"
-                data-oid="1y__pxb"
+                data-oid="5h7n026"
               >
-                <div className="flex items-center space-x-2" data-oid="z2sg.83">
+                <div className="flex items-center space-x-2" data-oid="lg0bsqp">
                   <div
                     className="w-2 h-2 bg-blue-500 rounded-full"
-                    data-oid="hd93j-2"
+                    data-oid="0hx2ch6"
                   ></div>
-                  <span data-oid="mhqpe-t">Clinically Validated Tool</span>
+                  <span data-oid="z16gg9c">Clinically Validated Tool</span>
                 </div>
-                <div className="flex items-center space-x-2" data-oid="a5ketv6">
+                <div className="flex items-center space-x-2" data-oid="xbq8elu">
                   <div
                     className="w-2 h-2 bg-green-500 rounded-full"
-                    data-oid="dl31q4h"
+                    data-oid="hal.va4"
                   ></div>
-                  <span data-oid=".de3qkd">5-10 Minutes to Complete</span>
+                  <span data-oid="z10lizr">5-10 Minutes to Complete</span>
                 </div>
-                <div className="flex items-center space-x-2" data-oid="l2zh-0k">
+                <div className="flex items-center space-x-2" data-oid="hzrfozq">
                   <div
                     className="w-2 h-2 bg-purple-500 rounded-full"
-                    data-oid=".im8f12"
+                    data-oid="43y4l8m"
                   ></div>
-                  <span data-oid="0_eh19n">Professional Review Included</span>
+                  <span data-oid="9t87lzx">Professional Review Included</span>
                 </div>
               </div>
             </div>
 
             {/* Enhanced privacy and security section */}
-            <div className="max-w-4xl mx-auto" data-oid="4digx47">
-              <div className="grid md:grid-cols-3 gap-4" data-oid="edxyihh">
+            <div className="max-w-4xl mx-auto" data-oid="atatm-i">
+              <div className="grid md:grid-cols-3 gap-4" data-oid="v1f2-im">
                 {/* Privacy Card */}
                 <div
                   className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300"
-                  data-oid="-a0gj:-"
+                  data-oid="lzkkku:"
                 >
                   <div
                     className="flex flex-col items-center text-center"
-                    data-oid="54dzt09"
+                    data-oid="3n2:zjx"
                   >
                     <div
                       className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
-                      data-oid="t.s1c:g"
+                      data-oid="zntfcvs"
                     >
                       <svg
                         className="w-6 h-6 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="w-v5oyd"
+                        data-oid="6.23gbx"
                       >
                         <path
                           fillRule="evenodd"
                           d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="o:rtzr3"
+                          data-oid="9d3-7c."
                         />
                       </svg>
                     </div>
                     <h3
                       className="text-lg font-semibold text-gray-900 mb-2"
-                      data-oid="9lld3jk"
+                      data-oid=":8ulxhk"
                     >
                       HIPAA Protected
                     </h3>
-                    <p className="text-sm text-gray-600" data-oid="qox6jew">
+                    <p className="text-sm text-gray-600" data-oid="kyj84c0">
                       Your health information is encrypted and protected
                       according to federal privacy standards.
                     </p>
@@ -1908,37 +1908,37 @@ const SleepApneaSurvey: React.FC = () => {
                 {/* Medical Validation Card */}
                 <div
                   className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300"
-                  data-oid="i_d2ci1"
+                  data-oid="m2pla6c"
                 >
                   <div
                     className="flex flex-col items-center text-center"
-                    data-oid="6da-zp7"
+                    data-oid="x4mjm.w"
                   >
                     <div
                       className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4"
-                      data-oid="wo72cgr"
+                      data-oid="bw1ayjt"
                     >
                       <svg
                         className="w-6 h-6 text-green-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="_m0z92n"
+                        data-oid="0ezg-qo"
                       >
                         <path
                           fillRule="evenodd"
                           d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="7k9c:3:"
+                          data-oid="inayg51"
                         />
                       </svg>
                     </div>
                     <h3
                       className="text-lg font-semibold text-gray-900 mb-2"
-                      data-oid="j77-cbg"
+                      data-oid="-q7096e"
                     >
                       Clinically Validated
                     </h3>
-                    <p className="text-sm text-gray-600" data-oid="zbvue2:">
+                    <p className="text-sm text-gray-600" data-oid="6gz33n9">
                       STOP-BANG is a scientifically proven screening tool used
                       by medical professionals worldwide.
                     </p>
@@ -1948,35 +1948,35 @@ const SleepApneaSurvey: React.FC = () => {
                 {/* Professional Review Card */}
                 <div
                   className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-100 hover:shadow-xl transition-all duration-300"
-                  data-oid="odhy6:q"
+                  data-oid="bzf0:1_"
                 >
                   <div
                     className="flex flex-col items-center text-center"
-                    data-oid="9jyi-00"
+                    data-oid="odsun.h"
                   >
                     <div
                       className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4"
-                      data-oid="d_u5rht"
+                      data-oid="5qpgu05"
                     >
                       <svg
                         className="w-6 h-6 text-purple-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="sm4qj50"
+                        data-oid="pz:b_m:"
                       >
                         <path
                           d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
-                          data-oid="x_pj1zm"
+                          data-oid="k1o_1wy"
                         />
                       </svg>
                     </div>
                     <h3
                       className="text-lg font-semibold text-gray-900 mb-2"
-                      data-oid="w4a_2p_"
+                      data-oid="co9umuj"
                     >
                       Expert Analysis
                     </h3>
-                    <p className="text-sm text-gray-600" data-oid="a:08nao">
+                    <p className="text-sm text-gray-600" data-oid="ak8v82i">
                       Licensed dental professionals will review your results and
                       provide personalized recommendations.
                     </p>
@@ -1987,83 +1987,83 @@ const SleepApneaSurvey: React.FC = () => {
               {/* Professional credentials footer */}
               <div
                 className="mt-8 pt-6 border-t border-gray-200"
-                data-oid="kzkb4n1"
+                data-oid="hpeg4r6"
               >
                 <div
                   className="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-500"
-                  data-oid="yjetu6b"
+                  data-oid="u899n_."
                 >
                   <div
                     className="flex items-center space-x-1"
-                    data-oid=":kqqzkr"
+                    data-oid="3z_b6rn"
                   >
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="2_g3g9y"
+                      data-oid="m0g4c3p"
                     >
                       <path
                         fillRule="evenodd"
                         d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                         clipRule="evenodd"
-                        data-oid="seftp_m"
+                        data-oid="_a7bt8."
                       />
                     </svg>
-                    <span data-oid="nxrf-78">256-bit SSL Encryption</span>
+                    <span data-oid="t.ezhux">256-bit SSL Encryption</span>
                   </div>
                   <div
                     className="flex items-center space-x-1"
-                    data-oid="nntipbs"
+                    data-oid="ctjt1.x"
                   >
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="_68lh:4"
+                      data-oid="ylj2m.z"
                     >
                       <path
                         fillRule="evenodd"
                         d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="xfdkp26"
+                        data-oid="c:mpn-v"
                       />
                     </svg>
-                    <span data-oid="mfz.f8i">HIPAA Compliant Platform</span>
+                    <span data-oid="2shg3pb">HIPAA Compliant Platform</span>
                   </div>
                   <div
                     className="flex items-center space-x-1"
-                    data-oid="rfw_fxm"
+                    data-oid="yt68r8_"
                   >
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="rbt5vgj"
+                      data-oid="cyop9fn"
                     >
                       <path
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                        data-oid="4si3c6r"
+                        data-oid="q6fl_sq"
                       />
                     </svg>
-                    <span data-oid="j0llsv9">Evidence-Based Medicine</span>
+                    <span data-oid=".yuaxib">Evidence-Based Medicine</span>
                   </div>
                   <div
                     className="flex items-center space-x-1"
-                    data-oid="6-wt5q4"
+                    data-oid="7.meqsz"
                   >
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="y71dzb0"
+                      data-oid="0mdui91"
                     >
                       <path
                         d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
-                        data-oid="in584p_"
+                        data-oid="tzf0r19"
                       />
                     </svg>
-                    <span data-oid="7bcy_wx">Licensed Professionals</span>
+                    <span data-oid="w8.:hf2">Licensed Professionals</span>
                   </div>
                 </div>
               </div>
@@ -2075,80 +2075,80 @@ const SleepApneaSurvey: React.FC = () => {
       {/* Survey Content */}
       <div
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-        data-oid="asu8mb5"
+        data-oid=":.u7u0r"
       >
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-6"
           autoComplete="off"
           noValidate
-          data-oid="feg5s4."
+          data-oid="40m8ymh"
         >
           <div
             className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-6 z-10 mb-8"
-            data-oid="lhr-uev"
+            data-oid="ubfn-ur"
           >
             <div
               className="flex justify-between items-center mb-3"
-              data-oid="vcpu898"
+              data-oid="7u6qo26"
             >
-              <div className="flex items-center space-x-3" data-oid="3ikznw:">
+              <div className="flex items-center space-x-3" data-oid="p8f_wgp">
                 <div
                   className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
-                  data-oid="j6:j_-2"
+                  data-oid="htloopn"
                 >
                   <svg
                     className="w-4 h-4 text-blue-600"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="dr-kohi"
+                    data-oid="s:6k4-o"
                   >
                     <path
                       fillRule="evenodd"
                       d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                       clipRule="evenodd"
-                      data-oid="fu7ha9q"
+                      data-oid="n2w:e-9"
                     />
                   </svg>
                 </div>
                 <span
                   className="text-lg font-semibold text-gray-900"
-                  data-oid="l3tzumx"
+                  data-oid="7bm1:4d"
                 >
                   Assessment Progress
                 </span>
               </div>
               <span
                 className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
-                data-oid="4_gu82w"
+                data-oid="8_w-7_n"
               >
                 Complete all sections
               </span>
             </div>
             <div
               className="w-full bg-gray-200 rounded-full h-3 mb-2"
-              data-oid="615zc4p"
+              data-oid="y9djmfq"
             >
               <div
                 className="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-300 w-0"
-                data-oid="a8gfmhv"
+                data-oid="4xwvge0"
               ></div>
             </div>
             <p
               className="text-sm text-gray-600 flex items-center"
-              data-oid="vjx-5pd"
+              data-oid="jp-sroh"
             >
               <svg
                 className="w-4 h-4 mr-2 text-blue-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                data-oid="068jv_z"
+                data-oid="w:07tnl"
               >
                 <path
                   fillRule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                   clipRule="evenodd"
-                  data-oid="609ylms"
+                  data-oid="a1n_veg"
                 />
               </svg>
               Answer all questions to receive your personalized STOP-BANG
@@ -2160,90 +2160,90 @@ const SleepApneaSurvey: React.FC = () => {
             name="snoring"
             title="S - Snoring"
             description="Do you snore loudly (loud enough to be heard through closed doors or your bed-partner elbows you)?"
-            data-oid="naki48o"
+            data-oid="ykdy5i6"
           />
 
           <YesNoQuestion
             name="tired"
             title="T - Tired"
             description="Do you often feel tired, fatigued, or sleepy during the day?"
-            data-oid="bo5ch9g"
+            data-oid="53o42:1"
           />
 
           <YesNoQuestion
             name="observed"
             title="O - Observed"
             description="Has anyone observed you stop breathing or gasping during sleep?"
-            data-oid=".gb_6e4"
+            data-oid="uurdn1j"
           />
 
           <YesNoQuestion
             name="pressure"
             title="P - Pressure"
             description="Do you have or are you being treated for high blood pressure?"
-            data-oid="m6-autm"
+            data-oid="-xzxj7i"
           />
 
-          <BMISection data-oid="spqj2t." />
+          <BMISection data-oid="5zlws3t" />
 
-          <AgeInput data-oid="hc0l-zt" />
+          <AgeInput data-oid="vdxh740" />
 
-          <NeckSizeInput data-oid="sciqzb4" />
+          <NeckSizeInput data-oid="klli.bl" />
 
           <YesNoQuestion
             name="genderMale"
             title="G - Gender"
             description="Are you male?"
-            data-oid="v1x7q.7"
+            data-oid="tz2a25x"
           />
 
-          <ContactFields data-oid="ib:ooin" />
+          <ContactFields data-oid=":scp282" />
 
           <div
             className="bg-gradient-to-br from-white to-blue-50 p-10 rounded-xl shadow-2xl border border-blue-100 relative overflow-hidden"
-            data-oid="z_1av7-"
+            data-oid="80x24.9"
           >
             {/* Subtle background pattern */}
-            <div className="absolute inset-0 opacity-5" data-oid="6d8nrx0">
+            <div className="absolute inset-0 opacity-5" data-oid="0cf73sc">
               <div
                 className="absolute inset-0"
                 style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234F46E5' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                   backgroundSize: "30px 30px",
                 }}
-                data-oid="0lx53wv"
+                data-oid="-oxxdt8"
               ></div>
             </div>
 
-            <div className="relative z-10" data-oid="xb:r0jx">
-              <div className="text-center mb-8" data-oid="kj_djo8">
+            <div className="relative z-10" data-oid="xq-dm6z">
+              <div className="text-center mb-8" data-oid="04oky4h">
                 {/* Medical icon with professional styling */}
                 <div
                   className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg"
-                  data-oid="rdj0b3z"
+                  data-oid="l2jeqgm"
                 >
                   <svg
                     className="w-10 h-10 text-white"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="_n3cimd"
+                    data-oid="g5ee1xy"
                   >
                     <path
                       d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
-                      data-oid="-n5g22x"
+                      data-oid="a0:.jjr"
                     />
                   </svg>
                 </div>
 
                 <h3
                   className="text-3xl font-bold text-gray-900 mb-3 tracking-tight"
-                  data-oid="qmg:j61"
+                  data-oid="y8s03v8"
                 >
                   Ready to Submit Your Assessment
                 </h3>
                 <p
                   className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed"
-                  data-oid="_.p04:c"
+                  data-oid="n3v:9de"
                 >
                   Please review your responses carefully before submitting. Our
                   dental professionals will analyze your results and provide
@@ -2254,101 +2254,101 @@ const SleepApneaSurvey: React.FC = () => {
               {/* Professional info cards */}
               <div
                 className="grid md:grid-cols-3 gap-4 mb-8"
-                data-oid="n_nrcp4"
+                data-oid="azxtsog"
               >
                 <div
                   className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
-                  data-oid="rdgm3lc"
+                  data-oid="58pi-fw"
                 >
                   <div
                     className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2"
-                    data-oid="89bf0-k"
+                    data-oid="tbzyitr"
                   >
                     <svg
                       className="w-4 h-4 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="0ag_y2u"
+                      data-oid="8vk4ytf"
                     >
                       <path
                         fillRule="evenodd"
                         d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="n._lk2w"
+                        data-oid="ea-tiks"
                       />
                     </svg>
                   </div>
                   <h4
                     className="font-semibold text-gray-900 text-sm mb-1"
-                    data-oid="kcsl4ri"
+                    data-oid="unnkpmd"
                   >
                     HIPAA Compliant
                   </h4>
-                  <p className="text-xs text-gray-600" data-oid="fzce5fo">
+                  <p className="text-xs text-gray-600" data-oid="j_9lab8">
                     Your data is protected
                   </p>
                 </div>
 
                 <div
                   className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
-                  data-oid="lhd3ltr"
+                  data-oid="94gnn24"
                 >
                   <div
                     className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2"
-                    data-oid="olfs3em"
+                    data-oid="q41-rzy"
                   >
                     <svg
                       className="w-4 h-4 text-green-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="pu9gfoa"
+                      data-oid="k30rkc:"
                     >
                       <path
                         fillRule="evenodd"
                         d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="ku3twq7"
+                        data-oid="oy5dsnp"
                       />
                     </svg>
                   </div>
                   <h4
                     className="font-semibold text-gray-900 text-sm mb-1"
-                    data-oid="m.x0o01"
+                    data-oid="ig_sddo"
                   >
                     Clinically Validated
                   </h4>
-                  <p className="text-xs text-gray-600" data-oid="ffc.sl9">
+                  <p className="text-xs text-gray-600" data-oid="r7m05yw">
                     Evidence-based screening
                   </p>
                 </div>
 
                 <div
                   className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
-                  data-oid="1sckcqz"
+                  data-oid="wz4h4eq"
                 >
                   <div
                     className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2"
-                    data-oid="7hhd4bq"
+                    data-oid="nrp__o."
                   >
                     <svg
                       className="w-4 h-4 text-purple-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="wmtsw8y"
+                      data-oid="ou6tnb1"
                     >
                       <path
                         d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
-                        data-oid="6:u5n:5"
+                        data-oid="x21kgqo"
                       />
                     </svg>
                   </div>
                   <h4
                     className="font-semibold text-gray-900 text-sm mb-1"
-                    data-oid="57q3:ya"
+                    data-oid="uxez11g"
                   >
                     Expert Review
                   </h4>
-                  <p className="text-xs text-gray-600" data-oid="phim6g5">
+                  <p className="text-xs text-gray-600" data-oid="o5sxvin">
                     Reviewed by specialists
                   </p>
                 </div>
@@ -2356,25 +2356,25 @@ const SleepApneaSurvey: React.FC = () => {
 
               <div
                 className="flex flex-col sm:flex-row gap-4 justify-center mb-6"
-                data-oid="2.d-7f-"
+                data-oid="yfe8eir"
               >
                 <button
                   type="button"
                   onClick={restartSurvey}
                   className="px-8 py-3 bg-white text-gray-700 border-2 border-gray-300 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 flex items-center justify-center font-medium shadow-sm hover:shadow-md"
-                  data-oid="ltgkexr"
+                  data-oid="y3eflor"
                 >
                   <svg
                     className="w-5 h-5 mr-2"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="cg4vo1o"
+                    data-oid="vp2nwm3"
                   >
                     <path
                       fillRule="evenodd"
                       d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
                       clipRule="evenodd"
-                      data-oid="yg9yxtc"
+                      data-oid="gz4w8ef"
                     />
                   </svg>
                   Start Over
@@ -2383,51 +2383,51 @@ const SleepApneaSurvey: React.FC = () => {
                 <button
                   type="submit"
                   className="px-10 py-4 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center justify-center space-x-3 text-lg transform hover:scale-105 focus:ring-4 focus:ring-blue-200"
-                  data-oid="fl45n4i"
+                  data-oid="51hkio7"
                 >
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="1i-jtgo"
+                    data-oid="bowbmr0"
                   >
                     <path
                       d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                      data-oid="z-zu95e"
+                      data-oid="10oymat"
                     />
                   </svg>
-                  <span data-oid="my.jel5">Submit Assessment</span>
+                  <span data-oid="p8fx4y9">Submit Assessment</span>
                 </button>
               </div>
 
               {/* Professional footer with credentials */}
-              <div className="pt-6 border-t border-blue-200" data-oid="cgj23me">
-                <div className="text-center space-y-3" data-oid="xjfobv0">
+              <div className="pt-6 border-t border-blue-200" data-oid="euy2946">
+                <div className="text-center space-y-3" data-oid="xdppe38">
                   <div
                     className="flex items-center justify-center space-x-2 text-sm text-gray-700"
-                    data-oid="j7.uy9w"
+                    data-oid="dwtrdvd"
                   >
                     <svg
                       className="w-5 h-5 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="ziq4peq"
+                      data-oid=":5a8vlo"
                     >
                       <path
                         fillRule="evenodd"
                         d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="y6cyeko"
+                        data-oid="rhj0e1y"
                       />
                     </svg>
-                    <span className="font-medium" data-oid="j6.btpw">
+                    <span className="font-medium" data-oid="6uysrue">
                       Secure Medical Assessment Platform
                     </span>
                   </div>
 
                   <p
                     className="text-xs text-gray-600 max-w-lg mx-auto"
-                    data-oid="0wgereg"
+                    data-oid="fmzahof"
                   >
                     This assessment will be reviewed by licensed dental
                     professionals. Results and recommendations will be provided
@@ -2436,50 +2436,50 @@ const SleepApneaSurvey: React.FC = () => {
 
                   <div
                     className="flex items-center justify-center space-x-4 text-xs text-gray-500"
-                    data-oid="lap4lf_"
+                    data-oid="em7awf."
                   >
-                    <span className="flex items-center" data-oid="d_07mc1">
+                    <span className="flex items-center" data-oid="l:s4wzc">
                       <svg
                         className="w-3 h-3 mr-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="7-:ay89"
+                        data-oid="12gx-xr"
                       >
                         <path
                           fillRule="evenodd"
                           d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                           clipRule="evenodd"
-                          data-oid="qb-xhfh"
+                          data-oid="9f8f2r0"
                         />
                       </svg>
                       SSL Encrypted
                     </span>
-                    <span className="flex items-center" data-oid="y_-c3i5">
+                    <span className="flex items-center" data-oid="hnik2g2">
                       <svg
                         className="w-3 h-3 mr-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="97t-:9t"
+                        data-oid="2tc_aku"
                       >
                         <path
                           fillRule="evenodd"
                           d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="813wx_e"
+                          data-oid="f-hgyqc"
                         />
                       </svg>
                       HIPAA Compliant
                     </span>
-                    <span className="flex items-center" data-oid="ex2ilyh">
+                    <span className="flex items-center" data-oid="xij-:tk">
                       <svg
                         className="w-3 h-3 mr-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="jmn1rgm"
+                        data-oid="x_64.pv"
                       >
                         <path
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          data-oid="4ts8q3v"
+                          data-oid="q47puig"
                         />
                       </svg>
                       Clinically Validated
