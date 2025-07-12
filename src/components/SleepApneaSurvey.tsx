@@ -675,7 +675,7 @@ const SleepApneaSurvey: React.FC = () => {
 
                   <div className="relative z-10" data-oid="0t-7rav">
                     <div
-                      className="flex items-center justify-between mb-4"
+                      className="flex items-center justify-between mb-3"
                       data-oid="zyt.t8n"
                     >
                       <div
@@ -693,25 +693,44 @@ const SleepApneaSurvey: React.FC = () => {
                           )}
                           data-oid="g_leqa2"
                         ></div>
-                        <span
-                          className={classNames(
-                            "text-xl font-bold",
-                            results.riskLevel === "Low Risk"
-                              ? "text-emerald-800"
-                              : results.riskLevel === "Intermediate Risk"
-                                ? "text-amber-800"
-                                : "text-red-800",
-                          )}
-                          data-oid="q8dtnzq"
+                        <div
+                          className="flex flex-col"
+                          data-oid="risk-text-container"
                         >
-                          {results.riskLevel}
-                        </span>
+                          <span
+                            className={classNames(
+                              "text-xl font-bold leading-tight",
+                              results.riskLevel === "Low Risk"
+                                ? "text-emerald-800"
+                                : results.riskLevel === "Intermediate Risk"
+                                  ? "text-amber-800"
+                                  : "text-red-800",
+                            )}
+                            data-oid="q8dtnzq"
+                          >
+                            {results.riskLevel}
+                          </span>
+                          <p
+                            className={classNames(
+                              "text-sm font-medium leading-tight",
+                              results.riskLevel === "Low Risk"
+                                ? "text-emerald-700"
+                                : results.riskLevel === "Intermediate Risk"
+                                  ? "text-amber-700"
+                                  : "text-red-700",
+                            )}
+                            data-oid=".7:ahqi"
+                            key="olk-KaGJ"
+                          >
+                            for Obstructive Sleep Apnea
+                          </p>
+                        </div>
                       </div>
 
                       {/* Risk level icon */}
                       <div
                         className={classNames(
-                          "w-8 h-8 rounded-full flex items-center justify-center",
+                          "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
                           results.riskLevel === "Low Risk"
                             ? "bg-emerald-200"
                             : results.riskLevel === "Intermediate Risk"
@@ -765,20 +784,6 @@ const SleepApneaSurvey: React.FC = () => {
                         )}
                       </div>
                     </div>
-                    <p
-                      className={classNames(
-                        "text-sm font-medium",
-                        results.riskLevel === "Low Risk"
-                          ? "text-emerald-700"
-                          : results.riskLevel === "Intermediate Risk"
-                            ? "text-amber-700"
-                            : "text-red-700",
-                      )}
-                      data-oid=".7:ahqi"
-                      key="olk-KaGJ"
-                    >
-                      for Obstructive Sleep Apnea
-                    </p>
                   </div>
                 </div>
 
