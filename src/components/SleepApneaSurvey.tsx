@@ -835,70 +835,386 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Clinical Interpretation */}
-          <div className="bg-slate-50 rounded-lg p-6 mb-8" data-oid="w.gaoqu">
-            <h3
-              className="text-lg font-semibold text-slate-800 mb-4 flex items-center"
-              data-oid="nx2c4ng"
+          <div
+            className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 mb-8 border border-slate-200 shadow-lg"
+            data-oid="w.gaoqu"
+          >
+            {/* Header Section */}
+            <div
+              className="flex items-start justify-between mb-6"
+              data-oid="header-section"
             >
-              <svg
-                className="w-5 h-5 mr-2 text-blue-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                data-oid="hlt:ear"
+              <div
+                className="flex items-center space-x-4"
+                data-oid="title-group"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  data-oid="ywbrk8p"
-                />
-              </svg>
-              Clinical Interpretation
-            </h3>
-            <div className="prose prose-slate max-w-none" data-oid="lq.ep1w">
+                <div
+                  className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg"
+                  data-oid="icon-container"
+                >
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="hlt:ear"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      data-oid="ywbrk8p"
+                    />
+                  </svg>
+                </div>
+                <div data-oid="title-content">
+                  <h3
+                    className="text-2xl font-bold text-slate-900 mb-1"
+                    data-oid="nx2c4ng"
+                  >
+                    Clinical Interpretation
+                  </h3>
+                  <p
+                    className="text-sm text-slate-600 font-medium"
+                    data-oid="subtitle"
+                  >
+                    Professional Assessment Based on STOP-BANG Criteria
+                  </p>
+                </div>
+              </div>
+
+              {/* Medical badge */}
+              <div
+                className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2"
+                data-oid="medical-badge"
+              >
+                <div
+                  className="flex items-center space-x-2"
+                  data-oid="badge-content"
+                >
+                  <div
+                    className="w-2 h-2 bg-blue-500 rounded-full"
+                    data-oid="status-dot"
+                  ></div>
+                  <span
+                    className="text-xs font-semibold text-blue-700 uppercase tracking-wide"
+                    data-oid="badge-text"
+                  >
+                    Clinical Grade
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Risk Level Specific Content */}
+            <div className="space-y-6" data-oid="lq.ep1w">
               {results.riskLevel === "Low Risk" && (
-                <p
-                  className="text-slate-700 leading-relaxed"
-                  data-oid="yv7hhm4"
+                <div
+                  className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6"
+                  data-oid="low-risk-section"
                 >
-                  Your STOP-BANG score indicates a{" "}
-                  <strong data-oid="9h9w_oi">lower probability</strong> of
-                  moderate to severe obstructive sleep apnea. However, if you
-                  continue to experience sleep-related symptoms such as
-                  excessive daytime sleepiness, witnessed breathing
-                  interruptions, or morning headaches, we recommend discussing
-                  these concerns with your healthcare provider.
-                </p>
+                  <div
+                    className="flex items-start space-x-4"
+                    data-oid="low-risk-content"
+                  >
+                    <div
+                      className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                      data-oid="low-risk-icon"
+                    >
+                      <svg
+                        className="w-4 h-4 text-emerald-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="check-icon"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                          data-oid=".ll6n0."
+                        />
+                      </svg>
+                    </div>
+                    <div data-oid="low-risk-text">
+                      <h4
+                        className="text-lg font-semibold text-emerald-900 mb-3"
+                        data-oid="low-risk-title"
+                      >
+                        Low Risk Assessment
+                      </h4>
+                      <p
+                        className="text-slate-700 leading-relaxed mb-4"
+                        data-oid="yv7hhm4"
+                      >
+                        Your STOP-BANG assessment indicates a{" "}
+                        <strong className="text-emerald-800" data-oid="9h9w_oi">
+                          lower probability
+                        </strong>{" "}
+                        of moderate to severe obstructive sleep apnea (OSA).
+                        This suggests that significant sleep-disordered
+                        breathing is less likely based on current screening
+                        criteria.
+                      </p>
+                      <div
+                        className="bg-white/70 rounded-lg p-4 border border-emerald-100"
+                        data-oid="low-risk-recommendations"
+                      >
+                        <h5
+                          className="font-semibold text-slate-800 mb-2 flex items-center"
+                          data-oid="rec-title"
+                        >
+                          <svg
+                            className="w-4 h-4 mr-2 text-emerald-600"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            data-oid="i8t0tfe"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                              clipRule="evenodd"
+                              data-oid="f55:iu1"
+                            />
+                          </svg>
+                          Clinical Recommendations
+                        </h5>
+                        <p
+                          className="text-sm text-slate-600 leading-relaxed"
+                          data-oid="low-risk-rec-text"
+                        >
+                          Continue monitoring your sleep quality and discuss any
+                          persistent symptoms such as excessive daytime
+                          sleepiness, witnessed breathing interruptions, or
+                          morning headaches with your healthcare provider.
+                          Maintain good sleep hygiene practices.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               )}
+
               {results.riskLevel === "Intermediate Risk" && (
-                <p
-                  className="text-slate-700 leading-relaxed"
-                  data-oid="::d-jf_"
+                <div
+                  className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-xl p-6"
+                  data-oid="intermediate-risk-section"
                 >
-                  Your STOP-BANG score suggests an{" "}
-                  <strong data-oid="s:ue.j0">intermediate probability</strong>{" "}
-                  of moderate to severe obstructive sleep apnea. We recommend
-                  scheduling a consultation with your healthcare provider to
-                  discuss these results and determine if further evaluation,
-                  such as a sleep study, would be beneficial for your health.
-                </p>
+                  <div
+                    className="flex items-start space-x-4"
+                    data-oid="intermediate-risk-content"
+                  >
+                    <div
+                      className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                      data-oid="intermediate-risk-icon"
+                    >
+                      <svg
+                        className="w-4 h-4 text-amber-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="warning-icon"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                          clipRule="evenodd"
+                          data-oid="lwof3.u"
+                        />
+                      </svg>
+                    </div>
+                    <div data-oid="intermediate-risk-text">
+                      <h4
+                        className="text-lg font-semibold text-amber-900 mb-3"
+                        data-oid="intermediate-risk-title"
+                      >
+                        Intermediate Risk Assessment
+                      </h4>
+                      <p
+                        className="text-slate-700 leading-relaxed mb-4"
+                        data-oid="::d-jf_"
+                      >
+                        Your STOP-BANG assessment suggests an{" "}
+                        <strong className="text-amber-800" data-oid="s:ue.j0">
+                          intermediate probability
+                        </strong>{" "}
+                        of moderate to severe obstructive sleep apnea. This
+                        indicates a moderate likelihood of clinically
+                        significant sleep-disordered breathing that warrants
+                        further evaluation.
+                      </p>
+                      <div
+                        className="bg-white/70 rounded-lg p-4 border border-amber-100"
+                        data-oid="intermediate-risk-recommendations"
+                      >
+                        <h5
+                          className="font-semibold text-slate-800 mb-2 flex items-center"
+                          data-oid="2u08k:j"
+                        >
+                          <svg
+                            className="w-4 h-4 mr-2 text-amber-600"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            data-oid="a3kol64"
+                          >
+                            <path
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                              data-oid=".rgel:8"
+                            />
+                          </svg>
+                          Clinical Recommendations
+                        </h5>
+                        <p
+                          className="text-sm text-slate-600 leading-relaxed"
+                          data-oid="intermediate-risk-rec-text"
+                        >
+                          We recommend scheduling a consultation with your
+                          healthcare provider to discuss these results in
+                          detail. Consider a comprehensive sleep evaluation,
+                          which may include a sleep study (polysomnography) to
+                          confirm diagnosis and assess severity.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               )}
+
               {results.riskLevel === "High Risk" && (
-                <p
-                  className="text-slate-700 leading-relaxed"
-                  data-oid="l6apt0q"
+                <div
+                  className="bg-gradient-to-r from-red-50 to-rose-50 border border-red-200 rounded-xl p-6"
+                  data-oid="high-risk-section"
                 >
-                  Your STOP-BANG score indicates a{" "}
-                  <strong data-oid="4p-sl_4">high probability</strong> of
-                  moderate to severe obstructive sleep apnea. We strongly
-                  recommend prompt consultation with your healthcare provider
-                  for comprehensive evaluation. A sleep study may be recommended
-                  to confirm the diagnosis and determine the most appropriate
-                  treatment approach.
-                </p>
+                  <div
+                    className="flex items-start space-x-4"
+                    data-oid="high-risk-content"
+                  >
+                    <div
+                      className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                      data-oid="high-risk-icon"
+                    >
+                      <svg
+                        className="w-4 h-4 text-red-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="alert-icon"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clipRule="evenodd"
+                          data-oid="61vuile"
+                        />
+                      </svg>
+                    </div>
+                    <div data-oid="high-risk-text">
+                      <h4
+                        className="text-lg font-semibold text-red-900 mb-3"
+                        data-oid="high-risk-title"
+                      >
+                        High Risk Assessment
+                      </h4>
+                      <p
+                        className="text-slate-700 leading-relaxed mb-4"
+                        data-oid="l6apt0q"
+                      >
+                        Your STOP-BANG assessment indicates a{" "}
+                        <strong className="text-red-800" data-oid="4p-sl_4">
+                          high probability
+                        </strong>{" "}
+                        of moderate to severe obstructive sleep apnea. This
+                        suggests a significant likelihood of clinically
+                        important sleep-disordered breathing requiring prompt
+                        medical attention.
+                      </p>
+                      <div
+                        className="bg-white/70 rounded-lg p-4 border border-red-100"
+                        data-oid="high-risk-recommendations"
+                      >
+                        <h5
+                          className="font-semibold text-slate-800 mb-2 flex items-center"
+                          data-oid="ws_xp0c"
+                        >
+                          <svg
+                            className="w-4 h-4 mr-2 text-red-600"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            data-oid="q-qviuz"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                              clipRule="evenodd"
+                              data-oid="t4o:t6f"
+                            />
+                          </svg>
+                          Urgent Clinical Recommendations
+                        </h5>
+                        <p
+                          className="text-sm text-slate-600 leading-relaxed"
+                          data-oid="high-risk-rec-text"
+                        >
+                          We strongly recommend prompt consultation with your
+                          healthcare provider for comprehensive evaluation. A
+                          sleep study is likely indicated to confirm the
+                          diagnosis and determine severity. Early intervention
+                          can significantly improve health outcomes and quality
+                          of life.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               )}
+
+              {/* Professional Footer */}
+              <div
+                className="bg-slate-100 rounded-lg p-4 border border-slate-200"
+                data-oid="professional-footer"
+              >
+                <div
+                  className="flex items-start space-x-3"
+                  data-oid="footer-content"
+                >
+                  <div
+                    className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5"
+                    data-oid="footer-icon"
+                  >
+                    <svg
+                      className="w-3 h-3 text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="np2b.co"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                        clipRule="evenodd"
+                        data-oid="l-huv9."
+                      />
+                    </svg>
+                  </div>
+                  <div data-oid="footer-text">
+                    <h5
+                      className="text-sm font-semibold text-slate-800 mb-1"
+                      data-oid="footer-title"
+                    >
+                      Important Medical Information
+                    </h5>
+                    <p
+                      className="text-xs text-slate-600 leading-relaxed"
+                      data-oid="footer-disclaimer"
+                    >
+                      This assessment is based on the validated STOP-BANG
+                      questionnaire and provides risk stratification for
+                      obstructive sleep apnea. It is intended for screening
+                      purposes only and does not replace professional medical
+                      evaluation. Individual risk factors and clinical
+                      presentation should always be considered in conjunction
+                      with these results.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
