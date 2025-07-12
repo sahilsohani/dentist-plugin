@@ -261,66 +261,233 @@ const SleepApneaSurvey: React.FC = () => {
         data-oid="s083816"
       >
         <div
-          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-t-xl p-8 text-white"
+          className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 rounded-t-xl overflow-hidden"
           data-oid="c4p_u2."
         >
-          <div className="flex items-start justify-between" data-oid="zjsiwk1">
-            {/* Left Section - Title and Icon */}
-            <div className="flex items-center space-x-6" data-oid="y-3ob6-">
+          {/* Sophisticated background pattern */}
+          <div className="absolute inset-0 opacity-10" data-oid="bg-pattern">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                backgroundSize: "30px 30px",
+              }}
+              data-oid="rx4:zmp"
+            ></div>
+          </div>
+
+          {/* Gradient overlay for depth */}
+          <div
+            className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"
+            data-oid="gradient-overlay"
+          ></div>
+
+          <div className="relative z-10 p-8" data-oid="content-wrapper">
+            <div
+              className="flex items-start justify-between"
+              data-oid="zjsiwk1"
+            >
+              {/* Left Section - Enhanced Title and Icon */}
+              <div className="flex items-start space-x-6" data-oid="y-3ob6-">
+                {/* Professional medical icon with enhanced styling */}
+                <div
+                  className="relative w-20 h-20 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl"
+                  data-oid="ms_q16:"
+                >
+                  {/* Inner glow effect */}
+                  <div
+                    className="absolute inset-1 bg-gradient-to-br from-white/10 to-transparent rounded-xl"
+                    data-oid="inner-glow"
+                  ></div>
+
+                  <svg
+                    className="w-10 h-10 text-white relative z-10"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="mc-yei4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      data-oid="7q5prly"
+                    />
+                  </svg>
+
+                  {/* Subtle corner accent */}
+                  <div
+                    className="absolute top-2 right-2 w-2 h-2 bg-blue-300/40 rounded-full"
+                    data-oid="corner-accent"
+                  ></div>
+                </div>
+
+                <div
+                  className="flex flex-col justify-center"
+                  data-oid="g3mja8."
+                >
+                  {/* Enhanced typography hierarchy */}
+                  <div className="mb-2" data-oid="title-section">
+                    <h1
+                      className="text-4xl font-bold text-white mb-1 tracking-tight leading-tight"
+                      data-oid="9ex58wr"
+                    >
+                      STOP-BANG Assessment
+                    </h1>
+                    <div
+                      className="text-2xl font-semibold text-blue-100 mb-1"
+                      data-oid="results-text"
+                    >
+                      Clinical Results
+                    </div>
+                  </div>
+
+                  <div
+                    className="flex items-center space-x-3"
+                    data-oid="subtitle-section"
+                  >
+                    <div
+                      className="w-1 h-6 bg-gradient-to-b from-blue-300 to-blue-400 rounded-full"
+                      data-oid="accent-line"
+                    ></div>
+                    <p
+                      className="text-blue-200 text-lg font-medium tracking-wide"
+                      data-oid="g7-3nnf"
+                    >
+                      Sleep Apnea Risk Evaluation Report
+                    </p>
+                  </div>
+
+                  {/* Professional timestamp */}
+                  <div
+                    className="mt-3 flex items-center space-x-2 text-blue-300/80 text-sm"
+                    data-oid="timestamp"
+                  >
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      data-oid=":birv:t"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        data-oid="ly9.d55"
+                      />
+                    </svg>
+                    <span data-oid="tgmkrek">
+                      Generated on{" "}
+                      {new Date().toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Section - Enhanced Patient Info Card */}
               <div
-                className="w-16 h-16 bg-white/15 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20"
-                data-oid="ms_q16:"
+                className="relative bg-gradient-to-br from-white/15 to-white/5 rounded-2xl px-6 py-4 backdrop-blur-md border border-white/20 shadow-2xl min-w-[200px]"
+                data-oid="nb7-f3o"
+              >
+                {/* Card header with icon */}
+                <div
+                  className="flex items-center justify-between mb-3"
+                  data-oid="card-header"
+                >
+                  <div
+                    className="text-xs text-blue-200 uppercase tracking-wider font-semibold flex items-center space-x-2"
+                    data-oid="9ko8tn2"
+                  >
+                    <svg
+                      className="w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="a0zo62y"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                        clipRule="evenodd"
+                        data-oid="fe9oxhw"
+                      />
+                    </svg>
+                    <span data-oid="77rf_0d">Patient Information</span>
+                  </div>
+
+                  {/* Status indicator */}
+                  <div
+                    className="w-2 h-2 bg-green-400 rounded-full shadow-lg"
+                    data-oid="status-indicator"
+                  ></div>
+                </div>
+
+                {/* Patient name with enhanced styling */}
+                <div className="text-right" data-oid="patient-name-section">
+                  <div
+                    className="font-bold text-xl text-white mb-1 tracking-wide"
+                    data-oid="9an149v"
+                  >
+                    {results.name}
+                  </div>
+                  <div
+                    className="text-blue-200/80 text-sm font-medium"
+                    data-oid="patient-id"
+                  >
+                    Assessment ID: #
+                    {Math.random().toString(36).substr(2, 8).toUpperCase()}
+                  </div>
+                </div>
+
+                {/* Subtle bottom accent */}
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-300/50 to-transparent rounded-b-2xl"
+                  data-oid="bottom-accent"
+                ></div>
+              </div>
+            </div>
+
+            {/* Professional divider with medical cross pattern */}
+            <div
+              className="mt-8 flex items-center justify-center"
+              data-oid="divider-section"
+            >
+              <div
+                className="flex-1 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                data-oid="divider-line"
+              ></div>
+              <div
+                className="mx-4 w-8 h-8 bg-white/10 rounded-full flex items-center justify-center border border-white/20"
+                data-oid="divider-icon"
               >
                 <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  data-oid="mc-yei4"
+                  className="w-4 h-4 text-white/60"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  data-oid="n4jr3sm"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                    data-oid="7q5prly"
+                    fillRule="evenodd"
+                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                    clipRule="evenodd"
+                    data-oid="nog9miv"
                   />
                 </svg>
               </div>
-              <div data-oid="g3mja8.">
-                <h1
-                  className="text-3xl font-bold mb-1 tracking-tight"
-                  data-oid="9ex58wr"
-                >
-                  STOP-BANG Assessment Results
-                </h1>
-                <p
-                  className="text-blue-100 text-lg font-medium"
-                  data-oid="g7-3nnf"
-                >
-                  Clinical Sleep Apnea Risk Evaluation
-                </p>
-              </div>
-            </div>
-
-            {/* Right Section - Patient Info */}
-            <div
-              className="text-right bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20"
-              data-oid="nb7-f3o"
-            >
               <div
-                className="text-sm text-blue-200 uppercase tracking-wide font-medium mb-1"
-                data-oid="9ko8tn2"
-              >
-                Patient
-              </div>
-              <div className="font-bold text-lg text-white" data-oid="9an149v">
-                {results.name}
-              </div>
+                className="flex-1 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                data-oid="divider-line-2"
+              ></div>
             </div>
           </div>
         </div>
-
+        =======
         {/* Score and Risk Level Section */}
         <div className="p-8" data-oid="7u4p6bc">
           <div className="grid lg:grid-cols-2 gap-10 mb-10" data-oid="vkny9va">
