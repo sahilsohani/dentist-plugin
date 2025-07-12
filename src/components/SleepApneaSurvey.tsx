@@ -452,39 +452,6 @@ const SleepApneaSurvey: React.FC = () => {
                 ></div>
               </div>
             </div>
-
-            {/* Professional divider with medical cross pattern */}
-            <div
-              className="mt-8 flex items-center justify-center"
-              data-oid="divider-section"
-            >
-              <div
-                className="flex-1 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                data-oid="divider-line"
-              ></div>
-              <div
-                className="mx-4 w-8 h-8 bg-white/10 rounded-full flex items-center justify-center border border-white/20"
-                data-oid="divider-icon"
-              >
-                <svg
-                  className="w-4 h-4 text-white/60"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  data-oid="n4jr3sm"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                    clipRule="evenodd"
-                    data-oid="nog9miv"
-                  />
-                </svg>
-              </div>
-              <div
-                className="flex-1 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                data-oid="divider-line-2"
-              ></div>
-            </div>
           </div>
         </div>
         =======
