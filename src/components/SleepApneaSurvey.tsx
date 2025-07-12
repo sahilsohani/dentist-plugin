@@ -252,343 +252,676 @@ const SleepApneaSurvey: React.FC = () => {
     results: { score: number; riskLevel: string; name: string };
   }> = ({ results }) => (
     <div
-      className="max-w-4xl mx-auto p-6 bg-gray-50 min-h-screen"
+      className="max-w-5xl mx-auto p-6 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen"
       data-oid="1p5_isz"
     >
+      {/* Header Section */}
       <div
-        className="bg-white rounded-lg shadow-lg p-8 text-center"
-        data-oid="65dw9-h"
+        className="bg-white rounded-xl shadow-xl border border-slate-200 mb-8"
+        data-oid="tvhbtin"
       >
-        {/* Success Icon */}
         <div
-          className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6"
-          data-oid="ruhf_y_"
+          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-t-xl p-6 text-white"
+          data-oid="c_yd7gu"
         >
-          <svg
-            className="h-8 w-8 text-green-600"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            data-oid="l30-l26"
-          >
-            <path
-              fillRule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clipRule="evenodd"
-              data-oid="l15yiqn"
-            />
-          </svg>
-        </div>
-
-        {/* Thank You Message */}
-        <h1
-          className="text-3xl font-bold text-gray-900 mb-2"
-          data-oid="wrymtuj"
-        >
-          ✅ Thank you, {results.name}!
-        </h1>
-
-        {/* Score Display */}
-        <div className="mb-6" data-oid="pk-utlo">
-          <p className="text-xl text-gray-700 mb-4" data-oid="3k2qf1s">
-            Your STOP-BANG score:
-          </p>
-          <div
-            className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-blue-100 border-4 border-blue-200 mb-4"
-            data-oid="4uj8f2_"
-          >
-            <span
-              className="text-3xl font-bold text-blue-600"
-              data-oid="qvuf4oi"
-            >
-              {results.score}/8
-            </span>
-          </div>
-        </div>
-
-        {/* Risk Level */}
-        <div className="mb-8" data-oid="bl-9s5b">
-          <p className="text-lg text-gray-700 mb-3" data-oid="a6y270-">
-            You may be at
-          </p>
-          <div
-            className={classNames(
-              "inline-block px-6 py-3 rounded-lg border-2 font-semibold text-lg",
-              getRiskColor(results.riskLevel),
-            )}
-            data-oid="r7sv49c"
-          >
-            {results.riskLevel}
-          </div>
-          <p className="text-lg text-gray-700 mt-3" data-oid="-1q2x69">
-            for Obstructive Sleep Apnea.
-          </p>
-        </div>
-
-        {/* Did You Know Section */}
-        <div
-          className="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6 mb-8"
-          data-oid="_le2pht"
-        >
-          <div className="flex items-start space-x-3" data-oid="hcd87v1">
-            <div className="text-2xl" data-oid="e-d8g2.">
-              🧠
-            </div>
-            <div className="text-left" data-oid="ng2qmf5">
-              <h3
-                className="font-semibold text-purple-900 mb-3"
-                data-oid=":3_6g8e"
+          <div className="flex items-center justify-between" data-oid="inag05a">
+            <div className="flex items-center space-x-4" data-oid="j8b816n">
+              <div
+                className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center"
+                data-oid="mu4uwid"
               >
-                Did You Know?
-              </h3>
-              <p className="text-gray-700 mb-3" data-oid=".xr-o1b">
-                Sleep apnea doesn't just affect your sleep — it can impact your
-                memory, energy, and even your weight.
-              </p>
-              <p className="text-gray-700" data-oid="tx0r5f:">
-                At our practice, we treat the{" "}
-                <strong data-oid="fpwtoo6">whole patient</strong> — because
-                airway health is vital to dental health.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Additional Risk Factors Section */}
-        <div
-          className="bg-white border border-gray-200 rounded-lg p-6 mb-8 text-left"
-          data-oid="p2saik8"
-        >
-          <h3 className="font-semibold text-gray-900 mb-3" data-oid="2l_-llx">
-            Additional Risk Factors That May Be Linked to Sleep Apnea
-          </h3>
-          <p className="text-gray-600 text-sm mb-4 italic" data-oid="6tjtpkc">
-            *(Check any that apply to you):*
-          </p>
-
-          <div className="space-y-3" data-oid="wqrtmkl">
-            {/* General Risk Factors */}
-            <div
-              className="grid grid-cols-1 md:grid-cols-2 gap-3"
-              data-oid="3ys6fw9"
-            >
-              {[
-                "Depression",
-                "Anxiety",
-                "Chronic Pain",
-                "Difficulty with memory",
-                "ADD/ADHD",
-                "Family history (relative with sleep apnea or snoring)",
-                "Dry mouth",
-                "Morning headaches",
-                "High caffeine intake (>1–2 cups/day)",
-                "Use of sleep medications",
-                "Trouble losing weight",
-              ].map((factor, index) => (
-                <label
-                  key={index}
-                  className="flex items-center space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded transition-colors"
-                  data-oid="evd_w1m"
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  data-oid="n1_gyiy"
                 >
-                  <input
-                    type="checkbox"
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
-                    data-oid="3o_94ey"
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    data-oid="-seithj"
                   />
+                </svg>
+              </div>
+              <div data-oid="9f5ukm1">
+                <h1 className="text-2xl font-bold" data-oid="7tzp5ne">
+                  STOP-BANG Assessment Results
+                </h1>
+                <p className="text-blue-100" data-oid="q8emgl5">
+                  Clinical Sleep Apnea Risk Evaluation
+                </p>
+              </div>
+            </div>
+            <div className="text-right" data-oid="e4c9b.-">
+              <div className="text-sm text-blue-100" data-oid="l_9g248">
+                Patient:
+              </div>
+              <div className="font-semibold" data-oid="s:49wmv">
+                {results.name}
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  <span className="text-gray-700 text-sm" data-oid="se3y_g9">
-                    {factor}
-                  </span>
-                </label>
-              ))}
+        {/* Score and Risk Level Section */}
+        <div className="p-8" data-oid="1onaf4:">
+          <div className="grid md:grid-cols-2 gap-8 mb-8" data-oid="aplohra">
+            {/* Score Display */}
+            <div className="text-center" data-oid="28eqn__">
+              <div className="mb-4" data-oid="j4yvq4z">
+                <h2
+                  className="text-xl font-semibold text-slate-800 mb-2"
+                  data-oid="y0x6ot_"
+                >
+                  Assessment Score
+                </h2>
+                <div className="relative inline-block" data-oid="6_9v7:w">
+                  <div
+                    className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg"
+                    data-oid="vn-4szn"
+                  >
+                    <div className="text-center" data-oid="6h8s.h8">
+                      <div
+                        className="text-4xl font-bold text-white"
+                        data-oid=":z5_i-k"
+                      >
+                        {results.score}
+                      </div>
+                      <div className="text-sm text-blue-100" data-oid="w8y:heg">
+                        out of 8
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="absolute -top-2 -right-2 w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center"
+                    data-oid=":zx7_yf"
+                  >
+                    <svg
+                      className="w-4 h-4 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="22l4psp"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                        data-oid="_dqz6z2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Female-Specific Section */}
-            <div
-              className="mt-6 pt-4 border-t border-gray-200"
-              data-oid="7745f.g"
-            >
-              <h4
-                className="font-semibold text-gray-900 mb-3"
-                data-oid="7tax2yu"
+            {/* Risk Level Display */}
+            <div className="flex flex-col justify-center" data-oid="7b8.nsh">
+              <h2
+                className="text-xl font-semibold text-slate-800 mb-4"
+                data-oid="zfx1_e1"
               >
-                Female Patients:
-              </h4>
-              <div className="space-y-3" data-oid="r7iv:::">
-                {["PCOS (Polycystic Ovarian Syndrome)", "Post-menopausal"].map(
-                  (factor, index) => (
-                    <label
-                      key={index}
-                      className="flex items-center space-x-3 cursor-pointer hover:bg-gray-50 p-2 rounded transition-colors"
-                      data-oid="ui7jgm-"
-                    >
-                      <input
-                        type="checkbox"
-                        className="w-4 h-4 text-pink-600 bg-gray-100 border-gray-300 rounded focus:ring-pink-500 focus:ring-2"
-                        data-oid="gd3wnn9"
-                      />
-
-                      <span
-                        className="text-gray-700 text-sm"
-                        data-oid="ze8-g6c"
-                      >
-                        {factor}
-                      </span>
-                    </label>
-                  ),
-                )}
+                Risk Assessment
+              </h2>
+              <div className="space-y-4" data-oid="76qv8c5">
+                <div
+                  className={classNames(
+                    "p-4 rounded-lg border-l-4 font-semibold text-lg",
+                    results.riskLevel === "Low Risk"
+                      ? "bg-emerald-50 border-emerald-500 text-emerald-800"
+                      : results.riskLevel === "Intermediate Risk"
+                        ? "bg-amber-50 border-amber-500 text-amber-800"
+                        : "bg-red-50 border-red-500 text-red-800",
+                  )}
+                  data-oid="qpczis6"
+                >
+                  <div
+                    className="flex items-center space-x-2"
+                    data-oid="-bo5rsf"
+                  >
+                    <div
+                      className={classNames(
+                        "w-3 h-3 rounded-full",
+                        results.riskLevel === "Low Risk"
+                          ? "bg-emerald-500"
+                          : results.riskLevel === "Intermediate Risk"
+                            ? "bg-amber-500"
+                            : "bg-red-500",
+                      )}
+                      data-oid="fujweyr"
+                    ></div>
+                    <span data-oid="07dzqbm">{results.riskLevel}</span>
+                  </div>
+                  <p className="text-sm mt-2 opacity-80" data-oid="w5ulnki">
+                    for Obstructive Sleep Apnea
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Privacy Note */}
-          <div
-            className="mt-6 pt-4 border-t border-gray-200"
-            data-oid="5g:7o03"
-          >
-            <p className="text-xs text-gray-500 italic" data-oid="9h75qsm">
-              Your selections will be shared privately with the care team to
-              help understand your unique case.
-            </p>
-          </div>
-        </div>
-
-        {/* Risk Level Explanation */}
-        <div
-          className="bg-gray-50 rounded-lg p-6 mb-8 text-left"
-          data-oid="flcqw8q"
-        >
-          <h3 className="font-semibold text-gray-900 mb-3" data-oid="6beln38">
-            What this means:
-          </h3>
-          {results.riskLevel === "Low Risk" && (
-            <p className="text-gray-700" data-oid="t9imb27">
-              Your score suggests a lower probability of having moderate to
-              severe obstructive sleep apnea. However, if you continue to
-              experience sleep-related symptoms, consider discussing them with
-              your healthcare provider.
-            </p>
-          )}
-          {results.riskLevel === "Intermediate Risk" && (
-            <p className="text-gray-700" data-oid="r9reskm">
-              Your score suggests an intermediate probability of having moderate
-              to severe obstructive sleep apnea. We recommend discussing these
-              results with your healthcare provider for further evaluation.
-            </p>
-          )}
-          {results.riskLevel === "High Risk" && (
-            <p className="text-gray-700" data-oid="ehi4-l0">
-              Your score suggests a high probability of having moderate to
-              severe obstructive sleep apnea. We strongly recommend discussing
-              these results with your healthcare provider for comprehensive
-              evaluation and potential sleep study.
-            </p>
-          )}
-        </div>
-
-        {/* Next Steps */}
-        <div
-          className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8"
-          data-oid="s640c_n"
-        >
-          <h3 className="font-semibold text-blue-900 mb-3" data-oid="al_h.h9">
-            Next Steps:
-          </h3>
-          <p className="text-blue-800" data-oid="_sarrx-">
-            A member of our team will reach out to you shortly to discuss your
-            results and care options.
-          </p>
-        </div>
-
-        {/* Email Toggle */}
-        <div className="mb-6" data-oid="sa0ht99">
-          <label
-            className="flex items-center justify-center space-x-3 cursor-pointer bg-gray-50 hover:bg-gray-100 p-4 rounded-lg border border-gray-200 transition-colors"
-            data-oid="mahfoys"
-          >
-            <input
-              type="checkbox"
-              checked={emailResults}
-              onChange={(e) => setEmailResults(e.target.checked)}
-              className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
-              data-oid="ouw7qpm"
-            />
-
-            <div className="flex items-center space-x-2" data-oid="xaeorap">
-              <span className="text-lg" data-oid="rgip4.c">
-                📩
-              </span>
-              <span className="text-gray-700 font-medium" data-oid=":vypufb">
-                Email me a copy of my results
-              </span>
+          {/* Clinical Interpretation */}
+          <div className="bg-slate-50 rounded-lg p-6 mb-8" data-oid="g0c-s.3">
+            <h3
+              className="text-lg font-semibold text-slate-800 mb-4 flex items-center"
+              data-oid="co21_7e"
+            >
+              <svg
+                className="w-5 h-5 mr-2 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-oid=".p17_6k"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  data-oid="8az82wx"
+                />
+              </svg>
+              Clinical Interpretation
+            </h3>
+            <div className="prose prose-slate max-w-none" data-oid="tlu:hze">
+              {results.riskLevel === "Low Risk" && (
+                <p
+                  className="text-slate-700 leading-relaxed"
+                  data-oid="khgmogi"
+                >
+                  Your STOP-BANG score indicates a{" "}
+                  <strong data-oid="sizixu1">lower probability</strong> of
+                  moderate to severe obstructive sleep apnea. However, if you
+                  continue to experience sleep-related symptoms such as
+                  excessive daytime sleepiness, witnessed breathing
+                  interruptions, or morning headaches, we recommend discussing
+                  these concerns with your healthcare provider.
+                </p>
+              )}
+              {results.riskLevel === "Intermediate Risk" && (
+                <p
+                  className="text-slate-700 leading-relaxed"
+                  data-oid="qcxzpjl"
+                >
+                  Your STOP-BANG score suggests an{" "}
+                  <strong data-oid="o8_s4t7">intermediate probability</strong>{" "}
+                  of moderate to severe obstructive sleep apnea. We recommend
+                  scheduling a consultation with your healthcare provider to
+                  discuss these results and determine if further evaluation,
+                  such as a sleep study, would be beneficial for your health.
+                </p>
+              )}
+              {results.riskLevel === "High Risk" && (
+                <p
+                  className="text-slate-700 leading-relaxed"
+                  data-oid="5d:epzz"
+                >
+                  Your STOP-BANG score indicates a{" "}
+                  <strong data-oid=":g8kna4">high probability</strong> of
+                  moderate to severe obstructive sleep apnea. We strongly
+                  recommend prompt consultation with your healthcare provider
+                  for comprehensive evaluation. A sleep study may be recommended
+                  to confirm the diagnosis and determine the most appropriate
+                  treatment approach.
+                </p>
+              )}
             </div>
-          </label>
-          {emailResults && (
+          </div>
+
+          {/* Medical Information Section */}
+          <div
+            className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 mb-8"
+            data-oid="060fgtt"
+          >
+            <div className="flex items-start space-x-4" data-oid="hpf40e_">
+              <div
+                className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
+                data-oid="xelur86"
+              >
+                <svg
+                  className="w-5 h-5 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  data-oid="0a8vkep"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    data-oid="4l06rq1"
+                  />
+                </svg>
+              </div>
+              <div className="flex-1" data-oid="tqrhpvw">
+                <h3
+                  className="font-semibold text-blue-900 mb-3"
+                  data-oid="_umqn8j"
+                >
+                  Understanding Sleep Apnea
+                </h3>
+                <p
+                  className="text-slate-700 mb-3 leading-relaxed"
+                  data-oid=":wybhrb"
+                >
+                  Sleep apnea is more than just snoring—it's a serious medical
+                  condition that can significantly impact your overall health,
+                  affecting memory, energy levels, cardiovascular health, and
+                  metabolic function.
+                </p>
+                <p
+                  className="text-slate-700 leading-relaxed"
+                  data-oid="x44l7hz"
+                >
+                  At our practice, we take a comprehensive approach to patient
+                  care, recognizing that
+                  <strong className="text-blue-800" data-oid="b3tp6gk">
+                    {" "}
+                    airway health is fundamental to overall wellness
+                  </strong>{" "}
+                  and directly impacts dental health outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Risk Factors Section */}
+          <div
+            className="bg-white border border-slate-200 rounded-lg p-6 mb-8"
+            data-oid="o266kw3"
+          >
+            <h3
+              className="text-lg font-semibold text-slate-800 mb-4 flex items-center"
+              data-oid="la3k9lr"
+            >
+              <svg
+                className="w-5 h-5 mr-2 text-slate-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-oid="_.-c3p0"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  data-oid="0.9tnmm"
+                />
+              </svg>
+              Additional Clinical Considerations
+            </h3>
             <p
-              className="text-xs text-blue-600 mt-2 text-center"
-              data-oid="folnsiy"
+              className="text-slate-600 text-sm mb-4 italic"
+              data-oid="vmrtjtd"
             >
-              Results will be sent to the email address you provided:{" "}
-              <strong data-oid="zfzvyun">{results.name}</strong>
+              Please indicate any additional factors that may be relevant to
+              your sleep health assessment:
             </p>
-          )}
-        </div>
 
-        {/* Action Buttons */}
-        <div
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-          data-oid="dr5bmex"
-        >
-          <button
-            onClick={() => window.print()}
-            className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center"
-            data-oid="n_2il:q"
-          >
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              data-oid="kukawco"
+            <div className="space-y-4" data-oid="g8yj839">
+              {/* General Risk Factors */}
+              <div
+                className="grid grid-cols-1 md:grid-cols-2 gap-3"
+                data-oid="ig-acec"
+              >
+                {[
+                  "Depression or mood disorders",
+                  "Anxiety disorders",
+                  "Chronic pain conditions",
+                  "Memory or concentration difficulties",
+                  "ADHD/ADD diagnosis",
+                  "Family history of sleep apnea",
+                  "Chronic dry mouth",
+                  "Frequent morning headaches",
+                  "High caffeine dependency (>2 cups/day)",
+                  "Regular sleep medication use",
+                  "Difficulty with weight management",
+                ].map((factor, index) => (
+                  <label
+                    key={index}
+                    className="flex items-start space-x-3 cursor-pointer hover:bg-slate-50 p-3 rounded-lg transition-colors border border-transparent hover:border-slate-200"
+                    data-oid=":2in-e-"
+                  >
+                    <input
+                      type="checkbox"
+                      className="w-4 h-4 text-blue-600 bg-white border-slate-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5"
+                      data-oid="40wzhx7"
+                    />
+
+                    <span
+                      className="text-slate-700 text-sm leading-relaxed"
+                      data-oid="hjyqd0e"
+                    >
+                      {factor}
+                    </span>
+                  </label>
+                ))}
+              </div>
+
+              {/* Female-Specific Section */}
+              <div
+                className="mt-6 pt-6 border-t border-slate-200"
+                data-oid="kcsc6on"
+              >
+                <h4
+                  className="font-semibold text-slate-800 mb-4 flex items-center"
+                  data-oid="-6n74hs"
+                >
+                  <svg
+                    className="w-4 h-4 mr-2 text-pink-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="f70vhix"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      data-oid="a.s5:kx"
+                    />
+                  </svg>
+                  Female-Specific Risk Factors:
+                </h4>
+                <div className="space-y-3" data-oid="37kh:27">
+                  {[
+                    "Polycystic Ovarian Syndrome (PCOS)",
+                    "Post-menopausal status",
+                  ].map((factor, index) => (
+                    <label
+                      key={index}
+                      className="flex items-start space-x-3 cursor-pointer hover:bg-pink-50 p-3 rounded-lg transition-colors border border-transparent hover:border-pink-200"
+                      data-oid="g1qcb7e"
+                    >
+                      <input
+                        type="checkbox"
+                        className="w-4 h-4 text-pink-600 bg-white border-slate-300 rounded focus:ring-pink-500 focus:ring-2 mt-0.5"
+                        data-oid="gw6:xif"
+                      />
+
+                      <span
+                        className="text-slate-700 text-sm leading-relaxed"
+                        data-oid="h-c3:e5"
+                      >
+                        {factor}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Privacy Note */}
+            <div
+              className="mt-6 pt-4 border-t border-slate-200"
+              data-oid="pz2u-hq"
             >
-              <path
-                fillRule="evenodd"
-                d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zM5 14H4v-3h1v3zm4 0h2v2H9v-2zM15 11h1v3h-1v-3z"
-                clipRule="evenodd"
-                data-oid="ye7y9c9"
-              />
-            </svg>
-            Print Results
-          </button>
+              <div className="flex items-start space-x-2" data-oid="1h-uoo:">
+                <svg
+                  className="w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  data-oid="i9yo_0_"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                    data-oid="yemm8c6"
+                  />
+                </svg>
+                <p
+                  className="text-xs text-slate-500 leading-relaxed"
+                  data-oid="1kz0n64"
+                >
+                  <strong data-oid="7f1hwco">Privacy Notice:</strong> Your
+                  responses will be shared confidentially with our clinical team
+                  to provide personalized care recommendations and ensure
+                  comprehensive treatment planning.
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <button
-            onClick={restartSurvey}
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
-            data-oid="bfpti4d"
+          {/* Next Steps Section */}
+          <div
+            className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8"
+            data-oid="05p2c-4"
           >
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              data-oid="v.dn9qw"
+            <h3
+              className="text-lg font-semibold text-blue-900 mb-4 flex items-center"
+              data-oid="r97vn0v"
             >
-              <path
-                fillRule="evenodd"
-                d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                clipRule="evenodd"
-                data-oid="0.fmytv"
-              />
-            </svg>
-            Retake Survey
-          </button>
-        </div>
+              <svg
+                className="w-5 h-5 mr-2 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-oid=".cclv.0"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                  data-oid="jwmd0.i"
+                />
+              </svg>
+              Recommended Next Steps
+            </h3>
+            <div className="space-y-3" data-oid="-9mnh_n">
+              <div className="flex items-start space-x-3" data-oid="m_bm-at">
+                <div
+                  className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5"
+                  data-oid="o8hf6bq"
+                >
+                  1
+                </div>
+                <p className="text-blue-800 leading-relaxed" data-oid="2lpaxnp">
+                  A licensed healthcare professional from our team will contact
+                  you within 24-48 hours to discuss your results.
+                </p>
+              </div>
+              <div className="flex items-start space-x-3" data-oid="ga93ohb">
+                <div
+                  className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5"
+                  data-oid="g81i:tw"
+                >
+                  2
+                </div>
+                <p className="text-blue-800 leading-relaxed" data-oid="zi_fip5">
+                  We will review your medical history and current symptoms to
+                  develop a personalized care plan.
+                </p>
+              </div>
+              <div className="flex items-start space-x-3" data-oid="yc0btlk">
+                <div
+                  className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5"
+                  data-oid="2ki1ifl"
+                >
+                  3
+                </div>
+                <p className="text-blue-800 leading-relaxed" data-oid="n6qtx42">
+                  If indicated, we will coordinate appropriate referrals and
+                  treatment options tailored to your needs.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        {/* Disclaimer */}
-        <div className="mt-8 pt-6 border-t border-gray-200" data-oid="hbg1we-">
-          <p className="text-xs text-gray-500" data-oid="9u1nd_m">
-            <strong data-oid="g_-wgvd">Disclaimer:</strong> This assessment is
-            for screening purposes only and does not replace professional
-            medical advice. Please consult with a healthcare provider for proper
-            diagnosis and treatment.
-          </p>
+          {/* Email Results Option */}
+          <div className="mb-8" data-oid="ucim45-">
+            <label
+              className="flex items-center justify-center space-x-3 cursor-pointer bg-slate-50 hover:bg-slate-100 p-4 rounded-lg border border-slate-200 transition-all duration-200 hover:shadow-md"
+              data-oid="e4c9a-a"
+            >
+              <input
+                type="checkbox"
+                checked={emailResults}
+                onChange={(e) => setEmailResults(e.target.checked)}
+                className="w-5 h-5 text-blue-600 bg-white border-slate-300 rounded focus:ring-blue-500 focus:ring-2"
+                data-oid="zbte690"
+              />
+
+              <div className="flex items-center space-x-3" data-oid="a_j1y4t">
+                <div
+                  className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center"
+                  data-oid=":61y3b0"
+                >
+                  <svg
+                    className="w-4 h-4 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid=":ekl1qb"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      data-oid="9o00ul7"
+                    />
+                  </svg>
+                </div>
+                <span className="text-slate-700 font-medium" data-oid="lyaphmz">
+                  Email me a secure copy of my assessment results
+                </span>
+              </div>
+            </label>
+            {emailResults && (
+              <div
+                className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200"
+                data-oid="v5nntus"
+              >
+                <p
+                  className="text-sm text-blue-700 text-center"
+                  data-oid="u.:ry51"
+                >
+                  <svg
+                    className="w-4 h-4 inline mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="2i-puk9"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                      data-oid="fy-m17d"
+                    />
+                  </svg>
+                  Results will be sent securely to your registered email address
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Action Buttons */}
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
+            data-oid="ix0bulx"
+          >
+            <button
+              onClick={() => window.print()}
+              className="px-6 py-3 bg-slate-600 text-white rounded-lg hover:bg-slate-700 transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg font-medium"
+              data-oid="lhy4jij"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-oid="qwh_zc8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+                  data-oid="4oa-hb4"
+                />
+              </svg>
+              Print Assessment Report
+            </button>
+
+            <button
+              onClick={restartSurvey}
+              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg font-medium"
+              data-oid="4h5-um1"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-oid="-u-zdnq"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  data-oid="qr0papy"
+                />
+              </svg>
+              Take New Assessment
+            </button>
+          </div>
+
+          {/* Professional Disclaimer */}
+          <div className="border-t border-slate-200 pt-6" data-oid="gi8aixq">
+            <div
+              className="bg-amber-50 border border-amber-200 rounded-lg p-4"
+              data-oid="qh9gq1i"
+            >
+              <div className="flex items-start space-x-3" data-oid="qqp2ekv">
+                <svg
+                  className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  data-oid="koovcms"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16c-.77.833.192 2.5 1.732 2.5z"
+                    data-oid=":e-qbgw"
+                  />
+                </svg>
+                <div data-oid="hs03k41">
+                  <h4
+                    className="font-semibold text-amber-800 mb-1"
+                    data-oid="w5c_n1q"
+                  >
+                    Medical Disclaimer
+                  </h4>
+                  <p
+                    className="text-sm text-amber-700 leading-relaxed"
+                    data-oid="sf7nbde"
+                  >
+                    This STOP-BANG assessment is a validated screening tool for
+                    educational and preliminary evaluation purposes only. It
+                    does not constitute a medical diagnosis and should not
+                    replace professional medical consultation. Please consult
+                    with a qualified healthcare provider for proper diagnosis,
+                    treatment recommendations, and medical advice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
