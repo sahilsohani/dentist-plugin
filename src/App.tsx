@@ -11,11 +11,11 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50" data-oid="o4df_5:">
-      <Header data-oid="ly4l.27" />
-      <Breadcrumb items={breadcrumbItems} data-oid="mx065a-" />
-      <main data-oid="421za7-">
-        <SleepApneaSurvey data-oid="y0sun96" />
+    <div className="min-h-screen bg-gray-50" data-oid=":ixzk8a">
+      <Header data-oid="8a0_10_" />
+      <Breadcrumb items={breadcrumbItems} data-oid=":0m_-t6" />
+      <main data-oid="j-ki_25">
+        <SleepApneaSurvey data-oid="unyjx0y" />
       </main>
     </div>
   );
