@@ -251,135 +251,85 @@ const SleepApneaSurvey: React.FC = () => {
   const ResultsDisplay: React.FC<{
     results: { score: number; riskLevel: string; name: string };
   }> = ({ results }) => (
-    <div
-      className="max-w-5xl mx-auto p-6 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen"
-      data-oid="03t1rxy"
-    >
+    <div className="max-w-5xl mx-auto p-6 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       {/* Header Section */}
-      <div
-        className="bg-white rounded-xl shadow-xl border border-slate-200 mb-8"
-        data-oid="s083816"
-      >
-        <div
-          className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 rounded-t-xl overflow-hidden"
-          data-oid="c4p_u2."
-        >
+      <div className="bg-white rounded-xl shadow-xl border border-slate-200 mb-8">
+        <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 rounded-t-xl overflow-hidden">
           {/* Sophisticated background pattern */}
-          <div className="absolute inset-0 opacity-10" data-oid="bg-pattern">
+          <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
               style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                 backgroundSize: "30px 30px",
               }}
-              data-oid="rx4:zmp"
             ></div>
           </div>
 
           {/* Gradient overlay for depth */}
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"
-            data-oid="gradient-overlay"
-          ></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
 
-          <div className="relative z-10 p-8" data-oid="content-wrapper">
-            <div
-              className="flex items-start justify-between"
-              data-oid="zjsiwk1"
-            >
+          <div className="relative z-10 p-8">
+            <div className="flex items-start justify-between">
               {/* Left Section - Enhanced Title and Icon */}
-              <div className="flex items-start space-x-6" data-oid="y-3ob6-">
+              <div className="flex items-start space-x-6">
                 {/* Professional medical icon with enhanced styling */}
-                <div
-                  className="relative w-20 h-20 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl"
-                  data-oid="ms_q16:"
-                >
+                <div className="relative w-20 h-20 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl">
                   {/* Inner glow effect */}
-                  <div
-                    className="absolute inset-1 bg-gradient-to-br from-white/10 to-transparent rounded-xl"
-                    data-oid="inner-glow"
-                  ></div>
+                  <div className="absolute inset-1 bg-gradient-to-br from-white/10 to-transparent rounded-xl"></div>
 
                   <svg
                     className="w-10 h-10 text-white relative z-10"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="mc-yei4"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={1.5}
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                      data-oid="7q5prly"
                     />
                   </svg>
 
                   {/* Subtle corner accent */}
-                  <div
-                    className="absolute top-2 right-2 w-2 h-2 bg-blue-300/40 rounded-full"
-                    data-oid="corner-accent"
-                  ></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-blue-300/40 rounded-full"></div>
                 </div>
 
-                <div
-                  className="flex flex-col justify-center"
-                  data-oid="g3mja8."
-                >
+                <div className="flex flex-col justify-center">
                   {/* Enhanced typography hierarchy */}
-                  <div className="mb-2" data-oid="title-section">
-                    <h1
-                      className="text-4xl font-bold text-white mb-1 tracking-tight leading-tight"
-                      data-oid="9ex58wr"
-                    >
+                  <div className="mb-2">
+                    <h1 className="text-4xl font-bold text-white mb-1 tracking-tight leading-tight">
                       STOP-BANG Assessment
                     </h1>
-                    <div
-                      className="text-2xl font-semibold text-blue-100 mb-1"
-                      data-oid="results-text"
-                    >
+                    <div className="text-2xl font-semibold text-blue-100 mb-1 rounded-none">
                       Clinical Results
                     </div>
                   </div>
 
-                  <div
-                    className="flex items-center space-x-3"
-                    data-oid="subtitle-section"
-                  >
-                    <div
-                      className="w-1 h-6 bg-gradient-to-b from-blue-300 to-blue-400 rounded-full"
-                      data-oid="accent-line"
-                    ></div>
-                    <p
-                      className="text-blue-200 text-lg font-medium tracking-wide"
-                      data-oid="g7-3nnf"
-                    >
+                  <div className="flex items-center space-x-3">
+                    <div className="w-1 h-6 bg-gradient-to-b from-blue-300 to-blue-400 rounded-full"></div>
+                    <p className="text-blue-200 text-lg font-medium tracking-wide">
                       Sleep Apnea Risk Evaluation Report
                     </p>
                   </div>
 
                   {/* Professional timestamp */}
-                  <div
-                    className="mt-3 flex items-center space-x-2 text-blue-300/80 text-sm"
-                    data-oid="timestamp"
-                  >
+                  <div className="mt-3 flex items-center space-x-2 text-blue-300/80 text-sm">
                     <svg
                       className="w-4 h-4"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      data-oid=":birv:t"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        data-oid="ly9.d55"
                       />
                     </svg>
-                    <span data-oid="tgmkrek">
+                    <span>
                       Generated on{" "}
                       {new Date().toLocaleDateString("en-US", {
                         year: "numeric",
@@ -392,117 +342,79 @@ const SleepApneaSurvey: React.FC = () => {
               </div>
 
               {/* Right Section - Enhanced Patient Info Card */}
-              <div
-                className="relative bg-gradient-to-br from-white/15 to-white/5 rounded-2xl px-6 py-4 backdrop-blur-md border border-white/20 shadow-2xl min-w-[200px]"
-                data-oid="nb7-f3o"
-              >
+              <div className="relative bg-gradient-to-br from-white/15 to-white/5 rounded-2xl px-6 py-4 backdrop-blur-md border border-white/20 shadow-2xl min-w-[200px]">
                 {/* Card header with icon */}
-                <div
-                  className="flex items-center justify-between mb-3"
-                  data-oid="card-header"
-                >
-                  <div
-                    className="text-xs text-blue-200 uppercase tracking-wider font-semibold flex items-center space-x-2"
-                    data-oid="9ko8tn2"
-                  >
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-xs text-blue-200 uppercase tracking-wider font-semibold flex items-center space-x-2">
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="a0zo62y"
                     >
                       <path
                         fillRule="evenodd"
                         d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                         clipRule="evenodd"
-                        data-oid="fe9oxhw"
                       />
                     </svg>
-                    <span data-oid="77rf_0d">Patient Information</span>
+                    <span>Patient Information</span>
                   </div>
 
                   {/* Status indicator */}
-                  <div
-                    className="w-2 h-2 bg-green-400 rounded-full shadow-lg"
-                    data-oid="status-indicator"
-                  ></div>
+                  <div className="w-2 h-2 bg-green-400 rounded-full shadow-lg"></div>
                 </div>
 
                 {/* Patient name with enhanced styling */}
-                <div className="text-right" data-oid="patient-name-section">
-                  <div
-                    className="font-bold text-xl text-white mb-1 tracking-wide"
-                    data-oid="9an149v"
-                  >
+                <div className="text-right">
+                  <div className="font-bold text-xl text-white mb-1 tracking-wide">
                     {results.name}
                   </div>
-                  <div
-                    className="text-blue-200/80 text-sm font-medium"
-                    data-oid="patient-id"
-                  >
+                  <div className="text-blue-200/80 text-sm font-medium">
                     Assessment ID: #
                     {Math.random().toString(36).substr(2, 8).toUpperCase()}
                   </div>
                 </div>
 
                 {/* Subtle bottom accent */}
-                <div
-                  className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-300/50 to-transparent rounded-b-2xl"
-                  data-oid="bottom-accent"
-                ></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-300/50 to-transparent rounded-b-2xl"></div>
               </div>
             </div>
           </div>
         </div>
         =======
         {/* Score and Risk Level Section */}
-        <div className="p-8" data-oid="7u4p6bc">
-          <div className="grid lg:grid-cols-2 gap-10 mb-10" data-oid="vkny9va">
+        <div className="p-8">
+          <div className="grid lg:grid-cols-2 gap-10 mb-10">
             {/* Score Display */}
-            <div
-              className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 border border-slate-200 shadow-sm"
-              data-oid="gfc7gx3"
-            >
-              <div className="text-center" data-oid=":gkaoss">
-                <div
-                  className="flex items-center justify-center mb-6"
-                  data-oid="gdpvvkv"
-                >
-                  <div
-                    className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mr-3"
-                    data-oid="by1end4"
-                  >
+            <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 border border-slate-200 shadow-sm">
+              <div className="text-center">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mr-3">
                     <svg
                       className="w-5 h-5 text-blue-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      data-oid="hb6:vxy"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
                         d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                        data-oid="oo7d5j."
                       />
                     </svg>
                   </div>
-                  <h2
-                    className="text-2xl font-bold text-slate-800"
-                    data-oid="jbth00a"
-                  >
+                  <h2 className="text-2xl font-bold text-slate-800">
                     Assessment Score
                   </h2>
                 </div>
 
-                <div className="relative inline-block mb-6" data-oid="njbwu0m">
+                <div className="relative inline-block mb-6">
                   {/* Main score circle */}
-                  <div className="relative" data-oid="ftl3o_w">
+                  <div className="relative">
                     <svg
                       className="w-40 h-40 transform -rotate-90"
                       viewBox="0 0 144 144"
-                      data-oid="jr85bka"
                     >
                       {/* Background circle */}
                       <circle
@@ -513,7 +425,6 @@ const SleepApneaSurvey: React.FC = () => {
                         strokeWidth="8"
                         fill="none"
                         className="text-slate-200"
-                        data-oid="r1rpi2-"
                       />
 
                       {/* Progress circle */}
@@ -534,26 +445,16 @@ const SleepApneaSurvey: React.FC = () => {
                               : "text-red-500",
                         )}
                         strokeLinecap="round"
-                        data-oid="3.bsjnm"
                       />
                     </svg>
 
                     {/* Score text overlay */}
-                    <div
-                      className="absolute inset-0 flex items-center justify-center"
-                      data-oid="bo6kcqk"
-                    >
-                      <div className="text-center" data-oid="m7f2exw">
-                        <div
-                          className="text-5xl font-bold text-slate-800 mb-1"
-                          data-oid="b8xqq7b"
-                        >
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-5xl font-bold text-slate-800 mb-1">
                           {results.score}
                         </div>
-                        <div
-                          className="text-sm font-medium text-slate-500 uppercase tracking-wide"
-                          data-oid="sguv_99"
-                        >
+                        <div className="text-sm font-medium text-slate-500 uppercase tracking-wide">
                           out of 8
                         </div>
                       </div>
@@ -561,38 +462,27 @@ const SleepApneaSurvey: React.FC = () => {
                   </div>
 
                   {/* Completion badge */}
-                  <div
-                    className="absolute -top-3 -right-3 w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
-                    data-oid="-ro2kim"
-                  >
+                  <div className="absolute -top-3 -right-3 w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                     <svg
                       className="w-5 h-5 text-white"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="6r_6usi"
                     >
                       <path
                         fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                         clipRule="evenodd"
-                        data-oid="x5986-v"
                       />
                     </svg>
                   </div>
                 </div>
 
                 {/* Score interpretation */}
-                <div
-                  className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-white/50"
-                  data-oid="1_u4xgy"
-                >
-                  <p
-                    className="text-sm text-slate-600 font-medium"
-                    data-oid="hhj0cgi"
-                  >
+                <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                  <p className="text-sm text-slate-600 font-medium">
                     STOP-BANG Questionnaire Score
                   </p>
-                  <p className="text-xs text-slate-500 mt-1" data-oid="2hn6..a">
+                  <p className="text-xs text-slate-500 mt-1">
                     Based on validated clinical assessment criteria
                   </p>
                 </div>
@@ -600,40 +490,29 @@ const SleepApneaSurvey: React.FC = () => {
             </div>
 
             {/* Risk Level Display */}
-            <div
-              className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm"
-              data-oid="a6jlin:"
-            >
-              <div className="flex items-center mb-6" data-oid="6u1s8gy">
-                <div
-                  className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center mr-3"
-                  data-oid="lmwnoqc"
-                >
+            <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm">
+              <div className="flex items-center mb-6">
+                <div className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center mr-3">
                   <svg
                     className="w-5 h-5 text-slate-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="bb8lrkw"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      data-oid="kc2v5ze"
                     />
                   </svg>
                 </div>
-                <h2
-                  className="text-2xl font-bold text-slate-800"
-                  data-oid="h8uvds1"
-                >
+                <h2 className="text-2xl font-bold text-slate-800">
                   Risk Assessment
                 </h2>
               </div>
 
-              <div className="space-y-6" data-oid="srhojlr">
+              <div className="space-y-6">
                 {/* Main risk level card */}
                 <div
                   className={classNames(
@@ -644,17 +523,10 @@ const SleepApneaSurvey: React.FC = () => {
                         ? "bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 shadow-amber-100/50"
                         : "bg-gradient-to-br from-red-50 to-red-100 border-red-200 shadow-red-100/50",
                   )}
-                  data-oid="izjri_y"
                 >
-                  <div className="relative z-10" data-oid="0t-7rav">
-                    <div
-                      className="flex items-center justify-between mb-3"
-                      data-oid="zyt.t8n"
-                    >
-                      <div
-                        className="flex items-center space-x-3"
-                        data-oid="7x:zv9n"
-                      >
+                  <div className="relative z-10">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center space-x-3">
                         <div
                           className={classNames(
                             "w-4 h-4 rounded-full shadow-sm",
@@ -664,12 +536,8 @@ const SleepApneaSurvey: React.FC = () => {
                                 ? "bg-amber-500"
                                 : "bg-red-500",
                           )}
-                          data-oid="g_leqa2"
                         ></div>
-                        <div
-                          className="flex flex-col"
-                          data-oid="risk-text-container"
-                        >
+                        <div className="flex flex-col">
                           <span
                             className={classNames(
                               "text-xl font-bold leading-tight",
@@ -679,7 +547,6 @@ const SleepApneaSurvey: React.FC = () => {
                                   ? "text-amber-800"
                                   : "text-red-800",
                             )}
-                            data-oid="q8dtnzq"
                           >
                             {results.riskLevel}
                           </span>
@@ -692,8 +559,6 @@ const SleepApneaSurvey: React.FC = () => {
                                   ? "text-amber-700"
                                   : "text-red-700",
                             )}
-                            data-oid=".7:ahqi"
-                            key="olk-KaGJ"
                           >
                             for Obstructive Sleep Apnea
                           </p>
@@ -710,20 +575,17 @@ const SleepApneaSurvey: React.FC = () => {
                               ? "bg-amber-200"
                               : "bg-red-200",
                         )}
-                        data-oid="_eu_wsi"
                       >
                         {results.riskLevel === "Low Risk" ? (
                           <svg
                             className="w-4 h-4 text-emerald-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="k3ty_26"
                           >
                             <path
                               fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                               clipRule="evenodd"
-                              data-oid="xydr209"
                             />
                           </svg>
                         ) : results.riskLevel === "Intermediate Risk" ? (
@@ -731,27 +593,23 @@ const SleepApneaSurvey: React.FC = () => {
                             className="w-4 h-4 text-amber-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="z1u1acm"
                           >
                             <path
                               fillRule="evenodd"
                               d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
                               clipRule="evenodd"
-                              data-oid="hlbsqg_"
                             />
                           </svg>
                         ) : (
                           <svg
-                            className="text-red-600 h-[17px] w-auto"
+                            className="w-5 h-5 text-red-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="nwdbyvi"
                           >
                             <path
                               fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
                               clipRule="evenodd"
-                              data-oid="q5lt69n"
                             />
                           </svg>
                         )}
@@ -761,43 +619,26 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
 
                 {/* Risk level explanation */}
-                <div
-                  className="bg-slate-50 rounded-xl p-4 border border-slate-200"
-                  data-oid="34:ctyl"
-                >
-                  <div
-                    className="flex items-start space-x-3"
-                    data-oid="y3ka1jo"
-                  >
-                    <div
-                      className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5"
-                      data-oid="gj1__3n"
-                    >
+                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
                       <svg
                         className="w-3 h-3 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="3-.g3fb"
                       >
                         <path
                           fillRule="evenodd"
                           d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                           clipRule="evenodd"
-                          data-oid="-bc.kcy"
                         />
                       </svg>
                     </div>
-                    <div data-oid="90:gv8w">
-                      <h4
-                        className="text-sm font-semibold text-slate-800 mb-1"
-                        data-oid="26.4r-4"
-                      >
+                    <div>
+                      <h4 className="text-sm font-semibold text-slate-800 mb-1">
                         Clinical Significance
                       </h4>
-                      <p
-                        className="text-xs text-slate-600 leading-relaxed"
-                        data-oid="sg.r87n"
-                      >
+                      <p className="text-xs text-slate-600 leading-relaxed">
                         {results.riskLevel === "Low Risk" &&
                           "Lower probability of moderate to severe OSA. Continue monitoring symptoms."}
                         {results.riskLevel === "Intermediate Risk" &&
@@ -813,72 +654,40 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Clinical Interpretation */}
-          <div
-            className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 mb-8 border border-slate-200 shadow-lg"
-            data-oid="w.gaoqu"
-          >
+          <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 mb-8 border border-slate-200 shadow-lg">
             {/* Header Section */}
-            <div
-              className="flex items-start justify-between mb-6"
-              data-oid="header-section"
-            >
-              <div
-                className="flex items-center space-x-4"
-                data-oid="title-group"
-              >
-                <div
-                  className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg"
-                  data-oid="icon-container"
-                >
+            <div className="flex items-start justify-between mb-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="hlt:ear"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                      data-oid="ywbrk8p"
                     />
                   </svg>
                 </div>
-                <div data-oid="title-content">
-                  <h3
-                    className="text-2xl font-bold text-slate-900 mb-1"
-                    data-oid="nx2c4ng"
-                  >
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-1">
                     Clinical Interpretation
                   </h3>
-                  <p
-                    className="text-sm text-slate-600 font-medium"
-                    data-oid="subtitle"
-                  >
+                  <p className="text-sm text-slate-600 font-medium">
                     Professional Assessment Based on STOP-BANG Criteria
                   </p>
                 </div>
               </div>
 
               {/* Medical badge */}
-              <div
-                className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2"
-                data-oid="medical-badge"
-              >
-                <div
-                  className="flex items-center space-x-2"
-                  data-oid="badge-content"
-                >
-                  <div
-                    className="w-2 h-2 bg-blue-500 rounded-full"
-                    data-oid="status-dot"
-                  ></div>
-                  <span
-                    className="text-xs font-semibold text-blue-700 uppercase tracking-wide"
-                    data-oid="badge-text"
-                  >
+              <div className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">
                     Clinical Grade
                   </span>
                 </div>
@@ -886,47 +695,30 @@ const SleepApneaSurvey: React.FC = () => {
             </div>
 
             {/* Risk Level Specific Content */}
-            <div className="space-y-6" data-oid="lq.ep1w">
+            <div className="space-y-6">
               {results.riskLevel === "Low Risk" && (
-                <div
-                  className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6"
-                  data-oid="low-risk-section"
-                >
-                  <div
-                    className="flex items-start space-x-4"
-                    data-oid="low-risk-content"
-                  >
-                    <div
-                      className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-                      data-oid="low-risk-icon"
-                    >
+                <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         className="w-4 h-4 text-emerald-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="check-icon"
                       >
                         <path
                           fillRule="evenodd"
                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                           clipRule="evenodd"
-                          data-oid=".ll6n0."
                         />
                       </svg>
                     </div>
-                    <div data-oid="low-risk-text">
-                      <h4
-                        className="text-lg font-semibold text-emerald-900 mb-3"
-                        data-oid="low-risk-title"
-                      >
+                    <div>
+                      <h4 className="text-lg font-semibold text-emerald-900 mb-3">
                         Low Risk Assessment
                       </h4>
-                      <p
-                        className="text-slate-700 leading-relaxed mb-4"
-                        data-oid="yv7hhm4"
-                      >
+                      <p className="text-slate-700 leading-relaxed mb-4">
                         Your STOP-BANG assessment indicates a{" "}
-                        <strong className="text-emerald-800" data-oid="9h9w_oi">
+                        <strong className="text-emerald-800">
                           lower probability
                         </strong>{" "}
                         of moderate to severe obstructive sleep apnea (OSA).
@@ -934,33 +726,22 @@ const SleepApneaSurvey: React.FC = () => {
                         breathing is less likely based on current screening
                         criteria.
                       </p>
-                      <div
-                        className="bg-white/70 rounded-lg p-4 border border-emerald-100"
-                        data-oid="low-risk-recommendations"
-                      >
-                        <h5
-                          className="font-semibold text-slate-800 mb-2 flex items-center"
-                          data-oid="rec-title"
-                        >
+                      <div className="bg-white/70 rounded-lg p-4 border border-emerald-100">
+                        <h5 className="font-semibold text-slate-800 mb-2 flex items-center">
                           <svg
                             className="w-4 h-4 mr-2 text-emerald-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="i8t0tfe"
                           >
                             <path
                               fillRule="evenodd"
                               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                               clipRule="evenodd"
-                              data-oid="f55:iu1"
                             />
                           </svg>
                           Clinical Recommendations
                         </h5>
-                        <p
-                          className="text-sm text-slate-600 leading-relaxed"
-                          data-oid="low-risk-rec-text"
-                        >
+                        <p className="text-sm text-slate-600 leading-relaxed">
                           Continue monitoring your sleep quality and discuss any
                           persistent symptoms such as excessive daytime
                           sleepiness, witnessed breathing interruptions, or
@@ -974,45 +755,28 @@ const SleepApneaSurvey: React.FC = () => {
               )}
 
               {results.riskLevel === "Intermediate Risk" && (
-                <div
-                  className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-xl p-6"
-                  data-oid="intermediate-risk-section"
-                >
-                  <div
-                    className="flex items-start space-x-4"
-                    data-oid="intermediate-risk-content"
-                  >
-                    <div
-                      className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-                      data-oid="intermediate-risk-icon"
-                    >
+                <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-xl p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         className="w-4 h-4 text-amber-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="warning-icon"
                       >
                         <path
                           fillRule="evenodd"
                           d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
                           clipRule="evenodd"
-                          data-oid="lwof3.u"
                         />
                       </svg>
                     </div>
-                    <div data-oid="intermediate-risk-text">
-                      <h4
-                        className="text-lg font-semibold text-amber-900 mb-3"
-                        data-oid="intermediate-risk-title"
-                      >
+                    <div>
+                      <h4 className="text-lg font-semibold text-amber-900 mb-3">
                         Intermediate Risk Assessment
                       </h4>
-                      <p
-                        className="text-slate-700 leading-relaxed mb-4"
-                        data-oid="::d-jf_"
-                      >
+                      <p className="text-slate-700 leading-relaxed mb-4">
                         Your STOP-BANG assessment suggests an{" "}
-                        <strong className="text-amber-800" data-oid="s:ue.j0">
+                        <strong className="text-amber-800">
                           intermediate probability
                         </strong>{" "}
                         of moderate to severe obstructive sleep apnea. This
@@ -1020,31 +784,18 @@ const SleepApneaSurvey: React.FC = () => {
                         significant sleep-disordered breathing that warrants
                         further evaluation.
                       </p>
-                      <div
-                        className="bg-white/70 rounded-lg p-4 border border-amber-100"
-                        data-oid="intermediate-risk-recommendations"
-                      >
-                        <h5
-                          className="font-semibold text-slate-800 mb-2 flex items-center"
-                          data-oid="2u08k:j"
-                        >
+                      <div className="bg-white/70 rounded-lg p-4 border border-amber-100">
+                        <h5 className="font-semibold text-slate-800 mb-2 flex items-center">
                           <svg
                             className="w-4 h-4 mr-2 text-amber-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="a3kol64"
                           >
-                            <path
-                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                              data-oid=".rgel:8"
-                            />
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                           Clinical Recommendations
                         </h5>
-                        <p
-                          className="text-sm text-slate-600 leading-relaxed"
-                          data-oid="intermediate-risk-rec-text"
-                        >
+                        <p className="text-sm text-slate-600 leading-relaxed">
                           We recommend scheduling a consultation with your
                           healthcare provider to discuss these results in
                           detail. Consider a comprehensive sleep evaluation,
@@ -1058,45 +809,28 @@ const SleepApneaSurvey: React.FC = () => {
               )}
 
               {results.riskLevel === "High Risk" && (
-                <div
-                  className="bg-gradient-to-r from-red-50 to-rose-50 border border-red-200 rounded-xl p-6"
-                  data-oid="high-risk-section"
-                >
-                  <div
-                    className="flex items-start space-x-4"
-                    data-oid="high-risk-content"
-                  >
-                    <div
-                      className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-                      data-oid="high-risk-icon"
-                    >
+                <div className="bg-gradient-to-r from-red-50 to-rose-50 border border-red-200 rounded-xl p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
                         className="w-4 h-4 text-red-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="alert-icon"
                       >
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
                           clipRule="evenodd"
-                          data-oid="61vuile"
                         />
                       </svg>
                     </div>
-                    <div data-oid="high-risk-text">
-                      <h4
-                        className="text-lg font-semibold text-red-900 mb-3"
-                        data-oid="high-risk-title"
-                      >
+                    <div>
+                      <h4 className="text-lg font-semibold text-red-900 mb-3">
                         High Risk Assessment
                       </h4>
-                      <p
-                        className="text-slate-700 leading-relaxed mb-4"
-                        data-oid="l6apt0q"
-                      >
+                      <p className="text-slate-700 leading-relaxed mb-4">
                         Your STOP-BANG assessment indicates a{" "}
-                        <strong className="text-red-800" data-oid="4p-sl_4">
+                        <strong className="text-red-800">
                           high probability
                         </strong>{" "}
                         of moderate to severe obstructive sleep apnea. This
@@ -1104,33 +838,22 @@ const SleepApneaSurvey: React.FC = () => {
                         important sleep-disordered breathing requiring prompt
                         medical attention.
                       </p>
-                      <div
-                        className="bg-white/70 rounded-lg p-4 border border-red-100"
-                        data-oid="high-risk-recommendations"
-                      >
-                        <h5
-                          className="font-semibold text-slate-800 mb-2 flex items-center"
-                          data-oid="ws_xp0c"
-                        >
+                      <div className="bg-white/70 rounded-lg p-4 border border-red-100">
+                        <h5 className="font-semibold text-slate-800 mb-2 flex items-center">
                           <svg
                             className="w-4 h-4 mr-2 text-red-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="q-qviuz"
                           >
                             <path
                               fillRule="evenodd"
                               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                               clipRule="evenodd"
-                              data-oid="t4o:t6f"
                             />
                           </svg>
                           Urgent Clinical Recommendations
                         </h5>
-                        <p
-                          className="text-sm text-slate-600 leading-relaxed"
-                          data-oid="high-risk-rec-text"
-                        >
+                        <p className="text-sm text-slate-600 leading-relaxed">
                           We strongly recommend prompt consultation with your
                           healthcare provider for comprehensive evaluation. A
                           sleep study is likely indicated to confirm the
@@ -1145,43 +868,26 @@ const SleepApneaSurvey: React.FC = () => {
               )}
 
               {/* Professional Footer */}
-              <div
-                className="bg-slate-100 rounded-lg p-4 border border-slate-200"
-                data-oid="professional-footer"
-              >
-                <div
-                  className="flex items-start space-x-3"
-                  data-oid="footer-content"
-                >
-                  <div
-                    className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5"
-                    data-oid="footer-icon"
-                  >
+              <div className="bg-slate-100 rounded-lg p-4 border border-slate-200">
+                <div className="flex items-start space-x-3">
+                  <div className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
                     <svg
                       className="w-3 h-3 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="np2b.co"
                     >
                       <path
                         fillRule="evenodd"
                         d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                         clipRule="evenodd"
-                        data-oid="l-huv9."
                       />
                     </svg>
                   </div>
-                  <div data-oid="footer-text">
-                    <h5
-                      className="text-sm font-semibold text-slate-800 mb-1"
-                      data-oid="footer-title"
-                    >
+                  <div>
+                    <h5 className="text-sm font-semibold text-slate-800 mb-1">
                       Important Medical Information
                     </h5>
-                    <p
-                      className="text-xs text-slate-600 leading-relaxed"
-                      data-oid="footer-disclaimer"
-                    >
+                    <p className="text-xs text-slate-600 leading-relaxed">
                       This assessment is based on the validated STOP-BANG
                       questionnaire and provides risk stratification for
                       obstructive sleep apnea. It is intended for screening
@@ -1197,54 +903,37 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Medical Information Section */}
-          <div
-            className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 mb-8"
-            data-oid="1phir0b"
-          >
-            <div className="flex items-start space-x-4" data-oid="5l5tftu">
-              <div
-                className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"
-                data-oid="v:ha8o5"
-              >
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 mb-8">
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg
                   className="w-5 h-5 text-blue-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  data-oid="ceil7mt"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    data-oid="0kkq:sq"
                   />
                 </svg>
               </div>
-              <div className="flex-1" data-oid="3x2uj6o">
-                <h3
-                  className="font-semibold text-blue-900 mb-3"
-                  data-oid="xct0_gf"
-                >
+              <div className="flex-1">
+                <h3 className="font-semibold text-blue-900 mb-3">
                   Understanding Sleep Apnea
                 </h3>
-                <p
-                  className="text-slate-700 mb-3 leading-relaxed"
-                  data-oid="5g9css4"
-                >
+                <p className="text-slate-700 mb-3 leading-relaxed">
                   Sleep apnea is more than just snoring—it's a serious medical
                   condition that can significantly impact your overall health,
                   affecting memory, energy levels, cardiovascular health, and
                   metabolic function.
                 </p>
-                <p
-                  className="text-slate-700 leading-relaxed"
-                  data-oid="ms9yt_l"
-                >
+                <p className="text-slate-700 leading-relaxed">
                   At our practice, we take a comprehensive approach to patient
                   care, recognizing that
-                  <strong className="text-blue-800" data-oid="hmj9o0n">
+                  <strong className="text-blue-800">
                     {" "}
                     airway health is fundamental to overall wellness
                   </strong>{" "}
@@ -1255,66 +944,40 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Additional Risk Factors Section */}
-          <div
-            className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 mb-8 border border-slate-200 shadow-lg"
-            data-oid="10y22jh"
-          >
+          <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 mb-8 border border-slate-200 shadow-lg">
             {/* Header Section */}
-            <div
-              className="flex items-start justify-between mb-6"
-              data-oid="x1b2pdi"
-            >
-              <div className="flex items-center space-x-4" data-oid="c7w68i7">
-                <div
-                  className="w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center shadow-lg"
-                  data-oid="9v-k6b2"
-                >
+            <div className="flex items-start justify-between mb-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center shadow-lg">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="rdk.utw"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                      data-oid="sh7l0f-"
                     />
                   </svg>
                 </div>
-                <div data-oid="f.ofa5h">
-                  <h3
-                    className="text-2xl font-bold text-slate-900 mb-1"
-                    data-oid="3ks0fso"
-                  >
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-1">
                     Additional Clinical Considerations
                   </h3>
-                  <p
-                    className="text-sm text-slate-600 font-medium"
-                    data-oid="yyf1ua6"
-                  >
+                  <p className="text-sm text-slate-600 font-medium">
                     Comprehensive Risk Factor Assessment
                   </p>
                 </div>
               </div>
 
               {/* Optional badge */}
-              <div
-                className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2"
-                data-oid="optional-badge"
-              >
-                <div className="flex items-center space-x-2" data-oid="nf7haic">
-                  <div
-                    className="w-2 h-2 bg-slate-400 rounded-full"
-                    data-oid="2j7i-:_"
-                  ></div>
-                  <span
-                    className="text-xs font-semibold text-slate-600 uppercase tracking-wide"
-                    data-oid="_8cfia."
-                  >
+              <div className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-slate-400 rounded-full"></div>
+                  <span className="text-xs font-semibold text-slate-600 uppercase tracking-wide">
                     Optional
                   </span>
                 </div>
@@ -1322,43 +985,26 @@ const SleepApneaSurvey: React.FC = () => {
             </div>
 
             {/* Description */}
-            <div
-              className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6"
-              data-oid="description-section"
-            >
-              <div
-                className="flex items-start space-x-3"
-                data-oid="description-content"
-              >
-                <div
-                  className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5"
-                  data-oid="info-icon"
-                >
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+              <div className="flex items-start space-x-3">
+                <div className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
                   <svg
                     className="w-3 h-3 text-blue-600"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="sy11kgc"
                   >
                     <path
                       fillRule="evenodd"
                       d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                       clipRule="evenodd"
-                      data-oid="fge3wi6"
                     />
                   </svg>
                 </div>
-                <div data-oid="description-text">
-                  <p
-                    className="text-sm text-blue-800 font-medium mb-1"
-                    data-oid="lpjcrm_"
-                  >
+                <div>
+                  <p className="text-sm text-blue-800 font-medium mb-1">
                     Enhanced Clinical Assessment
                   </p>
-                  <p
-                    className="text-xs text-blue-700 leading-relaxed"
-                    data-oid="description-detail"
-                  >
+                  <p className="text-xs text-blue-700 leading-relaxed">
                     Please indicate any additional factors that may be relevant
                     to your sleep health assessment. This information helps our
                     clinical team provide more personalized recommendations.
@@ -1367,43 +1013,29 @@ const SleepApneaSurvey: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-6" data-oid="n1iqcem">
+            <div className="space-y-6">
               {/* General Risk Factors */}
-              <div data-oid="general-factors-section">
-                <div
-                  className="flex items-center space-x-3 mb-4"
-                  data-oid="section-header"
-                >
-                  <div
-                    className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center"
-                    data-oid="section-icon"
-                  >
+              <div>
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center">
                     <svg
                       className="w-4 h-4 text-slate-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="gqh9z_:"
                     >
                       <path
                         fillRule="evenodd"
                         d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                         clipRule="evenodd"
-                        data-oid="qhow15w"
                       />
                     </svg>
                   </div>
-                  <h4
-                    className="text-lg font-semibold text-slate-800"
-                    data-oid="section-title"
-                  >
+                  <h4 className="text-lg font-semibold text-slate-800">
                     General Risk Factors
                   </h4>
                 </div>
 
-                <div
-                  className="grid grid-cols-1 md:grid-cols-2 gap-3"
-                  data-oid="uvyakwp"
-                >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[
                     {
                       text: "Depression or mood disorders",
@@ -1441,32 +1073,21 @@ const SleepApneaSurvey: React.FC = () => {
                     <label
                       key={index}
                       className="group flex items-start space-x-3 cursor-pointer hover:bg-white p-4 rounded-xl transition-all duration-200 border border-transparent hover:border-slate-200 hover:shadow-md"
-                      data-oid="yj1g58:"
                     >
-                      <div className="relative" data-oid="checkbox-container">
+                      <div className="relative">
                         <input
                           type="checkbox"
                           className="w-5 h-5 text-blue-600 bg-white border-slate-300 rounded-md focus:ring-blue-500 focus:ring-2 mt-0.5 transition-all duration-200"
-                          data-oid=".l:l.4c"
                         />
 
-                        <div
-                          className="absolute inset-0 rounded-md bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
-                          data-oid="hover-bg"
-                        ></div>
+                        <div className="absolute inset-0 rounded-md bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"></div>
                       </div>
 
-                      <div className="flex-1" data-oid="factor-content">
-                        <span
-                          className="text-slate-700 text-sm font-medium leading-relaxed block"
-                          data-oid="qh_5xqw"
-                        >
+                      <div className="flex-1">
+                        <span className="text-slate-700 text-sm font-medium leading-relaxed block">
                           {factor.text}
                         </span>
-                        <div
-                          className="flex items-center mt-1"
-                          data-oid="category-indicator"
-                        >
+                        <div className="flex items-center mt-1">
                           <div
                             className={`w-2 h-2 rounded-full mr-2 ${
                               factor.category === "mental-health"
@@ -1481,12 +1102,8 @@ const SleepApneaSurvey: React.FC = () => {
                                         ? "bg-orange-400"
                                         : "bg-gray-400"
                             }`}
-                            data-oid="category-dot"
                           ></div>
-                          <span
-                            className="text-xs text-slate-500 capitalize"
-                            data-oid="category-label"
-                          >
+                          <span className="text-xs text-slate-500 capitalize">
                             {factor.category.replace("-", " ")}
                           </span>
                         </div>
@@ -1497,43 +1114,29 @@ const SleepApneaSurvey: React.FC = () => {
               </div>
 
               {/* Female-Specific Section */}
-              <div
-                className="bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 rounded-xl p-6"
-                data-oid="bdg2q4e"
-              >
-                <div
-                  className="flex items-center space-x-3 mb-4"
-                  data-oid="female-section-header"
-                >
-                  <div
-                    className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center"
-                    data-oid="female-section-icon"
-                  >
+              <div className="bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 rounded-xl p-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
                     <svg
                       className="w-4 h-4 text-pink-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      data-oid="pzonzha"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
                         d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        data-oid="zw3jju9"
                       />
                     </svg>
                   </div>
-                  <h4
-                    className="text-lg font-semibold text-pink-900"
-                    data-oid="qq72szf"
-                  >
+                  <h4 className="text-lg font-semibold text-pink-900">
                     Female-Specific Risk Factors
                   </h4>
                 </div>
 
-                <div className="space-y-3" data-oid="3gtxied">
+                <div className="space-y-3">
                   {[
                     {
                       text: "Polycystic Ovarian Syndrome (PCOS)",
@@ -1548,35 +1151,21 @@ const SleepApneaSurvey: React.FC = () => {
                     <label
                       key={index}
                       className="group flex items-start space-x-3 cursor-pointer hover:bg-white/70 p-4 rounded-xl transition-all duration-200 border border-transparent hover:border-pink-200 hover:shadow-md"
-                      data-oid="xnk9mho"
                     >
-                      <div
-                        className="relative"
-                        data-oid="female-checkbox-container"
-                      >
+                      <div className="relative">
                         <input
                           type="checkbox"
                           className="w-5 h-5 text-pink-600 bg-white border-pink-300 rounded-md focus:ring-pink-500 focus:ring-2 mt-0.5 transition-all duration-200"
-                          data-oid="b5-p:74"
                         />
 
-                        <div
-                          className="absolute inset-0 rounded-md bg-pink-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
-                          data-oid="female-hover-bg"
-                        ></div>
+                        <div className="absolute inset-0 rounded-md bg-pink-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"></div>
                       </div>
 
-                      <div className="flex-1" data-oid="female-factor-content">
-                        <span
-                          className="text-slate-700 text-sm font-medium leading-relaxed block"
-                          data-oid="w.4jyzq"
-                        >
+                      <div className="flex-1">
+                        <span className="text-slate-700 text-sm font-medium leading-relaxed block">
                           {factor.text}
                         </span>
-                        <p
-                          className="text-xs text-slate-600 mt-1 leading-relaxed"
-                          data-oid="factor-description"
-                        >
+                        <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                           {factor.description}
                         </p>
                       </div>
@@ -1587,47 +1176,30 @@ const SleepApneaSurvey: React.FC = () => {
             </div>
 
             {/* Enhanced Privacy Note */}
-            <div
-              className="mt-8 pt-6 border-t border-slate-200"
-              data-oid="wwbu2gz"
-            >
-              <div
-                className="bg-slate-50 rounded-xl p-4 border border-slate-200"
-                data-oid="privacy-section"
-              >
-                <div className="flex items-start space-x-3" data-oid="uwutnqy">
-                  <div
-                    className="w-6 h-6 bg-slate-100 rounded-lg flex items-center justify-center mt-0.5"
-                    data-oid="privacy-icon"
-                  >
+            <div className="mt-8 pt-6 border-t border-slate-200">
+              <div className="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-slate-100 rounded-lg flex items-center justify-center mt-0.5">
                     <svg
                       className="w-3 h-3 text-slate-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      data-oid="kmezx5k"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
                         d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                        data-oid="jskqvkd"
                       />
                     </svg>
                   </div>
-                  <div data-oid="privacy-content">
-                    <h5
-                      className="text-sm font-semibold text-slate-800 mb-1"
-                      data-oid="privacy-title"
-                    >
+                  <div>
+                    <h5 className="text-sm font-semibold text-slate-800 mb-1">
                       Confidential Medical Information
                     </h5>
-                    <p
-                      className="text-xs text-slate-600 leading-relaxed"
-                      data-oid="fe9-w-1"
-                    >
-                      <strong className="text-slate-700" data-oid="dm2hzhe">
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      <strong className="text-slate-700">
                         Privacy Assurance:
                       </strong>{" "}
                       All responses are encrypted and shared confidentially with
@@ -1643,64 +1215,47 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Next Steps Section */}
-          <div
-            className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8"
-            data-oid="k:dy4ra"
-          >
-            <h3
-              className="text-lg font-semibold text-blue-900 mb-4 flex items-center"
-              data-oid="9ovz5zi"
-            >
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+            <h3 className="text-lg font-semibold text-blue-900 mb-4 flex items-center">
               <svg
                 className="w-5 h-5 mr-2 text-blue-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                data-oid=".foi00q"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
                   d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                  data-oid="0.6klpw"
                 />
               </svg>
               Recommended Next Steps
             </h3>
-            <div className="space-y-3" data-oid="pu::7v2">
-              <div className="flex items-start space-x-3" data-oid="5pkbu5:">
-                <div
-                  className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5"
-                  data-oid="90gnq9k"
-                >
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5">
                   1
                 </div>
-                <p className="text-blue-800 leading-relaxed" data-oid="xzfku96">
+                <p className="text-blue-800 leading-relaxed">
                   A licensed healthcare professional from our team will contact
                   you within 24-48 hours to discuss your results.
                 </p>
               </div>
-              <div className="flex items-start space-x-3" data-oid="p-uzmq:">
-                <div
-                  className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5"
-                  data-oid="i3maa_z"
-                >
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5">
                   2
                 </div>
-                <p className="text-blue-800 leading-relaxed" data-oid="8.1ezkk">
+                <p className="text-blue-800 leading-relaxed">
                   We will review your medical history and current symptoms to
                   develop a personalized care plan.
                 </p>
               </div>
-              <div className="flex items-start space-x-3" data-oid="-hcajb4">
-                <div
-                  className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5"
-                  data-oid="7a4kuu1"
-                >
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mt-0.5">
                   3
                 </div>
-                <p className="text-blue-800 leading-relaxed" data-oid=":lms4ma">
+                <p className="text-blue-800 leading-relaxed">
                   If indicated, we will coordinate appropriate referrals and
                   treatment options tailored to your needs.
                 </p>
@@ -1709,73 +1264,41 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Email Results Option - Enhanced Professional Design */}
-          <div className="mb-8" data-oid="h5xd6j2">
-            <div
-              className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300"
-              data-oid="email-results-container"
-            >
+          <div className="mb-8">
+            <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300">
               {/* Header Section */}
-              <div
-                className="flex items-center justify-between mb-4"
-                data-oid="email-header"
-              >
-                <div
-                  className="flex items-center space-x-3"
-                  data-oid="header-content"
-                >
-                  <div
-                    className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md"
-                    data-oid="email-icon-container"
-                  >
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
                     <svg
                       className="w-5 h-5 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      data-oid="email-icon"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
                         d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        data-oid="email-path"
                       />
                     </svg>
                   </div>
-                  <div data-oid="header-text">
-                    <h3
-                      className="text-lg font-semibold text-slate-900"
-                      data-oid="email-title"
-                    >
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-900">
                       Digital Report Delivery
                     </h3>
-                    <p
-                      className="text-sm text-slate-600"
-                      data-oid="email-subtitle"
-                    >
+                    <p className="text-sm text-slate-600">
                       Secure and convenient access to your results
                     </p>
                   </div>
                 </div>
 
                 {/* Professional badge */}
-                <div
-                  className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-1.5"
-                  data-oid="professional-badge"
-                >
-                  <div
-                    className="flex items-center space-x-2"
-                    data-oid="n_ctd1q"
-                  >
-                    <div
-                      className="w-2 h-2 bg-blue-500 rounded-full"
-                      data-oid="c:xa74f"
-                    ></div>
-                    <span
-                      className="text-xs font-semibold text-blue-700 uppercase tracking-wide"
-                      data-oid="4csi89r"
-                    >
+                <div className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-1.5">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">
                       Optional
                     </span>
                   </div>
@@ -1783,69 +1306,45 @@ const SleepApneaSurvey: React.FC = () => {
               </div>
 
               {/* Main Checkbox Option */}
-              <label
-                className="group flex items-start space-x-4 cursor-pointer p-4 rounded-xl border-2 border-transparent hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-200"
-                data-oid="ar5pwga"
-              >
-                <div className="relative mt-1" data-oid="ynnmw6b">
+              <label className="group flex items-start space-x-4 cursor-pointer p-4 rounded-xl border-2 border-transparent hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-200">
+                <div className="relative mt-1">
                   <input
                     type="checkbox"
                     checked={emailResults}
                     onChange={(e) => setEmailResults(e.target.checked)}
                     className="w-5 h-5 text-blue-600 bg-white border-slate-300 rounded-md focus:ring-blue-500 focus:ring-2 transition-all duration-200"
-                    data-oid="cmk3r11"
                   />
 
                   {/* Custom checkbox enhancement */}
-                  <div
-                    className="absolute inset-0 rounded-md bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
-                    data-oid="checkbox-hover-bg"
-                  ></div>
+                  <div className="absolute inset-0 rounded-md bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"></div>
                 </div>
 
-                <div className="flex-1" data-oid="checkbox-content">
-                  <div
-                    className="flex items-center space-x-3 mb-2"
-                    data-oid="main-option"
-                  >
-                    <span
-                      className="text-slate-900 font-semibold text-base"
-                      data-oid="main-text"
-                    >
+                <div className="flex-1">
+                  <div className="flex items-center space-x-3 mb-2">
+                    <span className="text-slate-900 font-semibold text-base">
                       Email me a secure copy of my assessment results
                     </span>
 
                     {/* Security indicator */}
-                    <div
-                      className="flex items-center space-x-1 bg-green-100 px-2 py-1 rounded-full"
-                      data-oid="security-indicator"
-                    >
+                    <div className="flex items-center space-x-1 bg-green-100 px-2 py-1 rounded-full">
                       <svg
                         className="w-3 h-3 text-green-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="security-icon"
                       >
                         <path
                           fillRule="evenodd"
                           d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="security-path"
                         />
                       </svg>
-                      <span
-                        className="text-xs font-medium text-green-700"
-                        data-oid="security-text"
-                      >
+                      <span className="text-xs font-medium text-green-700">
                         Encrypted
                       </span>
                     </div>
                   </div>
 
-                  <p
-                    className="text-sm text-slate-600 leading-relaxed"
-                    data-oid="exum5yl"
-                  >
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     Receive a comprehensive PDF report with your STOP-BANG
                     assessment results, clinical interpretation, and
                     personalized recommendations delivered securely to your
@@ -1853,10 +1352,7 @@ const SleepApneaSurvey: React.FC = () => {
                   </p>
 
                   {/* Feature highlights */}
-                  <div
-                    className="mt-3 flex flex-wrap gap-2"
-                    data-oid="feature-highlights"
-                  >
+                  <div className="mt-3 flex flex-wrap gap-2">
                     {[
                       { icon: "📊", text: "Detailed Analysis" },
                       { icon: "🔒", text: "HIPAA Compliant" },
@@ -1866,18 +1362,9 @@ const SleepApneaSurvey: React.FC = () => {
                       <div
                         key={index}
                         className="flex items-center space-x-1 bg-slate-100 px-2 py-1 rounded-md"
-                        data-oid={`feature-${index}`}
                       >
-                        <span
-                          className="text-xs"
-                          data-oid={`feature-icon-${index}`}
-                        >
-                          {feature.icon}
-                        </span>
-                        <span
-                          className="text-xs font-medium text-slate-700"
-                          data-oid={`feature-text-${index}`}
-                        >
+                        <span className="text-xs">{feature.icon}</span>
+                        <span className="text-xs font-medium text-slate-700">
                           {feature.text}
                         </span>
                       </div>
@@ -1888,110 +1375,51 @@ const SleepApneaSurvey: React.FC = () => {
 
               {/* Enhanced Confirmation Message */}
               {emailResults && (
-                <div
-                  className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 shadow-sm"
-                  data-oid="1a3cl1x"
-                >
-                  <div
-                    className="flex items-start space-x-3"
-                    data-oid="confirmation-content"
-                  >
-                    <div
-                      className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                      data-oid="confirmation-icon-container"
-                    >
+                <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 shadow-sm">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg
                         className="w-4 h-4 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="bhoavw8"
                       >
                         <path
                           fillRule="evenodd"
                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                           clipRule="evenodd"
-                          data-oid="5724366"
                         />
                       </svg>
                     </div>
-                    <div
-                      className="flex-1"
-                      data-oid="confirmation-text-container"
-                    >
-                      <h4
-                        className="text-sm font-semibold text-blue-900 mb-1"
-                        data-oid="confirmation-title"
-                      >
+                    <div className="flex-1">
+                      <h4 className="text-sm font-semibold text-blue-900 mb-1">
                         Email Delivery Confirmed
                       </h4>
-                      <p
-                        className="text-sm text-blue-700 leading-relaxed mb-2"
-                        data-oid="rq06w7r"
-                      >
+                      <p className="text-sm text-blue-700 leading-relaxed mb-2">
                         Your comprehensive assessment report will be securely
                         delivered to your registered email address within 24-48
                         hours.
                       </p>
 
                       {/* Delivery timeline */}
-                      <div
-                        className="bg-white/70 rounded-lg p-3 border border-blue-100"
-                        data-oid="delivery-timeline"
-                      >
-                        <div
-                          className="flex items-center justify-between text-xs"
-                          data-oid="timeline-content"
-                        >
-                          <div
-                            className="flex items-center space-x-2"
-                            data-oid="timeline-step-1"
-                          >
-                            <div
-                              className="w-2 h-2 bg-blue-500 rounded-full"
-                              data-oid="step-1-dot"
-                            ></div>
-                            <span
-                              className="text-blue-700 font-medium"
-                              data-oid="step-1-text"
-                            >
+                      <div className="bg-white/70 rounded-lg p-3 border border-blue-100">
+                        <div className="flex items-center justify-between text-xs">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span className="text-blue-700 font-medium">
                               Assessment Complete
                             </span>
                           </div>
-                          <div
-                            className="flex-1 h-px bg-blue-200 mx-2"
-                            data-oid="timeline-line"
-                          ></div>
-                          <div
-                            className="flex items-center space-x-2"
-                            data-oid="timeline-step-2"
-                          >
-                            <div
-                              className="w-2 h-2 bg-blue-300 rounded-full"
-                              data-oid="step-2-dot"
-                            ></div>
-                            <span
-                              className="text-blue-600"
-                              data-oid="step-2-text"
-                            >
+                          <div className="flex-1 h-px bg-blue-200 mx-2"></div>
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-blue-300 rounded-full"></div>
+                            <span className="text-blue-600">
                               Professional Review
                             </span>
                           </div>
-                          <div
-                            className="flex-1 h-px bg-blue-200 mx-2"
-                            data-oid="timeline-line-2"
-                          ></div>
-                          <div
-                            className="flex items-center space-x-2"
-                            data-oid="timeline-step-3"
-                          >
-                            <div
-                              className="w-2 h-2 bg-green-500 rounded-full"
-                              data-oid="step-3-dot"
-                            ></div>
-                            <span
-                              className="text-green-700 font-medium"
-                              data-oid="step-3-text"
-                            >
+                          <div className="flex-1 h-px bg-blue-200 mx-2"></div>
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span className="text-green-700 font-medium">
                               Email Delivered
                             </span>
                           </div>
@@ -2003,32 +1431,21 @@ const SleepApneaSurvey: React.FC = () => {
               )}
 
               {/* Privacy Notice */}
-              <div
-                className="mt-4 pt-4 border-t border-slate-200"
-                data-oid="privacy-notice"
-              >
-                <div className="flex items-start space-x-2" data-oid="0oxs.u_">
+              <div className="mt-4 pt-4 border-t border-slate-200">
+                <div className="flex items-start space-x-2">
                   <svg
                     className="w-4 h-4 text-slate-500 mt-0.5 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="cfod0_0"
                   >
                     <path
                       fillRule="evenodd"
                       d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                       clipRule="evenodd"
-                      data-oid="privacy-path"
                     />
                   </svg>
-                  <p
-                    className="text-xs text-slate-600 leading-relaxed"
-                    data-oid="privacy-text"
-                  >
-                    <strong
-                      className="text-slate-700"
-                      data-oid="privacy-emphasis"
-                    >
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    <strong className="text-slate-700">
                       Privacy Protected:
                     </strong>
                     All email communications are encrypted and comply with HIPAA
@@ -2041,248 +1458,162 @@ const SleepApneaSurvey: React.FC = () => {
           </div>
 
           {/* Enhanced Professional Action Buttons */}
-          <div className="mb-8" data-oid="h-upvrv">
-            <div
-              className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 border border-slate-200 shadow-lg"
-              data-oid="action-buttons-container"
-            >
+          <div className="mb-8">
+            <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 border border-slate-200 shadow-lg">
               {/* Header Section */}
-              <div className="text-center mb-6" data-oid="action-header">
-                <div
-                  className="w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg"
-                  data-oid="action-icon-container"
-                >
+              <div className="text-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="action-icon"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
-                      data-oid="action-path"
                     />
                   </svg>
                 </div>
-                <h3
-                  className="text-xl font-bold text-slate-900 mb-2"
-                  data-oid="action-title"
-                >
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
                   Assessment Actions
                 </h3>
-                <p
-                  className="text-sm text-slate-600"
-                  data-oid="action-subtitle"
-                >
+                <p className="text-sm text-slate-600">
                   Choose how you'd like to proceed with your results
                 </p>
               </div>
 
               {/* Action Buttons Grid */}
-              <div
-                className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto"
-                data-oid="action-buttons-grid"
-              >
+              <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
                 {/* Print Report Button */}
-                <div
-                  className="group relative overflow-hidden rounded-xl border-2 border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-lg"
-                  data-oid="print-button-container"
-                >
+                <div className="group relative overflow-hidden rounded-xl border-2 border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-lg">
                   <button
                     onClick={() => window.print()}
                     className="w-full p-6 bg-gradient-to-br from-white to-slate-50 hover:from-slate-50 hover:to-slate-100 transition-all duration-300 flex flex-col items-center text-center group-hover:scale-[1.02] transform"
-                    data-oid="mldwcg8"
                   >
                     {/* Icon Container */}
-                    <div
-                      className="w-14 h-14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-slate-200 group-hover:to-slate-300 transition-all duration-300 shadow-md"
-                      data-oid="print-icon-container"
-                    >
+                    <div className="w-14 h-14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-slate-200 group-hover:to-slate-300 transition-all duration-300 shadow-md">
                       <svg
                         className="w-7 h-7 text-slate-600 group-hover:text-slate-700 transition-colors duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        data-oid="-jmb_u3"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
                           d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
-                          data-oid="g_g2jur"
                         />
                       </svg>
                     </div>
 
                     {/* Button Content */}
-                    <div data-oid="print-button-content">
-                      <h4
-                        className="text-lg font-semibold text-slate-900 mb-2"
-                        data-oid="print-title"
-                      >
+                    <div>
+                      <h4 className="text-lg font-semibold text-slate-900 mb-2">
                         Print Report
                       </h4>
-                      <p
-                        className="text-sm text-slate-600 leading-relaxed mb-3"
-                        data-oid="print-description"
-                      >
+                      <p className="text-sm text-slate-600 leading-relaxed mb-3">
                         Generate a professional PDF copy of your complete
                         assessment results
                       </p>
 
                       {/* Feature badges */}
-                      <div
-                        className="flex flex-wrap justify-center gap-2"
-                        data-oid="print-features"
-                      >
-                        <span
-                          className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-medium"
-                          data-oid="print-feature-1"
-                        >
+                      <div className="flex flex-wrap justify-center gap-2">
+                        <span className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-medium">
                           📄 PDF Format
                         </span>
-                        <span
-                          className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-medium"
-                          data-oid="print-feature-2"
-                        >
+                        <span className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-medium">
                           🖨️ Print Ready
                         </span>
                       </div>
                     </div>
 
                     {/* Hover indicator */}
-                    <div
-                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-400 to-slate-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
-                      data-oid="print-hover-indicator"
-                    ></div>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-400 to-slate-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </button>
                 </div>
 
                 {/* New Assessment Button */}
-                <div
-                  className="group relative overflow-hidden rounded-xl border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg"
-                  data-oid="restart-button-container"
-                >
+                <div className="group relative overflow-hidden rounded-xl border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg">
                   <button
                     onClick={restartSurvey}
                     className="w-full p-6 bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-150 transition-all duration-300 flex flex-col items-center text-center group-hover:scale-[1.02] transform"
-                    data-oid="mrad_xd"
                   >
                     {/* Icon Container */}
-                    <div
-                      className="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300 shadow-md"
-                      data-oid="restart-icon-container"
-                    >
+                    <div className="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300 shadow-md">
                       <svg
                         className="w-7 h-7 text-blue-600 group-hover:text-blue-700 transition-colors duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        data-oid="ypt__0n"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
                           d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                          data-oid="g476ivt"
                         />
                       </svg>
                     </div>
 
                     {/* Button Content */}
-                    <div data-oid="restart-button-content">
-                      <h4
-                        className="text-lg font-semibold text-slate-900 mb-2"
-                        data-oid="restart-title"
-                      >
+                    <div>
+                      <h4 className="text-lg font-semibold text-slate-900 mb-2">
                         New Assessment
                       </h4>
-                      <p
-                        className="text-sm text-slate-600 leading-relaxed mb-3"
-                        data-oid="restart-description"
-                      >
+                      <p className="text-sm text-slate-600 leading-relaxed mb-3">
                         Start fresh with a new STOP-BANG assessment
                         questionnaire
                       </p>
 
                       {/* Feature badges */}
-                      <div
-                        className="flex flex-wrap justify-center gap-2"
-                        data-oid="restart-features"
-                      >
-                        <span
-                          className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium"
-                          data-oid="restart-feature-1"
-                        >
+                      <div className="flex flex-wrap justify-center gap-2">
+                        <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">
                           🔄 Fresh Start
                         </span>
-                        <span
-                          className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium"
-                          data-oid="restart-feature-2"
-                        >
+                        <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">
                           📋 New Form
                         </span>
                       </div>
                     </div>
 
                     {/* Hover indicator */}
-                    <div
-                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
-                      data-oid="restart-hover-indicator"
-                    ></div>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </button>
                 </div>
               </div>
 
               {/* Additional Options */}
-              <div
-                className="mt-6 pt-6 border-t border-slate-200"
-                data-oid="additional-options"
-              >
-                <div
-                  className="text-center"
-                  data-oid="additional-options-content"
-                >
-                  <p
-                    className="text-sm text-slate-600 mb-4"
-                    data-oid="additional-options-text"
-                  >
+              <div className="mt-6 pt-6 border-t border-slate-200">
+                <div className="text-center">
+                  <p className="text-sm text-slate-600 mb-4">
                     Need help or have questions about your results?
                   </p>
 
-                  <div
-                    className="flex flex-wrap justify-center gap-3"
-                    data-oid="help-options"
-                  >
+                  <div className="flex flex-wrap justify-center gap-3">
                     <button
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "smooth" })
                       }
                       className="inline-flex items-center space-x-2 text-sm text-slate-600 hover:text-slate-800 transition-colors duration-200 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg"
-                      data-oid="scroll-to-top"
                     >
                       <svg
                         className="w-4 h-4"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        data-oid="scroll-icon"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
                           d="M5 10l7-7m0 0l7 7m-7-7v18"
-                          data-oid="scroll-path"
                         />
                       </svg>
-                      <span data-oid="scroll-text">Back to Top</span>
+                      <span>Back to Top</span>
                     </button>
 
                     <button
@@ -2293,92 +1624,68 @@ const SleepApneaSurvey: React.FC = () => {
                         element?.scrollIntoView({ behavior: "smooth" });
                       }}
                       className="inline-flex items-center space-x-2 text-sm text-blue-600 hover:text-blue-800 transition-colors duration-200 bg-blue-100 hover:bg-blue-200 px-3 py-2 rounded-lg"
-                      data-oid="email-options"
                     >
                       <svg
                         className="w-4 h-4"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        data-oid="m3m4um:"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
                           d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                          data-oid="jse6qba"
                         />
                       </svg>
-                      <span data-oid="email-text">Email Options</span>
+                      <span>Email Options</span>
                     </button>
                   </div>
                 </div>
               </div>
 
               {/* Professional Footer */}
-              <div
-                className="mt-6 pt-4 border-t border-slate-200"
-                data-oid="action-footer"
-              >
-                <div
-                  className="flex items-center justify-center space-x-2 text-xs text-slate-500"
-                  data-oid="action-footer-content"
-                >
+              <div className="mt-6 pt-4 border-t border-slate-200">
+                <div className="flex items-center justify-center space-x-2 text-xs text-slate-500">
                   <svg
                     className="w-3 h-3"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="8m7szpv"
                   >
                     <path
                       fillRule="evenodd"
                       d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                       clipRule="evenodd"
-                      data-oid="ca_u_u5"
                     />
                   </svg>
-                  <span data-oid="k2r29ql">
-                    All actions are secure and HIPAA compliant
-                  </span>
+                  <span>All actions are secure and HIPAA compliant</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Professional Disclaimer */}
-          <div className="border-t border-slate-200 pt-6" data-oid="qsjx0t7">
-            <div
-              className="bg-amber-50 border border-amber-200 rounded-lg p-4"
-              data-oid="prubqce"
-            >
-              <div className="flex items-start space-x-3" data-oid="arp:4.r">
+          <div className="border-t border-slate-200 pt-6">
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <div className="flex items-start space-x-3">
                 <svg
                   className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  data-oid="xsu_mpm"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
                     d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16c-.77.833.192 2.5 1.732 2.5z"
-                    data-oid="h5az6v."
                   />
                 </svg>
-                <div data-oid=":i24g0u">
-                  <h4
-                    className="font-semibold text-amber-800 mb-1"
-                    data-oid="a5r7l.b"
-                  >
+                <div>
+                  <h4 className="font-semibold text-amber-800 mb-1">
                     Medical Disclaimer
                   </h4>
-                  <p
-                    className="text-sm text-amber-700 leading-relaxed"
-                    data-oid=".n9zhhp"
-                  >
+                  <p className="text-sm text-amber-700 leading-relaxed">
                     This STOP-BANG assessment is a validated screening tool for
                     educational and preliminary evaluation purposes only. It
                     does not constitute a medical diagnosis and should not
@@ -2397,7 +1704,7 @@ const SleepApneaSurvey: React.FC = () => {
 
   // Show results if survey is completed
   if (showResults && surveyResults) {
-    return <ResultsDisplay results={surveyResults} data-oid=".1dn7-5" />;
+    return <ResultsDisplay results={surveyResults} />;
   }
 
   // Rest of the original components (YesNoQuestion, BMICalculator, etc.)
@@ -2421,43 +1728,27 @@ const SleepApneaSurvey: React.FC = () => {
             "shadow-md": isAnswered,
           },
         )}
-        data-oid="y4v2ot-"
       >
-        <div
-          className="flex items-start justify-between mb-2"
-          data-oid="ihq1jl1"
-        >
-          <h3
-            className="text-lg font-semibold text-gray-900"
-            data-oid="798u7ac"
-          >
-            {title}
-          </h3>
+        <div className="flex items-start justify-between mb-2">
+          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
           {isAnswered && (
-            <div
-              className="flex items-center text-sm text-green-600 bg-green-100 px-2 py-1 rounded-full"
-              data-oid="y_._puv"
-            >
+            <div className="flex items-center text-sm text-green-600 bg-green-100 px-2 py-1 rounded-full">
               <svg
                 className="w-4 h-4 mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                data-oid="zx46fa:"
               >
                 <path
                   fillRule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clipRule="evenodd"
-                  data-oid=":nff89-"
                 />
               </svg>
               Answered
             </div>
           )}
         </div>
-        <p className="text-gray-600 mb-4" data-oid="s:asnto">
-          {description}
-        </p>
+        <p className="text-gray-600 mb-4">{description}</p>
 
         <Controller
           name={name}
@@ -2466,7 +1757,7 @@ const SleepApneaSurvey: React.FC = () => {
             validate: (value) => value !== null || "This question is required",
           }}
           render={({ field }) => (
-            <div className="flex space-x-4" data-oid="fizbvam">
+            <div className="flex space-x-4">
               <label
                 className={classNames(
                   "flex items-center space-x-3 cursor-pointer p-4 rounded-lg border-2 transition-all duration-200 flex-1",
@@ -2478,7 +1769,6 @@ const SleepApneaSurvey: React.FC = () => {
                     "opacity-50 cursor-not-allowed": disabled,
                   },
                 )}
-                data-oid="g9l2tem"
               >
                 <input
                   type="radio"
@@ -2491,7 +1781,6 @@ const SleepApneaSurvey: React.FC = () => {
                   }}
                   disabled={disabled}
                   className="sr-only"
-                  data-oid="miqyx2_"
                 />
 
                 <div
@@ -2502,13 +1791,9 @@ const SleepApneaSurvey: React.FC = () => {
                       "border-gray-400": field.value !== true,
                     },
                   )}
-                  data-oid="-5mm5oo"
                 >
                   {field.value === true && (
-                    <div
-                      className="w-2 h-2 bg-white rounded-full animate-pulse"
-                      data-oid="fkzs15t"
-                    />
+                    <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
                   )}
                 </div>
                 <span
@@ -2519,7 +1804,6 @@ const SleepApneaSurvey: React.FC = () => {
                       "text-gray-900": field.value !== true,
                     },
                   )}
-                  data-oid="2vdbm6s"
                 >
                   Yes
                 </span>
@@ -2536,7 +1820,6 @@ const SleepApneaSurvey: React.FC = () => {
                     "opacity-50 cursor-not-allowed": disabled,
                   },
                 )}
-                data-oid="1jyw5l."
               >
                 <input
                   type="radio"
@@ -2549,7 +1832,6 @@ const SleepApneaSurvey: React.FC = () => {
                   }}
                   disabled={disabled}
                   className="sr-only"
-                  data-oid="7c81t1d"
                 />
 
                 <div
@@ -2560,13 +1842,9 @@ const SleepApneaSurvey: React.FC = () => {
                       "border-gray-400": field.value !== false,
                     },
                   )}
-                  data-oid="t6zceda"
                 >
                   {field.value === false && (
-                    <div
-                      className="w-2 h-2 bg-white rounded-full animate-pulse"
-                      data-oid="l.kgybs"
-                    />
+                    <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
                   )}
                 </div>
                 <span
@@ -2577,43 +1855,33 @@ const SleepApneaSurvey: React.FC = () => {
                       "text-gray-900": field.value !== false,
                     },
                   )}
-                  data-oid="44.mr__"
                 >
                   No
                 </span>
               </label>
             </div>
           )}
-          data-oid="k881as4"
         />
 
         {errors[name] && (
-          <div
-            className="mt-3 p-3 bg-red-50 border border-red-200 rounded-md"
-            data-oid="ci3wh8w"
-          >
-            <p
-              className="text-sm text-red-600 flex items-center"
-              data-oid="k-of_su"
-            >
+          <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-md">
+            <p className="text-sm text-red-600 flex items-center">
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                data-oid="jds9xkq"
               >
                 <path
                   fillRule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                   clipRule="evenodd"
-                  data-oid="j4anmzz"
                 />
               </svg>
               {errors[name]?.message}
             </p>
           </div>
         )}
-        {!errors[name] && <div className="mt-3 h-0" data-oid="0mn0a-i" />}
+        {!errors[name] && <div className="mt-3 h-0" />}
       </div>
     );
   });
@@ -2664,72 +1932,45 @@ const SleepApneaSurvey: React.FC = () => {
     };
 
     return (
-      <div
-        className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-        data-oid="dyoup6m"
-      >
-        <h3
-          className="text-lg font-semibold text-gray-900 mb-2"
-          data-oid="qe6eevt"
-        >
+      <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h3 className="text-lg font-semibold text-gray-900 mb-2">
           BMI Calculator
         </h3>
-        <p className="text-gray-600 mb-4" data-oid="ivxegrk">
+        <p className="text-gray-600 mb-4">
           Calculate your BMI to determine if it's over 35.
         </p>
 
-        <div className="mb-4" data-oid="xirhzwy">
-          <p
-            className="text-sm font-medium text-gray-700 mb-2"
-            data-oid="n38mt9s"
-          >
+        <div className="mb-4">
+          <p className="text-sm font-medium text-gray-700 mb-2">
             Select units:
           </p>
-          <div className="flex space-x-4" data-oid="4cpfj4r">
-            <label
-              className="flex items-center space-x-2 cursor-pointer"
-              data-oid="tkgkvj8"
-            >
+          <div className="flex space-x-4">
+            <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="radio"
                 checked={units === "metric"}
                 onChange={() => setUnits("metric")}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500"
-                data-oid="pi5dlad"
               />
 
-              <span className="text-gray-900" data-oid="oizzeja">
-                cm / kg
-              </span>
+              <span className="text-gray-900">cm / kg</span>
             </label>
-            <label
-              className="flex items-center space-x-2 cursor-pointer"
-              data-oid="_fs9aan"
-            >
+            <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="radio"
                 checked={units === "imperial"}
                 onChange={() => setUnits("imperial")}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500"
-                data-oid="xging:."
               />
 
-              <span className="text-gray-900" data-oid="90j7nfa">
-                in / lb
-              </span>
+              <span className="text-gray-900">in / lb</span>
             </label>
           </div>
         </div>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4"
-          data-oid="9pqz7g4"
-        >
-          <div data-oid="i8snnza">
-            <label
-              className="block text-sm font-medium text-gray-700 mb-1"
-              data-oid="uo_k_e_"
-            >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
               Height ({units === "metric" ? "cm" : "in"})
             </label>
             <input
@@ -2741,15 +1982,11 @@ const SleepApneaSurvey: React.FC = () => {
               value={height}
               onChange={(e) => setHeight(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid=":c0qouh"
             />
           </div>
 
-          <div data-oid="9dhsbp9">
-            <label
-              className="block text-sm font-medium text-gray-700 mb-1"
-              data-oid="frz5xz-"
-            >
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
               Weight ({units === "metric" ? "kg" : "lb"})
             </label>
             <input
@@ -2761,12 +1998,11 @@ const SleepApneaSurvey: React.FC = () => {
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="e-xiol2"
             />
           </div>
         </div>
 
-        <div className="mb-4" data-oid="b-d79px">
+        <div className="mb-4">
           <button
             type="button"
             onClick={calculateBMI}
@@ -2780,7 +2016,6 @@ const SleepApneaSurvey: React.FC = () => {
                   !height || !weight,
               },
             )}
-            data-oid="s1jwsge"
           >
             Calculate BMI
           </button>
@@ -2789,7 +2024,6 @@ const SleepApneaSurvey: React.FC = () => {
               type="button"
               onClick={resetCalculator}
               className="px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium"
-              data-oid="jug:xja"
             >
               Reset
             </button>
@@ -2797,16 +2031,13 @@ const SleepApneaSurvey: React.FC = () => {
         </div>
 
         {showBMI && localBMI && (
-          <div className="bg-blue-50 p-4 rounded-lg mb-4" data-oid="2yj7mxw">
-            <p className="text-sm font-medium text-blue-900" data-oid="y80eiw9">
-              Your BMI:{" "}
-              <span className="text-lg font-bold" data-oid="zkyfujk">
-                {localBMI}
-              </span>
+          <div className="bg-blue-50 p-4 rounded-lg mb-4">
+            <p className="text-sm font-medium text-blue-900">
+              Your BMI: <span className="text-lg font-bold">{localBMI}</span>
             </p>
-            <p className="text-sm text-blue-700 mt-1" data-oid="otvki56">
+            <p className="text-sm text-blue-700 mt-1">
               BMI over 35:{" "}
-              <span className="font-semibold" data-oid="38117x9">
+              <span className="font-semibold">
                 {localBMI > 35 ? "Yes" : "No"}
               </span>
             </p>
@@ -2850,22 +2081,13 @@ const SleepApneaSurvey: React.FC = () => {
           <BMICalculator
             onBMICalculated={handleBMICalculated}
             onReset={handleReset}
-            data-oid="dy3q:cq"
           />
 
-          <div
-            className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mt-6"
-            data-oid="rkmgs6e"
-          >
-            <h3
-              className="text-lg font-semibold text-gray-900 mb-2"
-              data-oid="xyez0yu"
-            >
+          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mt-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
               BMI &gt; 35
             </h3>
-            <p className="text-gray-600 mb-4" data-oid="sd-oq46">
-              Is your BMI over 35?
-            </p>
+            <p className="text-gray-600 mb-4">Is your BMI over 35?</p>
 
             <Controller
               name="bmiOver35"
@@ -2875,7 +2097,7 @@ const SleepApneaSurvey: React.FC = () => {
                   value !== null || "This question is required",
               }}
               render={({ field }) => (
-                <div className="flex space-x-4" data-oid="amhkqma">
+                <div className="flex space-x-4">
                   <label
                     className={classNames(
                       "flex items-center space-x-2 cursor-pointer p-3 rounded-lg border-2 transition-all",
@@ -2886,7 +2108,6 @@ const SleepApneaSurvey: React.FC = () => {
                         "opacity-50 cursor-not-allowed": isDisabled,
                       },
                     )}
-                    data-oid="vn9c..b"
                   >
                     <input
                       type="radio"
@@ -2894,7 +2115,6 @@ const SleepApneaSurvey: React.FC = () => {
                       onChange={() => !isDisabled && field.onChange(true)}
                       disabled={isDisabled}
                       className="sr-only"
-                      data-oid="isy8qq1"
                     />
 
                     <div
@@ -2905,21 +2125,12 @@ const SleepApneaSurvey: React.FC = () => {
                           "border-gray-300": field.value !== true,
                         },
                       )}
-                      data-oid="_mt:fhd"
                     >
                       {field.value === true && (
-                        <div
-                          className="w-2 h-2 bg-white rounded-full"
-                          data-oid="pzm-8vh"
-                        />
+                        <div className="w-2 h-2 bg-white rounded-full" />
                       )}
                     </div>
-                    <span
-                      className="font-medium text-gray-900"
-                      data-oid="-z.v1aa"
-                    >
-                      Yes
-                    </span>
+                    <span className="font-medium text-gray-900">Yes</span>
                   </label>
 
                   <label
@@ -2932,7 +2143,6 @@ const SleepApneaSurvey: React.FC = () => {
                         "opacity-50 cursor-not-allowed": isDisabled,
                       },
                     )}
-                    data-oid="dl7.:fc"
                   >
                     <input
                       type="radio"
@@ -2940,7 +2150,6 @@ const SleepApneaSurvey: React.FC = () => {
                       onChange={() => !isDisabled && field.onChange(false)}
                       disabled={isDisabled}
                       className="sr-only"
-                      data-oid="gwcrs9-"
                     />
 
                     <div
@@ -2951,40 +2160,28 @@ const SleepApneaSurvey: React.FC = () => {
                           "border-gray-300": field.value !== false,
                         },
                       )}
-                      data-oid="rn0rmtr"
                     >
                       {field.value === false && (
-                        <div
-                          className="w-2 h-2 bg-white rounded-full"
-                          data-oid="nkyhyzi"
-                        />
+                        <div className="w-2 h-2 bg-white rounded-full" />
                       )}
                     </div>
-                    <span
-                      className="font-medium text-gray-900"
-                      data-oid="6rp-u32"
-                    >
-                      No
-                    </span>
+                    <span className="font-medium text-gray-900">No</span>
                   </label>
                 </div>
               )}
-              data-oid="xn-87o6"
             />
 
             {errors.bmiOver35 && (
-              <div className="mt-2 h-6" data-oid="qqm3-r3">
-                <p className="text-sm text-red-600" data-oid="wsxpud7">
+              <div className="mt-2 h-6">
+                <p className="text-sm text-red-600">
                   {errors.bmiOver35?.message}
                 </p>
               </div>
             )}
-            {!errors.bmiOver35 && (
-              <div className="mt-2 h-6" data-oid="5v7xixe" />
-            )}
+            {!errors.bmiOver35 && <div className="mt-2 h-6" />}
 
             {bmiCalculated && (
-              <p className="text-xs text-gray-500 mt-2" data-oid="m75enki">
+              <p className="text-xs text-gray-500 mt-2">
                 * This question has been automatically set based on your
                 calculated BMI
               </p>
@@ -2995,28 +2192,13 @@ const SleepApneaSurvey: React.FC = () => {
     });
 
   const BMISection: React.FC = React.memo(() => (
-    <Question5
-      control={control}
-      setValue={setValue}
-      errors={errors}
-      data-oid=".4f17uw"
-    />
+    <Question5 control={control} setValue={setValue} errors={errors} />
   ));
 
   const AgeInput: React.FC = React.memo(() => (
-    <div
-      className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-      data-oid="0zik20:"
-    >
-      <h3
-        className="text-lg font-semibold text-gray-900 mb-2"
-        data-oid="ebndi14"
-      >
-        Age
-      </h3>
-      <p className="text-gray-600 mb-4" data-oid="kzzzqt_">
-        Please enter your age.
-      </p>
+    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Age</h3>
+      <p className="text-gray-600 mb-4">Please enter your age.</p>
 
       <Controller
         name="age"
@@ -3040,16 +2222,12 @@ const SleepApneaSurvey: React.FC = () => {
             }}
             onBlur={field.onBlur}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
-            data-oid="a21kg9s"
           />
         )}
-        data-oid="eote.hs"
       />
 
       {errors.age && (
-        <p className="mb-4 text-sm text-red-600" data-oid="5ch_vu0">
-          {errors.age.message}
-        </p>
+        <p className="mb-4 text-sm text-red-600">{errors.age.message}</p>
       )}
 
       <YesNoQuestion
@@ -3057,27 +2235,18 @@ const SleepApneaSurvey: React.FC = () => {
         title="Age > 50"
         description="Are you over 50 years old?"
         disabled={true}
-        data-oid="sgtzzar"
       />
     </div>
   ));
 
   const NeckSizeInput: React.FC = React.memo(() => (
-    <div
-      className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-      data-oid="pz4z3h7"
-    >
-      <h3
-        className="text-lg font-semibold text-gray-900 mb-2"
-        data-oid="5v7ujoc"
-      >
-        Neck Size
-      </h3>
-      <p className="text-gray-600 mb-4" data-oid="u_wx67u">
+    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Neck Size</h3>
+      <p className="text-gray-600 mb-4">
         Please measure your neck circumference.
       </p>
 
-      <div className="flex space-x-2 mb-4" data-oid="5_rcv0c">
+      <div className="flex space-x-2 mb-4">
         <Controller
           name="neckSize"
           control={control}
@@ -3102,10 +2271,8 @@ const SleepApneaSurvey: React.FC = () => {
               }}
               onBlur={field.onBlur}
               className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="-:5e8dt"
             />
           )}
-          data-oid="3921vr3"
         />
 
         <Controller
@@ -3122,23 +2289,15 @@ const SleepApneaSurvey: React.FC = () => {
                 );
               }}
               className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="x54qhtr"
             >
-              <option value="inches" data-oid="-lh:izh">
-                inches
-              </option>
-              <option value="cm" data-oid="5oo-c:3">
-                cm
-              </option>
+              <option value="inches">inches</option>
+              <option value="cm">cm</option>
             </select>
           )}
-          data-oid="rd3xkym"
         />
       </div>
       {errors.neckSize && (
-        <p className="mb-4 text-sm text-red-600" data-oid="e2z0fub">
-          {errors.neckSize.message}
-        </p>
+        <p className="mb-4 text-sm text-red-600">{errors.neckSize.message}</p>
       )}
 
       <YesNoQuestion
@@ -3146,7 +2305,6 @@ const SleepApneaSurvey: React.FC = () => {
         title="Neck Size > 16 inches"
         description="Is your neck circumference greater than 16 inches (40cm)?"
         disabled={true}
-        data-oid="1ilgfac"
       />
     </div>
   ));
@@ -3242,51 +2400,37 @@ const SleepApneaSurvey: React.FC = () => {
     };
 
     return (
-      <div
-        className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-        data-oid="6j1:zix"
-      >
-        <div className="flex items-center mb-4" data-oid="6f4-m6q">
-          <div
-            className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
-            data-oid="m2.pwl-"
-          >
+      <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div className="flex items-center mb-4">
+          <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
             <svg
               className="w-4 h-4 text-blue-600"
               fill="currentColor"
               viewBox="0 0 20 20"
-              data-oid="_eza.lz"
             >
               <path
                 fillRule="evenodd"
                 d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                 clipRule="evenodd"
-                data-oid="ty28dq-"
               />
             </svg>
           </div>
-          <div data-oid="1rwdv9r">
-            <h3
-              className="text-lg font-semibold text-gray-900"
-              data-oid="vy5mk6j"
-            >
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900">
               Contact Information
             </h3>
-            <p className="text-gray-600 text-sm" data-oid="gfee:_l">
+            <p className="text-gray-600 text-sm">
               Your details are kept confidential and secure
             </p>
           </div>
         </div>
 
-        <div className="space-y-6" data-oid="oahmsy3">
-          <div data-oid="gw.ko2z">
-            <label
-              className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="7th:njy"
-            >
+        <div className="space-y-6">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
               Full Name *
             </label>
-            <div className="relative" data-oid="dzm::ml">
+            <div className="relative">
               <input
                 type="text"
                 placeholder="Enter your full name"
@@ -3307,82 +2451,61 @@ const SleepApneaSurvey: React.FC = () => {
                       getFieldStatus("fullName", fullName) === "success",
                   },
                 )}
-                data-oid="hv0cyih"
               />
 
-              <div
-                className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                data-oid="l8iqd:5"
-              >
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg
                   className="h-5 w-5 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="5zjiw.w"
                 >
                   <path
                     fillRule="evenodd"
                     d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                     clipRule="evenodd"
-                    data-oid=".wurc0t"
                   />
                 </svg>
               </div>
               {getFieldStatus("fullName", fullName) === "success" && (
-                <div
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  data-oid="mpr9j3a"
-                >
+                <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="n5lfr-o"
                   >
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
-                      data-oid="edc48:n"
                     />
                   </svg>
                 </div>
               )}
             </div>
             {errors.fullName && (
-              <div
-                className="mt-2 flex items-center text-sm text-red-600"
-                data-oid=":wb8gy1"
-              >
+              <div className="mt-2 flex items-center text-sm text-red-600">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="x6277b4"
                 >
                   <path
                     fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                     clipRule="evenodd"
-                    data-oid="9i5t8ig"
                   />
                 </svg>
                 {errors.fullName}
               </div>
             )}
-            {!errors.fullName && (
-              <div className="mt-2 h-5" data-oid=".i-q7wr" />
-            )}
+            {!errors.fullName && <div className="mt-2 h-5" />}
           </div>
 
-          <div data-oid="4:765vc">
-            <label
-              className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="fln7jdt"
-            >
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
               Email Address *
             </label>
-            <div className="relative" data-oid="3ehn-nc">
+            <div className="relative">
               <input
                 type="email"
                 placeholder="Enter your email address"
@@ -3403,83 +2526,59 @@ const SleepApneaSurvey: React.FC = () => {
                       getFieldStatus("email", email) === "success",
                   },
                 )}
-                data-oid="-30c-nw"
               />
 
-              <div
-                className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                data-oid="fhsd8n6"
-              >
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg
                   className="h-5 w-5 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="wvrzn5s"
                 >
-                  <path
-                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                    data-oid="j5h0b6t"
-                  />
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 
-                  <path
-                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                    data-oid="r7ljr4b"
-                  />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
               </div>
               {getFieldStatus("email", email) === "success" && (
-                <div
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  data-oid="sa40m0."
-                >
+                <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="9:ngbf-"
                   >
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
-                      data-oid="c_7fh-7"
                     />
                   </svg>
                 </div>
               )}
             </div>
             {errors.email && (
-              <div
-                className="mt-2 flex items-center text-sm text-red-600"
-                data-oid="dpg0g6u"
-              >
+              <div className="mt-2 flex items-center text-sm text-red-600">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="b-cmapp"
                 >
                   <path
                     fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                     clipRule="evenodd"
-                    data-oid="bg9braz"
                   />
                 </svg>
                 {errors.email}
               </div>
             )}
-            {!errors.email && <div className="mt-2 h-5" data-oid="dgy74-u" />}
+            {!errors.email && <div className="mt-2 h-5" />}
           </div>
 
-          <div data-oid="e3_x-tu">
-            <label
-              className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="5b1:bel"
-            >
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
               Phone Number *
             </label>
-            <div className="relative" data-oid="b_xg509">
+            <div className="relative">
               <input
                 type="tel"
                 placeholder="Enter your phone number"
@@ -3500,68 +2599,50 @@ const SleepApneaSurvey: React.FC = () => {
                       getFieldStatus("phone", phone) === "success",
                   },
                 )}
-                data-oid="-_bvtya"
               />
 
-              <div
-                className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-                data-oid="nib7uwe"
-              >
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg
                   className="h-5 w-5 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="x_i8ael"
                 >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                    data-oid="m_wmd9h"
-                  />
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
               </div>
               {getFieldStatus("phone", phone) === "success" && (
-                <div
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  data-oid="9o:_a0_"
-                >
+                <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <svg
                     className="h-5 w-5 text-green-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid=".wqpsg5"
                   >
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
-                      data-oid="q80ih-s"
                     />
                   </svg>
                 </div>
               )}
             </div>
             {errors.phone && (
-              <div
-                className="mt-2 flex items-center text-sm text-red-600"
-                data-oid="z8_us7-"
-              >
+              <div className="mt-2 flex items-center text-sm text-red-600">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  data-oid="bv:jm75"
                 >
                   <path
                     fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
                     clipRule="evenodd"
-                    data-oid="jk2x1ry"
                   />
                 </svg>
                 {errors.phone}
               </div>
             )}
-            {!errors.phone && <div className="mt-2 h-5" data-oid="w7eq7nd" />}
+            {!errors.phone && <div className="mt-2 h-5" />}
           </div>
         </div>
       </div>
@@ -3569,137 +2650,88 @@ const SleepApneaSurvey: React.FC = () => {
   });
 
   return (
-    <div className="bg-white min-h-screen" data-oid="6nrq2ij">
+    <div className="bg-white min-h-screen">
       {/* Page Header Section */}
-      <div
-        className="bg-gradient-to-br from-blue-50 via-white to-blue-50 border-b border-blue-200 relative overflow-hidden"
-        data-oid="w5t0c__"
-      >
+      <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 border-b border-blue-200 relative overflow-hidden">
         {/* Subtle medical pattern background */}
-        <div className="absolute inset-0 opacity-5" data-oid="6w12jna">
+        <div className="absolute inset-0 opacity-5">
           <div
             className="absolute inset-0"
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563eb' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
               backgroundSize: "40px 40px",
             }}
-            data-oid="pp87bz0"
           ></div>
         </div>
 
-        <div
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10"
-          data-oid="j13obdx"
-        >
-          <div className="text-center" data-oid="rom1zlq">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+          <div className="text-center">
             {/* Medical badge/credential indicator */}
-            <div className="flex justify-center mb-6" data-oid="7lsj8a7">
-              <div
-                className="bg-white rounded-full p-4 shadow-lg border-2 border-blue-100"
-                data-oid="y1s9fnu"
-              >
-                <div
-                  className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center"
-                  data-oid="kijykqh"
-                >
+            <div className="flex justify-center mb-6">
+              <div className="bg-white rounded-full p-4 shadow-lg border-2 border-blue-100">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="a0-2--:"
                   >
-                    <path
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      data-oid="x4fn2:7"
-                    />
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
               </div>
             </div>
 
-            <h1
-              className="text-5xl font-bold text-gray-900 mb-4 tracking-tight"
-              data-oid="dc6x8d3"
-            >
+            <h1 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
               Sleep Apnea Risk Assessment
             </h1>
 
-            <div className="max-w-4xl mx-auto mb-8" data-oid="kej:nwp">
-              <p
-                className="text-xl text-gray-700 mb-4 leading-relaxed"
-                data-oid="nxqwr.i"
-              >
+            <div className="max-w-4xl mx-auto mb-8">
+              <p className="text-xl text-gray-700 mb-4 leading-relaxed">
                 Complete our clinically validated STOP-BANG questionnaire to
                 assess your risk for obstructive sleep apnea. This
                 evidence-based screening tool enables our dental professionals
                 to provide you with personalized care recommendations.
               </p>
 
-              <div
-                className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 mb-6"
-                data-oid="x_2-ihr"
-              >
-                <div className="flex items-center space-x-2" data-oid="h7:.:7d">
-                  <div
-                    className="w-2 h-2 bg-blue-500 rounded-full"
-                    data-oid="st57guz"
-                  ></div>
-                  <span data-oid="wtg-3n7">Clinically Validated Tool</span>
+              <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 mb-6">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span>Clinically Validated Tool</span>
                 </div>
-                <div className="flex items-center space-x-2" data-oid="f1du805">
-                  <div
-                    className="w-2 h-2 bg-green-500 rounded-full"
-                    data-oid="tjbwz4m"
-                  ></div>
-                  <span data-oid="1_uwvj8">5-10 Minutes to Complete</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span>5-10 Minutes to Complete</span>
                 </div>
-                <div className="flex items-center space-x-2" data-oid="4y_ybl_">
-                  <div
-                    className="w-2 h-2 bg-purple-500 rounded-full"
-                    data-oid="fouscrz"
-                  ></div>
-                  <span data-oid="0ktarpw">Professional Review Included</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                  <span>Professional Review Included</span>
                 </div>
               </div>
             </div>
 
             {/* Enhanced privacy and security section */}
-            <div className="max-w-4xl mx-auto" data-oid="sjscvca">
-              <div className="grid md:grid-cols-3 gap-4" data-oid=":fscee3">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-4">
                 {/* Privacy Card */}
-                <div
-                  className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300"
-                  data-oid="uqw2cm-"
-                >
-                  <div
-                    className="flex flex-col items-center text-center"
-                    data-oid="fv2higx"
-                  >
-                    <div
-                      className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
-                      data-oid="aq4jex6"
-                    >
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                       <svg
                         className="w-6 h-6 text-blue-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="as92748"
                       >
                         <path
                           fillRule="evenodd"
                           d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="81l8pnk"
                         />
                       </svg>
                     </div>
-                    <h3
-                      className="text-lg font-semibold text-gray-900 mb-2"
-                      data-oid="wpuu_5q"
-                    >
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       HIPAA Protected
                     </h3>
-                    <p className="text-sm text-gray-600" data-oid="zy.:70x">
+                    <p className="text-sm text-gray-600">
                       Your health information is encrypted and protected
                       according to federal privacy standards.
                     </p>
@@ -3707,39 +2739,25 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
 
                 {/* Medical Validation Card */}
-                <div
-                  className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300"
-                  data-oid="n0jvvr7"
-                >
-                  <div
-                    className="flex flex-col items-center text-center"
-                    data-oid="cls82:z"
-                  >
-                    <div
-                      className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4"
-                      data-oid="j916hlc"
-                    >
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                       <svg
                         className="w-6 h-6 text-green-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="41e4l5q"
                       >
                         <path
                           fillRule="evenodd"
                           d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="k981qwv"
                         />
                       </svg>
                     </div>
-                    <h3
-                      className="text-lg font-semibold text-gray-900 mb-2"
-                      data-oid="dmcvka2"
-                    >
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Clinically Validated
                     </h3>
-                    <p className="text-sm text-gray-600" data-oid="4dp0yav">
+                    <p className="text-sm text-gray-600">
                       STOP-BANG is a scientifically proven screening tool used
                       by medical professionals worldwide.
                     </p>
@@ -3747,37 +2765,21 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
 
                 {/* Professional Review Card */}
-                <div
-                  className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-100 hover:shadow-xl transition-all duration-300"
-                  data-oid="pmpng6w"
-                >
-                  <div
-                    className="flex flex-col items-center text-center"
-                    data-oid="bbko1e0"
-                  >
-                    <div
-                      className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4"
-                      data-oid="c3pkl:d"
-                    >
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-100 hover:shadow-xl transition-all duration-300">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
                       <svg
                         className="w-6 h-6 text-purple-600"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="z1r5mhz"
                       >
-                        <path
-                          d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
-                          data-oid="d.rcniv"
-                        />
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
                       </svg>
                     </div>
-                    <h3
-                      className="text-lg font-semibold text-gray-900 mb-2"
-                      data-oid="8zn0uka"
-                    >
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Expert Analysis
                     </h3>
-                    <p className="text-sm text-gray-600" data-oid="rh9tl5h">
+                    <p className="text-sm text-gray-600">
                       Licensed dental professionals will review your results and
                       provide personalized recommendations.
                     </p>
@@ -3786,85 +2788,55 @@ const SleepApneaSurvey: React.FC = () => {
               </div>
 
               {/* Professional credentials footer */}
-              <div
-                className="mt-8 pt-6 border-t border-gray-200"
-                data-oid="1rr02z."
-              >
-                <div
-                  className="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-500"
-                  data-oid="ranw-p_"
-                >
-                  <div
-                    className="flex items-center space-x-1"
-                    data-oid="evss1jd"
-                  >
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <div className="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-500">
+                  <div className="flex items-center space-x-1">
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="rbtwbn."
                     >
                       <path
                         fillRule="evenodd"
                         d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                         clipRule="evenodd"
-                        data-oid="3djo-pn"
                       />
                     </svg>
-                    <span data-oid="up0k6:.">256-bit SSL Encryption</span>
+                    <span>256-bit SSL Encryption</span>
                   </div>
-                  <div
-                    className="flex items-center space-x-1"
-                    data-oid="0c4o7uo"
-                  >
+                  <div className="flex items-center space-x-1">
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="x4nu6bm"
                     >
                       <path
                         fillRule="evenodd"
                         d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="gyx5mhc"
                       />
                     </svg>
-                    <span data-oid="teuf515">HIPAA Compliant Platform</span>
+                    <span>HIPAA Compliant Platform</span>
                   </div>
-                  <div
-                    className="flex items-center space-x-1"
-                    data-oid="eg19-gj"
-                  >
+                  <div className="flex items-center space-x-1">
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="ow_gu39"
                     >
-                      <path
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                        data-oid="15578.g"
-                      />
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span data-oid="0sic2o2">Evidence-Based Medicine</span>
+                    <span>Evidence-Based Medicine</span>
                   </div>
-                  <div
-                    className="flex items-center space-x-1"
-                    data-oid="1.r41mm"
-                  >
+                  <div className="flex items-center space-x-1">
                     <svg
                       className="w-3 h-3"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="bta1qmg"
                     >
-                      <path
-                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
-                        data-oid="rxoi8ya"
-                      />
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
                     </svg>
-                    <span data-oid="yl7w6ew">Licensed Professionals</span>
+                    <span>Licensed Professionals</span>
                   </div>
                 </div>
               </div>
@@ -3874,82 +2846,50 @@ const SleepApneaSurvey: React.FC = () => {
       </div>
 
       {/* Survey Content */}
-      <div
-        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-        data-oid="eefnh7e"
-      >
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-6"
           autoComplete="off"
           noValidate
-          data-oid=":qr.dyq"
         >
-          <div
-            className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-6 z-10 mb-8"
-            data-oid="09l8j-2"
-          >
-            <div
-              className="flex justify-between items-center mb-3"
-              data-oid="x:lm2:9"
-            >
-              <div className="flex items-center space-x-3" data-oid="chqcfct">
-                <div
-                  className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
-                  data-oid="p7:zu.:"
-                >
+          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-6 z-10 mb-8">
+            <div className="flex justify-between items-center mb-3">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                   <svg
                     className="w-4 h-4 text-blue-600"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="q_5-ql4"
                   >
                     <path
                       fillRule="evenodd"
                       d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                       clipRule="evenodd"
-                      data-oid="f_8zsnd"
                     />
                   </svg>
                 </div>
-                <span
-                  className="text-lg font-semibold text-gray-900"
-                  data-oid="1rkdm1m"
-                >
+                <span className="text-lg font-semibold text-gray-900">
                   Assessment Progress
                 </span>
               </div>
-              <span
-                className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
-                data-oid="0c3rw2p"
-              >
+              <span className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
                 Complete all sections
               </span>
             </div>
-            <div
-              className="w-full bg-gray-200 rounded-full h-3 mb-2"
-              data-oid="323o847"
-            >
-              <div
-                className="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-300 w-0"
-                data-oid="uqftet7"
-              ></div>
+            <div className="w-full bg-gray-200 rounded-full h-3 mb-2">
+              <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-300 w-0"></div>
             </div>
-            <p
-              className="text-sm text-gray-600 flex items-center"
-              data-oid="2e1fp87"
-            >
+            <p className="text-sm text-gray-600 flex items-center">
               <svg
                 className="w-4 h-4 mr-2 text-blue-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                data-oid="n.e18t9"
               >
                 <path
                   fillRule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                   clipRule="evenodd"
-                  data-oid="04:vy_y"
                 />
               </svg>
               Answer all questions to receive your personalized STOP-BANG
@@ -3961,91 +2901,69 @@ const SleepApneaSurvey: React.FC = () => {
             name="snoring"
             title="S - Snoring"
             description="Do you snore loudly (loud enough to be heard through closed doors or your bed-partner elbows you)?"
-            data-oid="s7-h6wg"
           />
 
           <YesNoQuestion
             name="tired"
             title="T - Tired"
             description="Do you often feel tired, fatigued, or sleepy during the day?"
-            data-oid="g:92hyd"
           />
 
           <YesNoQuestion
             name="observed"
             title="O - Observed"
             description="Has anyone observed you stop breathing or gasping during sleep?"
-            data-oid="ox5z4ao"
           />
 
           <YesNoQuestion
             name="pressure"
             title="P - Pressure"
             description="Do you have or are you being treated for high blood pressure?"
-            data-oid="str7ydt"
           />
 
-          <BMISection data-oid="7ecm5r8" />
+          <BMISection />
 
-          <AgeInput data-oid="7owdfc3" />
+          <AgeInput />
 
-          <NeckSizeInput data-oid="4-5wjaj" />
+          <NeckSizeInput />
 
           <YesNoQuestion
             name="genderMale"
             title="G - Gender"
             description="Are you male?"
-            data-oid="hxi.lge"
           />
 
-          <ContactFields data-oid="hm-6xzr" />
+          <ContactFields />
 
-          <div
-            className="bg-gradient-to-br from-white to-blue-50 p-10 rounded-xl shadow-2xl border border-blue-100 relative overflow-hidden"
-            data-oid="6x5y05q"
-          >
+          <div className="bg-gradient-to-br from-white to-blue-50 p-10 rounded-xl shadow-2xl border border-blue-100 relative overflow-hidden">
             {/* Subtle background pattern */}
-            <div className="absolute inset-0 opacity-5" data-oid="1t4:33k">
+            <div className="absolute inset-0 opacity-5">
               <div
                 className="absolute inset-0"
                 style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234F46E5' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
                   backgroundSize: "30px 30px",
                 }}
-                data-oid="dcgrrwo"
               ></div>
             </div>
 
-            <div className="relative z-10" data-oid=":wrlou9">
-              <div className="text-center mb-8" data-oid="i_qni5h">
+            <div className="relative z-10">
+              <div className="text-center mb-8">
                 {/* Medical icon with professional styling */}
-                <div
-                  className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg"
-                  data-oid="0521za-"
-                >
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <svg
                     className="w-10 h-10 text-white"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="7dws.0z"
                   >
-                    <path
-                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
-                      data-oid="r6tvf7x"
-                    />
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
                   </svg>
                 </div>
 
-                <h3
-                  className="text-3xl font-bold text-gray-900 mb-3 tracking-tight"
-                  data-oid="hht400:"
-                >
+                <h3 className="text-3xl font-bold text-gray-900 mb-3 tracking-tight">
                   Ready to Submit Your Assessment
                 </h3>
-                <p
-                  className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed"
-                  data-oid="ft:wvyo"
-                >
+                <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
                   Please review your responses carefully before submitting. Our
                   dental professionals will analyze your results and provide
                   personalized recommendations for your sleep health.
@@ -4053,129 +2971,85 @@ const SleepApneaSurvey: React.FC = () => {
               </div>
 
               {/* Professional info cards */}
-              <div
-                className="grid md:grid-cols-3 gap-4 mb-8"
-                data-oid="7xysgf-"
-              >
-                <div
-                  className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
-                  data-oid="yjn7u1f"
-                >
-                  <div
-                    className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2"
-                    data-oid="0ksnc6c"
-                  >
+              <div className="grid md:grid-cols-3 gap-4 mb-8">
+                <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                     <svg
                       className="w-4 h-4 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="gg:c0.s"
                     >
                       <path
                         fillRule="evenodd"
                         d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="ttyifti"
                       />
                     </svg>
                   </div>
-                  <h4
-                    className="font-semibold text-gray-900 text-sm mb-1"
-                    data-oid="rtoo-s0"
-                  >
+                  <h4 className="font-semibold text-gray-900 text-sm mb-1">
                     HIPAA Compliant
                   </h4>
-                  <p className="text-xs text-gray-600" data-oid="s02tg8f">
+                  <p className="text-xs text-gray-600">
                     Your data is protected
                   </p>
                 </div>
 
-                <div
-                  className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
-                  data-oid="579fzls"
-                >
-                  <div
-                    className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2"
-                    data-oid="s3o3:q8"
-                  >
+                <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center">
+                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                     <svg
                       className="w-4 h-4 text-green-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="28wqy-j"
                     >
                       <path
                         fillRule="evenodd"
                         d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="e5frcb3"
                       />
                     </svg>
                   </div>
-                  <h4
-                    className="font-semibold text-gray-900 text-sm mb-1"
-                    data-oid=".7-nq28"
-                  >
+                  <h4 className="font-semibold text-gray-900 text-sm mb-1">
                     Clinically Validated
                   </h4>
-                  <p className="text-xs text-gray-600" data-oid="b.rsirq">
+                  <p className="text-xs text-gray-600">
                     Evidence-based screening
                   </p>
                 </div>
 
-                <div
-                  className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center"
-                  data-oid="jhcwzvh"
-                >
-                  <div
-                    className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2"
-                    data-oid="fvgp8y-"
-                  >
+                <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-blue-100 text-center">
+                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
                     <svg
                       className="w-4 h-4 text-purple-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="jvcgt7j"
                     >
-                      <path
-                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
-                        data-oid="sqkej9z"
-                      />
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
                     </svg>
                   </div>
-                  <h4
-                    className="font-semibold text-gray-900 text-sm mb-1"
-                    data-oid="235m-wr"
-                  >
+                  <h4 className="font-semibold text-gray-900 text-sm mb-1">
                     Expert Review
                   </h4>
-                  <p className="text-xs text-gray-600" data-oid="5bzv-j4">
+                  <p className="text-xs text-gray-600">
                     Reviewed by specialists
                   </p>
                 </div>
               </div>
 
-              <div
-                className="flex flex-col sm:flex-row gap-4 justify-center mb-6"
-                data-oid="g90gl.0"
-              >
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <button
                   type="button"
                   onClick={restartSurvey}
                   className="px-8 py-3 bg-white text-gray-700 border-2 border-gray-300 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 flex items-center justify-center font-medium shadow-sm hover:shadow-md"
-                  data-oid="nw-qpt3"
                 >
                   <svg
                     className="w-5 h-5 mr-2"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    data-oid="4012awl"
                   >
                     <path
                       fillRule="evenodd"
                       d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
                       clipRule="evenodd"
-                      data-oid="-7kzlfx"
                     />
                   </svg>
                   Start Over
@@ -4184,104 +3058,80 @@ const SleepApneaSurvey: React.FC = () => {
                 <button
                   type="submit"
                   className="px-10 py-4 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center justify-center space-x-3 text-lg transform hover:scale-105 focus:ring-4 focus:ring-blue-200"
-                  data-oid="qxtvsgx"
                 >
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="82n:i4i"
                   >
-                    <path
-                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                      data-oid="rzjsfs:"
-                    />
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                   </svg>
-                  <span data-oid="z6xfsny">Submit Assessment</span>
+                  <span>Submit Assessment</span>
                 </button>
               </div>
 
               {/* Professional footer with credentials */}
-              <div className="pt-6 border-t border-blue-200" data-oid="ubr2vnv">
-                <div className="text-center space-y-3" data-oid="rk-01.o">
-                  <div
-                    className="flex items-center justify-center space-x-2 text-sm text-gray-700"
-                    data-oid="q9q4hd:"
-                  >
+              <div className="pt-6 border-t border-blue-200">
+                <div className="text-center space-y-3">
+                  <div className="flex items-center justify-center space-x-2 text-sm text-gray-700">
                     <svg
                       className="w-5 h-5 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      data-oid="d4vvr6k"
                     >
                       <path
                         fillRule="evenodd"
                         d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
-                        data-oid="9m6f1:2"
                       />
                     </svg>
-                    <span className="font-medium" data-oid="9ojmcrl">
+                    <span className="font-medium">
                       Secure Medical Assessment Platform
                     </span>
                   </div>
 
-                  <p
-                    className="text-xs text-gray-600 max-w-lg mx-auto"
-                    data-oid="i5a_0uv"
-                  >
+                  <p className="text-xs text-gray-600 max-w-lg mx-auto">
                     This assessment will be reviewed by licensed dental
                     professionals. Results and recommendations will be provided
                     within 24-48 hours via secure communication.
                   </p>
 
-                  <div
-                    className="flex items-center justify-center space-x-4 text-xs text-gray-500"
-                    data-oid="cz9co5:"
-                  >
-                    <span className="flex items-center" data-oid="rvvl922">
+                  <div className="flex items-center justify-center space-x-4 text-xs text-gray-500">
+                    <span className="flex items-center">
                       <svg
                         className="w-3 h-3 mr-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="1z_2_c-"
                       >
                         <path
                           fillRule="evenodd"
                           d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                           clipRule="evenodd"
-                          data-oid="_zq2-:k"
                         />
                       </svg>
                       SSL Encrypted
                     </span>
-                    <span className="flex items-center" data-oid="g4br0u1">
+                    <span className="flex items-center">
                       <svg
                         className="w-3 h-3 mr-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="q34m41j"
                       >
                         <path
                           fillRule="evenodd"
                           d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                           clipRule="evenodd"
-                          data-oid="i5j.8ru"
                         />
                       </svg>
                       HIPAA Compliant
                     </span>
-                    <span className="flex items-center" data-oid="-l:5oz1">
+                    <span className="flex items-center">
                       <svg
                         className="w-3 h-3 mr-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        data-oid="0odajl3"
                       >
-                        <path
-                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          data-oid="5xa5i4g"
-                        />
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       Clinically Validated
                     </span>
