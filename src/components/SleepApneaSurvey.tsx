@@ -616,7 +616,7 @@ const SleepApneaSurvey: React.FC = () => {
                           </svg>
                         ) : (
                           <svg
-                            className="w-4 h-4 text-red-600"
+                            className="text-red-600 h-[17px] w-auto"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             data-oid="nwdbyvi"
@@ -631,7 +631,6 @@ const SleepApneaSurvey: React.FC = () => {
                         )}
                       </div>
                     </div>
-
                     <p
                       className={classNames(
                         "text-sm font-medium",
@@ -642,6 +641,7 @@ const SleepApneaSurvey: React.FC = () => {
                             : "text-red-700",
                       )}
                       data-oid=".7:ahqi"
+                      key="olk-KaGJ"
                     >
                       for Obstructive Sleep Apnea
                     </p>
