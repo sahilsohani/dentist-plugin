@@ -2062,56 +2062,310 @@ const SleepApneaSurvey: React.FC = () => {
             </div>
           </div>
 
-          {/* Action Buttons */}
-          <div
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
-            data-oid="h-upvrv"
-          >
-            <button
-              onClick={() => window.print()}
-              className="px-6 py-3 bg-slate-600 text-white rounded-lg hover:bg-slate-700 transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg font-medium"
-              data-oid="mldwcg8"
+          {/* Enhanced Professional Action Buttons */}
+          <div className="mb-8" data-oid="h-upvrv">
+            <div
+              className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 border border-slate-200 shadow-lg"
+              data-oid="action-buttons-container"
             >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                data-oid="-jmb_u3"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
-                  data-oid="g_g2jur"
-                />
-              </svg>
-              Print Assessment Report
-            </button>
+              {/* Header Section */}
+              <div className="text-center mb-6" data-oid="action-header">
+                <div
+                  className="w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+                  data-oid="action-icon-container"
+                >
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    data-oid="action-icon"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
+                      data-oid="action-path"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  className="text-xl font-bold text-slate-900 mb-2"
+                  data-oid="action-title"
+                >
+                  Assessment Actions
+                </h3>
+                <p
+                  className="text-sm text-slate-600"
+                  data-oid="action-subtitle"
+                >
+                  Choose how you'd like to proceed with your results
+                </p>
+              </div>
 
-            <button
-              onClick={restartSurvey}
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg font-medium"
-              data-oid="mrad_xd"
-            >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                data-oid="ypt__0n"
+              {/* Action Buttons Grid */}
+              <div
+                className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto"
+                data-oid="action-buttons-grid"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                  data-oid="g476ivt"
-                />
-              </svg>
-              Take New Assessment
-            </button>
+                {/* Print Report Button */}
+                <div
+                  className="group relative overflow-hidden rounded-xl border-2 border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-lg"
+                  data-oid="print-button-container"
+                >
+                  <button
+                    onClick={() => window.print()}
+                    className="w-full p-6 bg-gradient-to-br from-white to-slate-50 hover:from-slate-50 hover:to-slate-100 transition-all duration-300 flex flex-col items-center text-center group-hover:scale-[1.02] transform"
+                    data-oid="mldwcg8"
+                  >
+                    {/* Icon Container */}
+                    <div
+                      className="w-14 h-14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-slate-200 group-hover:to-slate-300 transition-all duration-300 shadow-md"
+                      data-oid="print-icon-container"
+                    >
+                      <svg
+                        className="w-7 h-7 text-slate-600 group-hover:text-slate-700 transition-colors duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        data-oid="-jmb_u3"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+                          data-oid="g_g2jur"
+                        />
+                      </svg>
+                    </div>
+
+                    {/* Button Content */}
+                    <div data-oid="print-button-content">
+                      <h4
+                        className="text-lg font-semibold text-slate-900 mb-2"
+                        data-oid="print-title"
+                      >
+                        Print Report
+                      </h4>
+                      <p
+                        className="text-sm text-slate-600 leading-relaxed mb-3"
+                        data-oid="print-description"
+                      >
+                        Generate a professional PDF copy of your complete
+                        assessment results
+                      </p>
+
+                      {/* Feature badges */}
+                      <div
+                        className="flex flex-wrap justify-center gap-2"
+                        data-oid="print-features"
+                      >
+                        <span
+                          className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-medium"
+                          data-oid="print-feature-1"
+                        >
+                          📄 PDF Format
+                        </span>
+                        <span
+                          className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-medium"
+                          data-oid="print-feature-2"
+                        >
+                          🖨️ Print Ready
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Hover indicator */}
+                    <div
+                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-400 to-slate-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                      data-oid="print-hover-indicator"
+                    ></div>
+                  </button>
+                </div>
+
+                {/* New Assessment Button */}
+                <div
+                  className="group relative overflow-hidden rounded-xl border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg"
+                  data-oid="restart-button-container"
+                >
+                  <button
+                    onClick={restartSurvey}
+                    className="w-full p-6 bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-150 transition-all duration-300 flex flex-col items-center text-center group-hover:scale-[1.02] transform"
+                    data-oid="mrad_xd"
+                  >
+                    {/* Icon Container */}
+                    <div
+                      className="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mb-4 group-hover:from-blue-200 group-hover:to-blue-300 transition-all duration-300 shadow-md"
+                      data-oid="restart-icon-container"
+                    >
+                      <svg
+                        className="w-7 h-7 text-blue-600 group-hover:text-blue-700 transition-colors duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        data-oid="ypt__0n"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                          data-oid="g476ivt"
+                        />
+                      </svg>
+                    </div>
+
+                    {/* Button Content */}
+                    <div data-oid="restart-button-content">
+                      <h4
+                        className="text-lg font-semibold text-slate-900 mb-2"
+                        data-oid="restart-title"
+                      >
+                        New Assessment
+                      </h4>
+                      <p
+                        className="text-sm text-slate-600 leading-relaxed mb-3"
+                        data-oid="restart-description"
+                      >
+                        Start fresh with a new STOP-BANG assessment
+                        questionnaire
+                      </p>
+
+                      {/* Feature badges */}
+                      <div
+                        className="flex flex-wrap justify-center gap-2"
+                        data-oid="restart-features"
+                      >
+                        <span
+                          className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium"
+                          data-oid="restart-feature-1"
+                        >
+                          🔄 Fresh Start
+                        </span>
+                        <span
+                          className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium"
+                          data-oid="restart-feature-2"
+                        >
+                          📋 New Form
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Hover indicator */}
+                    <div
+                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                      data-oid="restart-hover-indicator"
+                    ></div>
+                  </button>
+                </div>
+              </div>
+
+              {/* Additional Options */}
+              <div
+                className="mt-6 pt-6 border-t border-slate-200"
+                data-oid="additional-options"
+              >
+                <div
+                  className="text-center"
+                  data-oid="additional-options-content"
+                >
+                  <p
+                    className="text-sm text-slate-600 mb-4"
+                    data-oid="additional-options-text"
+                  >
+                    Need help or have questions about your results?
+                  </p>
+
+                  <div
+                    className="flex flex-wrap justify-center gap-3"
+                    data-oid="help-options"
+                  >
+                    <button
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                      className="inline-flex items-center space-x-2 text-sm text-slate-600 hover:text-slate-800 transition-colors duration-200 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg"
+                      data-oid="scroll-to-top"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        data-oid="scroll-icon"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 10l7-7m0 0l7 7m-7-7v18"
+                          data-oid="scroll-path"
+                        />
+                      </svg>
+                      <span data-oid="scroll-text">Back to Top</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        const element = document.querySelector(
+                          '[data-oid="email-results-container"]',
+                        );
+                        element?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="inline-flex items-center space-x-2 text-sm text-blue-600 hover:text-blue-800 transition-colors duration-200 bg-blue-100 hover:bg-blue-200 px-3 py-2 rounded-lg"
+                      data-oid="email-options"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        data-oid="m3m4um:"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          data-oid="jse6qba"
+                        />
+                      </svg>
+                      <span data-oid="email-text">Email Options</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Professional Footer */}
+              <div
+                className="mt-6 pt-4 border-t border-slate-200"
+                data-oid="action-footer"
+              >
+                <div
+                  className="flex items-center justify-center space-x-2 text-xs text-slate-500"
+                  data-oid="action-footer-content"
+                >
+                  <svg
+                    className="w-3 h-3"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    data-oid="8m7szpv"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                      data-oid="ca_u_u5"
+                    />
+                  </svg>
+                  <span data-oid="k2r29ql">
+                    All actions are secure and HIPAA compliant
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Professional Disclaimer */}
