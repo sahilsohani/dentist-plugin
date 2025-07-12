@@ -646,33 +646,6 @@ const SleepApneaSurvey: React.FC = () => {
                   )}
                   data-oid="izjri_y"
                 >
-                  {/* Background pattern */}
-                  <div
-                    className="absolute top-0 right-0 w-32 h-32 opacity-10"
-                    data-oid="zxja0z-"
-                  >
-                    <svg
-                      viewBox="0 0 100 100"
-                      className="w-full h-full"
-                      data-oid="8k6vnv1"
-                    >
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="currentColor"
-                        className={classNames(
-                          results.riskLevel === "Low Risk"
-                            ? "text-emerald-600"
-                            : results.riskLevel === "Intermediate Risk"
-                              ? "text-amber-600"
-                              : "text-red-600",
-                        )}
-                        data-oid="q5i2p0n"
-                      />
-                    </svg>
-                  </div>
-
                   <div className="relative z-10" data-oid="0t-7rav">
                     <div
                       className="flex items-center justify-between mb-3"
