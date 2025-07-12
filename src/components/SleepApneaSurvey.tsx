@@ -1278,162 +1278,388 @@ const SleepApneaSurvey: React.FC = () => {
 
           {/* Additional Risk Factors Section */}
           <div
-            className="bg-white border border-slate-200 rounded-lg p-6 mb-8"
+            className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-8 mb-8 border border-slate-200 shadow-lg"
             data-oid="10y22jh"
           >
-            <h3
-              className="text-lg font-semibold text-slate-800 mb-4 flex items-center"
-              data-oid="3ks0fso"
+            {/* Header Section */}
+            <div
+              className="flex items-start justify-between mb-6"
+              data-oid="x1b2pdi"
             >
-              <svg
-                className="w-5 h-5 mr-2 text-slate-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                data-oid="rdk.utw"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                  data-oid="sh7l0f-"
-                />
-              </svg>
-              Additional Clinical Considerations
-            </h3>
-            <p
-              className="text-slate-600 text-sm mb-4 italic"
-              data-oid="lpjcrm_"
-            >
-              Please indicate any additional factors that may be relevant to
-              your sleep health assessment:
-            </p>
-
-            <div className="space-y-4" data-oid="n1iqcem">
-              {/* General Risk Factors */}
-              <div
-                className="grid grid-cols-1 md:grid-cols-2 gap-3"
-                data-oid="uvyakwp"
-              >
-                {[
-                  "Depression or mood disorders",
-                  "Anxiety disorders",
-                  "Chronic pain conditions",
-                  "Memory or concentration difficulties",
-                  "ADHD/ADD diagnosis",
-                  "Family history of sleep apnea",
-                  "Chronic dry mouth",
-                  "Frequent morning headaches",
-                  "High caffeine dependency (>2 cups/day)",
-                  "Regular sleep medication use",
-                  "Difficulty with weight management",
-                ].map((factor, index) => (
-                  <label
-                    key={index}
-                    className="flex items-start space-x-3 cursor-pointer hover:bg-slate-50 p-3 rounded-lg transition-colors border border-transparent hover:border-slate-200"
-                    data-oid="yj1g58:"
-                  >
-                    <input
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-white border-slate-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5"
-                      data-oid=".l:l.4c"
-                    />
-
-                    <span
-                      className="text-slate-700 text-sm leading-relaxed"
-                      data-oid="qh_5xqw"
-                    >
-                      {factor}
-                    </span>
-                  </label>
-                ))}
-              </div>
-
-              {/* Female-Specific Section */}
-              <div
-                className="mt-6 pt-6 border-t border-slate-200"
-                data-oid="bdg2q4e"
-              >
-                <h4
-                  className="font-semibold text-slate-800 mb-4 flex items-center"
-                  data-oid="qq72szf"
+              <div className="flex items-center space-x-4" data-oid="c7w68i7">
+                <div
+                  className="w-12 h-12 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center shadow-lg"
+                  data-oid="9v-k6b2"
                 >
                   <svg
-                    className="w-4 h-4 mr-2 text-pink-600"
+                    className="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    data-oid="pzonzha"
+                    data-oid="rdk.utw"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                      data-oid="zw3jju9"
+                      d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                      data-oid="sh7l0f-"
                     />
                   </svg>
-                  Female-Specific Risk Factors:
-                </h4>
-                <div className="space-y-3" data-oid="3gtxied">
+                </div>
+                <div data-oid="f.ofa5h">
+                  <h3
+                    className="text-2xl font-bold text-slate-900 mb-1"
+                    data-oid="3ks0fso"
+                  >
+                    Additional Clinical Considerations
+                  </h3>
+                  <p
+                    className="text-sm text-slate-600 font-medium"
+                    data-oid="yyf1ua6"
+                  >
+                    Comprehensive Risk Factor Assessment
+                  </p>
+                </div>
+              </div>
+
+              {/* Optional badge */}
+              <div
+                className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2"
+                data-oid="optional-badge"
+              >
+                <div className="flex items-center space-x-2" data-oid="nf7haic">
+                  <div
+                    className="w-2 h-2 bg-slate-400 rounded-full"
+                    data-oid="2j7i-:_"
+                  ></div>
+                  <span
+                    className="text-xs font-semibold text-slate-600 uppercase tracking-wide"
+                    data-oid="_8cfia."
+                  >
+                    Optional
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Description */}
+            <div
+              className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6"
+              data-oid="description-section"
+            >
+              <div
+                className="flex items-start space-x-3"
+                data-oid="description-content"
+              >
+                <div
+                  className="w-5 h-5 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5"
+                  data-oid="info-icon"
+                >
+                  <svg
+                    className="w-3 h-3 text-blue-600"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    data-oid="sy11kgc"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clipRule="evenodd"
+                      data-oid="fge3wi6"
+                    />
+                  </svg>
+                </div>
+                <div data-oid="description-text">
+                  <p
+                    className="text-sm text-blue-800 font-medium mb-1"
+                    data-oid="lpjcrm_"
+                  >
+                    Enhanced Clinical Assessment
+                  </p>
+                  <p
+                    className="text-xs text-blue-700 leading-relaxed"
+                    data-oid="description-detail"
+                  >
+                    Please indicate any additional factors that may be relevant
+                    to your sleep health assessment. This information helps our
+                    clinical team provide more personalized recommendations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6" data-oid="n1iqcem">
+              {/* General Risk Factors */}
+              <div data-oid="general-factors-section">
+                <div
+                  className="flex items-center space-x-3 mb-4"
+                  data-oid="section-header"
+                >
+                  <div
+                    className="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center"
+                    data-oid="section-icon"
+                  >
+                    <svg
+                      className="w-4 h-4 text-slate-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      data-oid="gqh9z_:"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clipRule="evenodd"
+                        data-oid="qhow15w"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    className="text-lg font-semibold text-slate-800"
+                    data-oid="section-title"
+                  >
+                    General Risk Factors
+                  </h4>
+                </div>
+
+                <div
+                  className="grid grid-cols-1 md:grid-cols-2 gap-3"
+                  data-oid="uvyakwp"
+                >
                   {[
-                    "Polycystic Ovarian Syndrome (PCOS)",
-                    "Post-menopausal status",
+                    {
+                      text: "Depression or mood disorders",
+                      category: "mental-health",
+                    },
+                    { text: "Anxiety disorders", category: "mental-health" },
+                    { text: "Chronic pain conditions", category: "physical" },
+                    {
+                      text: "Memory or concentration difficulties",
+                      category: "cognitive",
+                    },
+                    { text: "ADHD/ADD diagnosis", category: "cognitive" },
+                    {
+                      text: "Family history of sleep apnea",
+                      category: "genetic",
+                    },
+                    { text: "Chronic dry mouth", category: "physical" },
+                    {
+                      text: "Frequent morning headaches",
+                      category: "physical",
+                    },
+                    {
+                      text: "High caffeine dependency (>2 cups/day)",
+                      category: "lifestyle",
+                    },
+                    {
+                      text: "Regular sleep medication use",
+                      category: "medication",
+                    },
+                    {
+                      text: "Difficulty with weight management",
+                      category: "lifestyle",
+                    },
                   ].map((factor, index) => (
                     <label
                       key={index}
-                      className="flex items-start space-x-3 cursor-pointer hover:bg-pink-50 p-3 rounded-lg transition-colors border border-transparent hover:border-pink-200"
+                      className="group flex items-start space-x-3 cursor-pointer hover:bg-white p-4 rounded-xl transition-all duration-200 border border-transparent hover:border-slate-200 hover:shadow-md"
+                      data-oid="yj1g58:"
+                    >
+                      <div className="relative" data-oid="checkbox-container">
+                        <input
+                          type="checkbox"
+                          className="w-5 h-5 text-blue-600 bg-white border-slate-300 rounded-md focus:ring-blue-500 focus:ring-2 mt-0.5 transition-all duration-200"
+                          data-oid=".l:l.4c"
+                        />
+
+                        <div
+                          className="absolute inset-0 rounded-md bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+                          data-oid="hover-bg"
+                        ></div>
+                      </div>
+
+                      <div className="flex-1" data-oid="factor-content">
+                        <span
+                          className="text-slate-700 text-sm font-medium leading-relaxed block"
+                          data-oid="qh_5xqw"
+                        >
+                          {factor.text}
+                        </span>
+                        <div
+                          className="flex items-center mt-1"
+                          data-oid="category-indicator"
+                        >
+                          <div
+                            className={`w-2 h-2 rounded-full mr-2 ${
+                              factor.category === "mental-health"
+                                ? "bg-purple-400"
+                                : factor.category === "physical"
+                                  ? "bg-red-400"
+                                  : factor.category === "cognitive"
+                                    ? "bg-blue-400"
+                                    : factor.category === "genetic"
+                                      ? "bg-green-400"
+                                      : factor.category === "lifestyle"
+                                        ? "bg-orange-400"
+                                        : "bg-gray-400"
+                            }`}
+                            data-oid="category-dot"
+                          ></div>
+                          <span
+                            className="text-xs text-slate-500 capitalize"
+                            data-oid="category-label"
+                          >
+                            {factor.category.replace("-", " ")}
+                          </span>
+                        </div>
+                      </div>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Female-Specific Section */}
+              <div
+                className="bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 rounded-xl p-6"
+                data-oid="bdg2q4e"
+              >
+                <div
+                  className="flex items-center space-x-3 mb-4"
+                  data-oid="female-section-header"
+                >
+                  <div
+                    className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center"
+                    data-oid="female-section-icon"
+                  >
+                    <svg
+                      className="w-4 h-4 text-pink-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      data-oid="pzonzha"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        data-oid="zw3jju9"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    className="text-lg font-semibold text-pink-900"
+                    data-oid="qq72szf"
+                  >
+                    Female-Specific Risk Factors
+                  </h4>
+                </div>
+
+                <div className="space-y-3" data-oid="3gtxied">
+                  {[
+                    {
+                      text: "Polycystic Ovarian Syndrome (PCOS)",
+                      description:
+                        "Hormonal disorder affecting reproductive health",
+                    },
+                    {
+                      text: "Post-menopausal status",
+                      description: "Hormonal changes after menopause",
+                    },
+                  ].map((factor, index) => (
+                    <label
+                      key={index}
+                      className="group flex items-start space-x-3 cursor-pointer hover:bg-white/70 p-4 rounded-xl transition-all duration-200 border border-transparent hover:border-pink-200 hover:shadow-md"
                       data-oid="xnk9mho"
                     >
-                      <input
-                        type="checkbox"
-                        className="w-4 h-4 text-pink-600 bg-white border-slate-300 rounded focus:ring-pink-500 focus:ring-2 mt-0.5"
-                        data-oid="b5-p:74"
-                      />
-
-                      <span
-                        className="text-slate-700 text-sm leading-relaxed"
-                        data-oid="w.4jyzq"
+                      <div
+                        className="relative"
+                        data-oid="female-checkbox-container"
                       >
-                        {factor}
-                      </span>
+                        <input
+                          type="checkbox"
+                          className="w-5 h-5 text-pink-600 bg-white border-pink-300 rounded-md focus:ring-pink-500 focus:ring-2 mt-0.5 transition-all duration-200"
+                          data-oid="b5-p:74"
+                        />
+
+                        <div
+                          className="absolute inset-0 rounded-md bg-pink-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+                          data-oid="female-hover-bg"
+                        ></div>
+                      </div>
+
+                      <div className="flex-1" data-oid="female-factor-content">
+                        <span
+                          className="text-slate-700 text-sm font-medium leading-relaxed block"
+                          data-oid="w.4jyzq"
+                        >
+                          {factor.text}
+                        </span>
+                        <p
+                          className="text-xs text-slate-600 mt-1 leading-relaxed"
+                          data-oid="factor-description"
+                        >
+                          {factor.description}
+                        </p>
+                      </div>
                     </label>
                   ))}
                 </div>
               </div>
             </div>
 
-            {/* Privacy Note */}
+            {/* Enhanced Privacy Note */}
             <div
-              className="mt-6 pt-4 border-t border-slate-200"
+              className="mt-8 pt-6 border-t border-slate-200"
               data-oid="wwbu2gz"
             >
-              <div className="flex items-start space-x-2" data-oid="uwutnqy">
-                <svg
-                  className="w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  data-oid="kmezx5k"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    data-oid="jskqvkd"
-                  />
-                </svg>
-                <p
-                  className="text-xs text-slate-500 leading-relaxed"
-                  data-oid="fe9-w-1"
-                >
-                  <strong data-oid="dm2hzhe">Privacy Notice:</strong> Your
-                  responses will be shared confidentially with our clinical team
-                  to provide personalized care recommendations and ensure
-                  comprehensive treatment planning.
-                </p>
+              <div
+                className="bg-slate-50 rounded-xl p-4 border border-slate-200"
+                data-oid="privacy-section"
+              >
+                <div className="flex items-start space-x-3" data-oid="uwutnqy">
+                  <div
+                    className="w-6 h-6 bg-slate-100 rounded-lg flex items-center justify-center mt-0.5"
+                    data-oid="privacy-icon"
+                  >
+                    <svg
+                      className="w-3 h-3 text-slate-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      data-oid="kmezx5k"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                        data-oid="jskqvkd"
+                      />
+                    </svg>
+                  </div>
+                  <div data-oid="privacy-content">
+                    <h5
+                      className="text-sm font-semibold text-slate-800 mb-1"
+                      data-oid="privacy-title"
+                    >
+                      Confidential Medical Information
+                    </h5>
+                    <p
+                      className="text-xs text-slate-600 leading-relaxed"
+                      data-oid="fe9-w-1"
+                    >
+                      <strong className="text-slate-700" data-oid="dm2hzhe">
+                        Privacy Assurance:
+                      </strong>{" "}
+                      All responses are encrypted and shared confidentially with
+                      our licensed clinical team to provide personalized care
+                      recommendations and ensure comprehensive treatment
+                      planning. Your information is protected under HIPAA
+                      regulations.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
