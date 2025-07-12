@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { useForm, Controller } from "react-hook-form";
-import classNames from "classnames";
+import React, { useState, useCallback } from 'react';
+import { useForm, Controller } from 'react-hook-form';
+import classNames from 'classnames';
 
 interface SurveyFormData {
   snoring: boolean | null;
@@ -13,11 +13,11 @@ interface SurveyFormData {
   genderMale: boolean | null;
   height: number | null;
   weight: number | null;
-  heightUnit: "cm" | "ft";
-  weightUnit: "kg" | "lbs";
+  heightUnit: 'cm' | 'ft';
+  weightUnit: 'kg' | 'lbs';
   age: number | null;
   neckSize: number | null;
-  neckUnit: "cm" | "inches";
+  neckUnit: 'cm' | 'inches';
   fullName: string;
   email: string;
   phone: string;
@@ -42,19 +42,18 @@ const SleepApneaSurvey: React.FC = () => {
       genderMale: null,
       height: null,
       weight: null,
-      heightUnit: "cm",
-      weightUnit: "kg",
+      heightUnit: 'cm',
+      weightUnit: 'kg',
       age: null,
       neckSize: null,
-      neckUnit: "inches",
-      fullName: "",
-      email: "",
-      phone: "",
+      neckUnit: 'inches',
+      fullName: '',
+      email: '',
+      phone: '',
     },
-    mode: "onSubmit",
+    mode: 'onSubmit',
   });
 
-  const [calculatedBMI, setCalculatedBMI] = useState<number | null>(null);
   const [showResults, setShowResults] = useState(false);
   const [surveyResults, setSurveyResults] = useState<{
     score: number;
@@ -63,78 +62,42 @@ const SleepApneaSurvey: React.FC = () => {
   } | null>(null);
   const [emailResults, setEmailResults] = useState(false);
 
-  const getCurrentStep = () => {
-    const values = getValues();
-    let step = 0;
-    const surveyFields = [
-      "snoring",
-      "tired",
-      "observed",
-      "pressure",
-      "bmiOver35",
-      "ageOver50",
-      "neckSizeOver16",
-      "genderMale",
-    ];
-
-    surveyFields.forEach((field) => {
-      if (values[field as keyof SurveyFormData] !== null) step++;
-    });
-
-    if (values.fullName && values.email && values.phone) step++;
-
-    return step;
-  };
-
   const calculateScore = useCallback(() => {
     const values = getValues();
     const questions = [
-      "snoring",
-      "tired",
-      "observed",
-      "pressure",
-      "bmiOver35",
-      "ageOver50",
-      "neckSizeOver16",
-      "genderMale",
+      'snoring',
+      'tired',
+      'observed',
+      'pressure',
+      'bmiOver35',
+      'ageOver50',
+      'neckSizeOver16',
+      'genderMale',
     ] as const;
     return questions.reduce(
       (sum, question) => sum + (values[question] === true ? 1 : 0),
-      0,
+      0
     );
   }, [getValues]);
 
   const getRiskLevel = (score: number): string => {
-    if (score >= 0 && score <= 2) return "Low Risk";
-    if (score >= 3 && score <= 4) return "Intermediate Risk";
-    if (score >= 5 && score <= 8) return "High Risk";
-    return "Unknown Risk";
-  };
-
-  const getRiskColor = (riskLevel: string): string => {
-    switch (riskLevel) {
-      case "Low Risk":
-        return "text-green-600 bg-green-100 border-green-200";
-      case "Intermediate Risk":
-        return "text-yellow-600 bg-yellow-100 border-yellow-200";
-      case "High Risk":
-        return "text-red-600 bg-red-100 border-red-200";
-      default:
-        return "text-gray-600 bg-gray-100 border-gray-200";
-    }
+    if (score >= 0 && score <= 2) return 'Low Risk';
+    if (score >= 3 && score <= 4) return 'Intermediate Risk';
+    if (score >= 5 && score <= 8) return 'High Risk';
+    return 'Unknown Risk';
   };
 
   const handleAgeCalculation = useCallback(
     (age: number) => {
       if (age && age > 0) {
-        setValue("ageOver50", age > 50, {
+        setValue('ageOver50', age > 50, {
           shouldDirty: false,
           shouldTouch: false,
           shouldValidate: false,
         });
       }
     },
-    [setValue],
+    [setValue]
   );
 
   const handleNeckCalculation = useCallback(
@@ -145,39 +108,39 @@ const SleepApneaSurvey: React.FC = () => {
 
       if (ns && ns > 0) {
         let neckInInches = ns;
-        if (nu === "cm") {
+        if (nu === 'cm') {
           neckInInches = ns / 2.54;
         }
-        setValue("neckSizeOver16", neckInInches > 16, {
+        setValue('neckSizeOver16', neckInInches > 16, {
           shouldDirty: false,
           shouldTouch: false,
           shouldValidate: false,
         });
       }
     },
-    [setValue, getValues],
+    [setValue, getValues]
   );
 
   const checkIfFormComplete = () => {
     const values = getValues();
     const requiredSurveyFields: (keyof SurveyFormData)[] = [
-      "snoring",
-      "tired",
-      "observed",
-      "pressure",
-      "bmiOver35",
-      "ageOver50",
-      "neckSizeOver16",
-      "genderMale",
+      'snoring',
+      'tired',
+      'observed',
+      'pressure',
+      'bmiOver35',
+      'ageOver50',
+      'neckSizeOver16',
+      'genderMale',
     ];
 
     const surveyComplete = requiredSurveyFields.every(
-      (field) => values[field] !== null,
+      (field) => values[field] !== null
     );
     const contactComplete =
-      values.fullName.trim() !== "" &&
-      values.email.trim() !== "" &&
-      values.phone.trim() !== "";
+      values.fullName.trim() !== '' &&
+      values.email.trim() !== '' &&
+      values.phone.trim() !== '';
 
     return surveyComplete && contactComplete;
   };
@@ -185,7 +148,7 @@ const SleepApneaSurvey: React.FC = () => {
   const onSubmit = (data: SurveyFormData) => {
     if (!checkIfFormComplete()) {
       alert(
-        "Please answer all questions and complete contact information before submitting.",
+        'Please answer all questions and complete contact information before submitting.'
       );
       return;
     }
@@ -202,7 +165,7 @@ const SleepApneaSurvey: React.FC = () => {
     setShowResults(true);
 
     // Scroll to top to show results
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const restartSurvey = () => {
@@ -222,14 +185,14 @@ const SleepApneaSurvey: React.FC = () => {
       genderMale: null,
       height: null,
       weight: null,
-      heightUnit: "cm" as const,
-      weightUnit: "kg" as const,
+      heightUnit: 'cm' as const,
+      weightUnit: 'kg' as const,
       age: null,
       neckSize: null,
-      neckUnit: "inches" as const,
-      fullName: "",
-      email: "",
-      phone: "",
+      neckUnit: 'inches' as const,
+      fullName: '',
+      email: '',
+      phone: '',
     };
 
     // Reset form values
@@ -241,10 +204,7 @@ const SleepApneaSurvey: React.FC = () => {
       });
     });
 
-    // Reset calculated BMI
-    setCalculatedBMI(null);
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Results Display Component
@@ -261,7 +221,7 @@ const SleepApneaSurvey: React.FC = () => {
               className="absolute inset-0"
               style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                backgroundSize: "30px 30px",
+                backgroundSize: '30px 30px',
               }}
             ></div>
           </div>
@@ -330,11 +290,11 @@ const SleepApneaSurvey: React.FC = () => {
                       />
                     </svg>
                     <span>
-                      Generated on{" "}
-                      {new Date().toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
+                      Generated on{' '}
+                      {new Date().toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
                       })}
                     </span>
                   </div>
@@ -437,12 +397,12 @@ const SleepApneaSurvey: React.FC = () => {
                         fill="none"
                         strokeDasharray={`${(results.score / 8) * 377} 377`}
                         className={classNames(
-                          "transition-all duration-1000 ease-out",
-                          results.riskLevel === "Low Risk"
-                            ? "text-emerald-500"
-                            : results.riskLevel === "Intermediate Risk"
-                              ? "text-amber-500"
-                              : "text-red-500",
+                          'transition-all duration-1000 ease-out',
+                          results.riskLevel === 'Low Risk'
+                            ? 'text-emerald-500'
+                            : results.riskLevel === 'Intermediate Risk'
+                            ? 'text-amber-500'
+                            : 'text-red-500'
                         )}
                         strokeLinecap="round"
                       />
@@ -516,12 +476,12 @@ const SleepApneaSurvey: React.FC = () => {
                 {/* Main risk level card */}
                 <div
                   className={classNames(
-                    "relative overflow-hidden rounded-2xl p-6 border-2 transition-all duration-300",
-                    results.riskLevel === "Low Risk"
-                      ? "bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200 shadow-emerald-100/50"
-                      : results.riskLevel === "Intermediate Risk"
-                        ? "bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 shadow-amber-100/50"
-                        : "bg-gradient-to-br from-red-50 to-red-100 border-red-200 shadow-red-100/50",
+                    'relative overflow-hidden rounded-2xl p-6 border-2 transition-all duration-300',
+                    results.riskLevel === 'Low Risk'
+                      ? 'bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200 shadow-emerald-100/50'
+                      : results.riskLevel === 'Intermediate Risk'
+                      ? 'bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 shadow-amber-100/50'
+                      : 'bg-gradient-to-br from-red-50 to-red-100 border-red-200 shadow-red-100/50'
                   )}
                 >
                   <div className="relative z-10">
@@ -529,35 +489,35 @@ const SleepApneaSurvey: React.FC = () => {
                       <div className="flex items-center space-x-3">
                         <div
                           className={classNames(
-                            "w-4 h-4 rounded-full shadow-sm",
-                            results.riskLevel === "Low Risk"
-                              ? "bg-emerald-500"
-                              : results.riskLevel === "Intermediate Risk"
-                                ? "bg-amber-500"
-                                : "bg-red-500",
+                            'w-4 h-4 rounded-full shadow-sm',
+                            results.riskLevel === 'Low Risk'
+                              ? 'bg-emerald-500'
+                              : results.riskLevel === 'Intermediate Risk'
+                              ? 'bg-amber-500'
+                              : 'bg-red-500'
                           )}
                         ></div>
                         <div className="flex flex-col">
                           <span
                             className={classNames(
-                              "text-xl font-bold leading-tight",
-                              results.riskLevel === "Low Risk"
-                                ? "text-emerald-800"
-                                : results.riskLevel === "Intermediate Risk"
-                                  ? "text-amber-800"
-                                  : "text-red-800",
+                              'text-xl font-bold leading-tight',
+                              results.riskLevel === 'Low Risk'
+                                ? 'text-emerald-800'
+                                : results.riskLevel === 'Intermediate Risk'
+                                ? 'text-amber-800'
+                                : 'text-red-800'
                             )}
                           >
                             {results.riskLevel}
                           </span>
                           <p
                             className={classNames(
-                              "text-sm font-medium leading-tight",
-                              results.riskLevel === "Low Risk"
-                                ? "text-emerald-700"
-                                : results.riskLevel === "Intermediate Risk"
-                                  ? "text-amber-700"
-                                  : "text-red-700",
+                              'text-sm font-medium leading-tight',
+                              results.riskLevel === 'Low Risk'
+                                ? 'text-emerald-700'
+                                : results.riskLevel === 'Intermediate Risk'
+                                ? 'text-amber-700'
+                                : 'text-red-700'
                             )}
                           >
                             for Obstructive Sleep Apnea
@@ -568,15 +528,15 @@ const SleepApneaSurvey: React.FC = () => {
                       {/* Risk level icon */}
                       <div
                         className={classNames(
-                          "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
-                          results.riskLevel === "Low Risk"
-                            ? "bg-emerald-200"
-                            : results.riskLevel === "Intermediate Risk"
-                              ? "bg-amber-200"
-                              : "bg-red-200",
+                          'w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0',
+                          results.riskLevel === 'Low Risk'
+                            ? 'bg-emerald-200'
+                            : results.riskLevel === 'Intermediate Risk'
+                            ? 'bg-amber-200'
+                            : 'bg-red-200'
                         )}
                       >
-                        {results.riskLevel === "Low Risk" ? (
+                        {results.riskLevel === 'Low Risk' ? (
                           <svg
                             className="w-4 h-4 text-emerald-600"
                             fill="currentColor"
@@ -588,7 +548,7 @@ const SleepApneaSurvey: React.FC = () => {
                               clipRule="evenodd"
                             />
                           </svg>
-                        ) : results.riskLevel === "Intermediate Risk" ? (
+                        ) : results.riskLevel === 'Intermediate Risk' ? (
                           <svg
                             className="w-4 h-4 text-amber-600"
                             fill="currentColor"
@@ -639,12 +599,12 @@ const SleepApneaSurvey: React.FC = () => {
                         Clinical Significance
                       </h4>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        {results.riskLevel === "Low Risk" &&
-                          "Lower probability of moderate to severe OSA. Continue monitoring symptoms."}
-                        {results.riskLevel === "Intermediate Risk" &&
-                          "Moderate probability of OSA. Clinical evaluation recommended."}
-                        {results.riskLevel === "High Risk" &&
-                          "High probability of OSA. Prompt medical evaluation strongly recommended."}
+                        {results.riskLevel === 'Low Risk' &&
+                          'Lower probability of moderate to severe OSA. Continue monitoring symptoms.'}
+                        {results.riskLevel === 'Intermediate Risk' &&
+                          'Moderate probability of OSA. Clinical evaluation recommended.'}
+                        {results.riskLevel === 'High Risk' &&
+                          'High probability of OSA. Prompt medical evaluation strongly recommended.'}
                       </p>
                     </div>
                   </div>
@@ -696,7 +656,7 @@ const SleepApneaSurvey: React.FC = () => {
 
             {/* Risk Level Specific Content */}
             <div className="space-y-6">
-              {results.riskLevel === "Low Risk" && (
+              {results.riskLevel === 'Low Risk' && (
                 <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -717,10 +677,10 @@ const SleepApneaSurvey: React.FC = () => {
                         Low Risk Assessment
                       </h4>
                       <p className="text-slate-700 leading-relaxed mb-4">
-                        Your STOP-BANG assessment indicates a{" "}
+                        Your STOP-BANG assessment indicates a{' '}
                         <strong className="text-emerald-800">
                           lower probability
-                        </strong>{" "}
+                        </strong>{' '}
                         of moderate to severe obstructive sleep apnea (OSA).
                         This suggests that significant sleep-disordered
                         breathing is less likely based on current screening
@@ -754,7 +714,7 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
               )}
 
-              {results.riskLevel === "Intermediate Risk" && (
+              {results.riskLevel === 'Intermediate Risk' && (
                 <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-xl p-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -775,10 +735,10 @@ const SleepApneaSurvey: React.FC = () => {
                         Intermediate Risk Assessment
                       </h4>
                       <p className="text-slate-700 leading-relaxed mb-4">
-                        Your STOP-BANG assessment suggests an{" "}
+                        Your STOP-BANG assessment suggests an{' '}
                         <strong className="text-amber-800">
                           intermediate probability
-                        </strong>{" "}
+                        </strong>{' '}
                         of moderate to severe obstructive sleep apnea. This
                         indicates a moderate likelihood of clinically
                         significant sleep-disordered breathing that warrants
@@ -808,7 +768,7 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
               )}
 
-              {results.riskLevel === "High Risk" && (
+              {results.riskLevel === 'High Risk' && (
                 <div className="bg-gradient-to-r from-red-50 to-rose-50 border border-red-200 rounded-xl p-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -829,10 +789,10 @@ const SleepApneaSurvey: React.FC = () => {
                         High Risk Assessment
                       </h4>
                       <p className="text-slate-700 leading-relaxed mb-4">
-                        Your STOP-BANG assessment indicates a{" "}
+                        Your STOP-BANG assessment indicates a{' '}
                         <strong className="text-red-800">
                           high probability
-                        </strong>{" "}
+                        </strong>{' '}
                         of moderate to severe obstructive sleep apnea. This
                         suggests a significant likelihood of clinically
                         important sleep-disordered breathing requiring prompt
@@ -934,9 +894,9 @@ const SleepApneaSurvey: React.FC = () => {
                   At our practice, we take a comprehensive approach to patient
                   care, recognizing that
                   <strong className="text-blue-800">
-                    {" "}
+                    {' '}
                     airway health is fundamental to overall wellness
-                  </strong>{" "}
+                  </strong>{' '}
                   and directly impacts dental health outcomes.
                 </p>
               </div>
@@ -1038,36 +998,36 @@ const SleepApneaSurvey: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[
                     {
-                      text: "Depression or mood disorders",
-                      category: "mental-health",
+                      text: 'Depression or mood disorders',
+                      category: 'mental-health',
                     },
-                    { text: "Anxiety disorders", category: "mental-health" },
-                    { text: "Chronic pain conditions", category: "physical" },
+                    { text: 'Anxiety disorders', category: 'mental-health' },
+                    { text: 'Chronic pain conditions', category: 'physical' },
                     {
-                      text: "Memory or concentration difficulties",
-                      category: "cognitive",
+                      text: 'Memory or concentration difficulties',
+                      category: 'cognitive',
                     },
-                    { text: "ADHD/ADD diagnosis", category: "cognitive" },
+                    { text: 'ADHD/ADD diagnosis', category: 'cognitive' },
                     {
-                      text: "Family history of sleep apnea",
-                      category: "genetic",
+                      text: 'Family history of sleep apnea',
+                      category: 'genetic',
                     },
-                    { text: "Chronic dry mouth", category: "physical" },
+                    { text: 'Chronic dry mouth', category: 'physical' },
                     {
-                      text: "Frequent morning headaches",
-                      category: "physical",
-                    },
-                    {
-                      text: "High caffeine dependency (>2 cups/day)",
-                      category: "lifestyle",
+                      text: 'Frequent morning headaches',
+                      category: 'physical',
                     },
                     {
-                      text: "Regular sleep medication use",
-                      category: "medication",
+                      text: 'High caffeine dependency (>2 cups/day)',
+                      category: 'lifestyle',
                     },
                     {
-                      text: "Difficulty with weight management",
-                      category: "lifestyle",
+                      text: 'Regular sleep medication use',
+                      category: 'medication',
+                    },
+                    {
+                      text: 'Difficulty with weight management',
+                      category: 'lifestyle',
                     },
                   ].map((factor, index) => (
                     <label
@@ -1090,21 +1050,21 @@ const SleepApneaSurvey: React.FC = () => {
                         <div className="flex items-center mt-1">
                           <div
                             className={`w-2 h-2 rounded-full mr-2 ${
-                              factor.category === "mental-health"
-                                ? "bg-purple-400"
-                                : factor.category === "physical"
-                                  ? "bg-red-400"
-                                  : factor.category === "cognitive"
-                                    ? "bg-blue-400"
-                                    : factor.category === "genetic"
-                                      ? "bg-green-400"
-                                      : factor.category === "lifestyle"
-                                        ? "bg-orange-400"
-                                        : "bg-gray-400"
+                              factor.category === 'mental-health'
+                                ? 'bg-purple-400'
+                                : factor.category === 'physical'
+                                ? 'bg-red-400'
+                                : factor.category === 'cognitive'
+                                ? 'bg-blue-400'
+                                : factor.category === 'genetic'
+                                ? 'bg-green-400'
+                                : factor.category === 'lifestyle'
+                                ? 'bg-orange-400'
+                                : 'bg-gray-400'
                             }`}
                           ></div>
                           <span className="text-xs text-slate-500 capitalize">
-                            {factor.category.replace("-", " ")}
+                            {factor.category.replace('-', ' ')}
                           </span>
                         </div>
                       </div>
@@ -1139,13 +1099,13 @@ const SleepApneaSurvey: React.FC = () => {
                 <div className="space-y-3">
                   {[
                     {
-                      text: "Polycystic Ovarian Syndrome (PCOS)",
+                      text: 'Polycystic Ovarian Syndrome (PCOS)',
                       description:
-                        "Hormonal disorder affecting reproductive health",
+                        'Hormonal disorder affecting reproductive health',
                     },
                     {
-                      text: "Post-menopausal status",
-                      description: "Hormonal changes after menopause",
+                      text: 'Post-menopausal status',
+                      description: 'Hormonal changes after menopause',
                     },
                   ].map((factor, index) => (
                     <label
@@ -1201,7 +1161,7 @@ const SleepApneaSurvey: React.FC = () => {
                     <p className="text-xs text-slate-600 leading-relaxed">
                       <strong className="text-slate-700">
                         Privacy Assurance:
-                      </strong>{" "}
+                      </strong>{' '}
                       All responses are encrypted and shared confidentially with
                       our licensed clinical team to provide personalized care
                       recommendations and ensure comprehensive treatment
@@ -1354,10 +1314,10 @@ const SleepApneaSurvey: React.FC = () => {
                   {/* Feature highlights */}
                   <div className="mt-3 flex flex-wrap gap-2">
                     {[
-                      { icon: "📊", text: "Detailed Analysis" },
-                      { icon: "🔒", text: "HIPAA Compliant" },
-                      { icon: "📱", text: "Mobile Friendly" },
-                      { icon: "💾", text: "Downloadable PDF" },
+                      { icon: '📊', text: 'Detailed Analysis' },
+                      { icon: '🔒', text: 'HIPAA Compliant' },
+                      { icon: '📱', text: 'Mobile Friendly' },
+                      { icon: '💾', text: 'Downloadable PDF' },
                     ].map((feature, index) => (
                       <div
                         key={index}
@@ -1596,7 +1556,7 @@ const SleepApneaSurvey: React.FC = () => {
                   <div className="flex flex-wrap justify-center gap-3">
                     <button
                       onClick={() =>
-                        window.scrollTo({ top: 0, behavior: "smooth" })
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
                       }
                       className="inline-flex items-center space-x-2 text-sm text-slate-600 hover:text-slate-800 transition-colors duration-200 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg"
                     >
@@ -1619,9 +1579,9 @@ const SleepApneaSurvey: React.FC = () => {
                     <button
                       onClick={() => {
                         const element = document.querySelector(
-                          '[data-oid="email-results-container"]',
+                          '[data-oid="email-results-container"]'
                         );
-                        element?.scrollIntoView({ behavior: "smooth" });
+                        element?.scrollIntoView({ behavior: 'smooth' });
                       }}
                       className="inline-flex items-center space-x-2 text-sm text-blue-600 hover:text-blue-800 transition-colors duration-200 bg-blue-100 hover:bg-blue-200 px-3 py-2 rounded-lg"
                     >
@@ -1720,13 +1680,13 @@ const SleepApneaSurvey: React.FC = () => {
     return (
       <div
         className={classNames(
-          "bg-white p-6 rounded-lg shadow-sm border-2 transition-all duration-300",
+          'bg-white p-6 rounded-lg shadow-sm border-2 transition-all duration-300',
           {
-            "border-gray-200 hover:border-gray-300": !isAnswered,
-            "border-green-200 bg-green-50": isAnswered && localValue === true,
-            "border-red-200 bg-red-50": isAnswered && localValue === false,
-            "shadow-md": isAnswered,
-          },
+            'border-gray-200 hover:border-gray-300': !isAnswered,
+            'border-green-200 bg-green-50': isAnswered && localValue === true,
+            'border-red-200 bg-red-50': isAnswered && localValue === false,
+            'shadow-md': isAnswered,
+          }
         )}
       >
         <div className="flex items-start justify-between mb-2">
@@ -1754,20 +1714,20 @@ const SleepApneaSurvey: React.FC = () => {
           name={name}
           control={control}
           rules={{
-            validate: (value) => value !== null || "This question is required",
+            validate: (value) => value !== null || 'This question is required',
           }}
           render={({ field }) => (
             <div className="flex space-x-4">
               <label
                 className={classNames(
-                  "flex items-center space-x-3 cursor-pointer p-4 rounded-lg border-2 transition-all duration-200 flex-1",
+                  'flex items-center space-x-3 cursor-pointer p-4 rounded-lg border-2 transition-all duration-200 flex-1',
                   {
-                    "border-green-500 bg-green-100 shadow-md scale-105":
+                    'border-green-500 bg-green-100 shadow-md scale-105':
                       field.value === true,
-                    "border-gray-300 hover:border-green-400 hover:bg-green-50":
+                    'border-gray-300 hover:border-green-400 hover:bg-green-50':
                       field.value !== true,
-                    "opacity-50 cursor-not-allowed": disabled,
-                  },
+                    'opacity-50 cursor-not-allowed': disabled,
+                  }
                 )}
               >
                 <input
@@ -1785,11 +1745,11 @@ const SleepApneaSurvey: React.FC = () => {
 
                 <div
                   className={classNames(
-                    "w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200",
+                    'w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200',
                     {
-                      "border-green-500 bg-green-500": field.value === true,
-                      "border-gray-400": field.value !== true,
-                    },
+                      'border-green-500 bg-green-500': field.value === true,
+                      'border-gray-400': field.value !== true,
+                    }
                   )}
                 >
                   {field.value === true && (
@@ -1798,11 +1758,11 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
                 <span
                   className={classNames(
-                    "font-medium transition-colors duration-200",
+                    'font-medium transition-colors duration-200',
                     {
-                      "text-green-700": field.value === true,
-                      "text-gray-900": field.value !== true,
-                    },
+                      'text-green-700': field.value === true,
+                      'text-gray-900': field.value !== true,
+                    }
                   )}
                 >
                   Yes
@@ -1811,14 +1771,14 @@ const SleepApneaSurvey: React.FC = () => {
 
               <label
                 className={classNames(
-                  "flex items-center space-x-3 cursor-pointer p-4 rounded-lg border-2 transition-all duration-200 flex-1",
+                  'flex items-center space-x-3 cursor-pointer p-4 rounded-lg border-2 transition-all duration-200 flex-1',
                   {
-                    "border-red-500 bg-red-100 shadow-md scale-105":
+                    'border-red-500 bg-red-100 shadow-md scale-105':
                       field.value === false,
-                    "border-gray-300 hover:border-red-400 hover:bg-red-50":
+                    'border-gray-300 hover:border-red-400 hover:bg-red-50':
                       field.value !== false,
-                    "opacity-50 cursor-not-allowed": disabled,
-                  },
+                    'opacity-50 cursor-not-allowed': disabled,
+                  }
                 )}
               >
                 <input
@@ -1836,11 +1796,11 @@ const SleepApneaSurvey: React.FC = () => {
 
                 <div
                   className={classNames(
-                    "w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200",
+                    'w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200',
                     {
-                      "border-red-500 bg-red-500": field.value === false,
-                      "border-gray-400": field.value !== false,
-                    },
+                      'border-red-500 bg-red-500': field.value === false,
+                      'border-gray-400': field.value !== false,
+                    }
                   )}
                 >
                   {field.value === false && (
@@ -1849,11 +1809,11 @@ const SleepApneaSurvey: React.FC = () => {
                 </div>
                 <span
                   className={classNames(
-                    "font-medium transition-colors duration-200",
+                    'font-medium transition-colors duration-200',
                     {
-                      "text-red-700": field.value === false,
-                      "text-gray-900": field.value !== false,
-                    },
+                      'text-red-700': field.value === false,
+                      'text-gray-900': field.value !== false,
+                    }
                   )}
                 >
                   No
@@ -1890,9 +1850,9 @@ const SleepApneaSurvey: React.FC = () => {
     onBMICalculated: (bmi: number) => void;
     onReset: () => void;
   }> = React.memo(({ onBMICalculated, onReset }) => {
-    const [units, setUnits] = useState<"metric" | "imperial">("metric");
-    const [height, setHeight] = useState<string>("");
-    const [weight, setWeight] = useState<string>("");
+    const [units, setUnits] = useState<'metric' | 'imperial'>('metric');
+    const [height, setHeight] = useState<string>('');
+    const [weight, setWeight] = useState<string>('');
     const [showBMI, setShowBMI] = useState<boolean>(false);
     const [localBMI, setLocalBMI] = useState<number | null>(null);
 
@@ -1901,14 +1861,14 @@ const SleepApneaSurvey: React.FC = () => {
       const w = parseFloat(weight);
 
       if (!h || !w || h <= 0 || w <= 0) {
-        alert("Please enter valid height and weight values");
+        alert('Please enter valid height and weight values');
         return;
       }
 
       let heightInMeters = h;
       let weightInKg = w;
 
-      if (units === "imperial") {
+      if (units === 'imperial') {
         heightInMeters = h * 0.0254;
         weightInKg = w * 0.453592;
       } else {
@@ -1924,8 +1884,8 @@ const SleepApneaSurvey: React.FC = () => {
     };
 
     const resetCalculator = () => {
-      setHeight("");
-      setWeight("");
+      setHeight('');
+      setWeight('');
       setLocalBMI(null);
       setShowBMI(false);
       onReset();
@@ -1948,8 +1908,8 @@ const SleepApneaSurvey: React.FC = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="radio"
-                checked={units === "metric"}
-                onChange={() => setUnits("metric")}
+                checked={units === 'metric'}
+                onChange={() => setUnits('metric')}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500"
               />
 
@@ -1958,8 +1918,8 @@ const SleepApneaSurvey: React.FC = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="radio"
-                checked={units === "imperial"}
-                onChange={() => setUnits("imperial")}
+                checked={units === 'imperial'}
+                onChange={() => setUnits('imperial')}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500"
               />
 
@@ -1971,13 +1931,13 @@ const SleepApneaSurvey: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Height ({units === "metric" ? "cm" : "in"})
+              Height ({units === 'metric' ? 'cm' : 'in'})
             </label>
             <input
               type="number"
               step="0.1"
               placeholder={`Enter height in ${
-                units === "metric" ? "cm" : "inches"
+                units === 'metric' ? 'cm' : 'inches'
               }`}
               value={height}
               onChange={(e) => setHeight(e.target.value)}
@@ -1987,13 +1947,13 @@ const SleepApneaSurvey: React.FC = () => {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Weight ({units === "metric" ? "kg" : "lb"})
+              Weight ({units === 'metric' ? 'kg' : 'lb'})
             </label>
             <input
               type="number"
               step="0.1"
               placeholder={`Enter weight in ${
-                units === "metric" ? "kg" : "pounds"
+                units === 'metric' ? 'kg' : 'pounds'
               }`}
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
@@ -2008,13 +1968,13 @@ const SleepApneaSurvey: React.FC = () => {
             onClick={calculateBMI}
             disabled={!height || !weight}
             className={classNames(
-              "px-4 py-2 rounded-md font-medium transition-all mr-2",
+              'px-4 py-2 rounded-md font-medium transition-all mr-2',
               {
-                "bg-blue-600 hover:bg-blue-700 text-white cursor-pointer":
+                'bg-blue-600 hover:bg-blue-700 text-white cursor-pointer':
                   height && weight,
-                "bg-gray-300 text-gray-500 cursor-not-allowed":
+                'bg-gray-300 text-gray-500 cursor-not-allowed':
                   !height || !weight,
-              },
+              }
             )}
           >
             Calculate BMI
@@ -2036,9 +1996,9 @@ const SleepApneaSurvey: React.FC = () => {
               Your BMI: <span className="text-lg font-bold">{localBMI}</span>
             </p>
             <p className="text-sm text-blue-700 mt-1">
-              BMI over 35:{" "}
+              BMI over 35:{' '}
               <span className="font-semibold">
-                {localBMI > 35 ? "Yes" : "No"}
+                {localBMI > 35 ? 'Yes' : 'No'}
               </span>
             </p>
           </div>
@@ -2054,7 +2014,7 @@ const SleepApneaSurvey: React.FC = () => {
 
       const handleBMICalculated = (bmi: number) => {
         setTimeout(() => {
-          setValue("bmiOver35", bmi > 35, {
+          setValue('bmiOver35', bmi > 35, {
             shouldDirty: false,
             shouldTouch: false,
             shouldValidate: false,
@@ -2066,7 +2026,7 @@ const SleepApneaSurvey: React.FC = () => {
 
       const handleReset = () => {
         setTimeout(() => {
-          setValue("bmiOver35", null, {
+          setValue('bmiOver35', null, {
             shouldDirty: false,
             shouldTouch: false,
             shouldValidate: false,
@@ -2094,19 +2054,19 @@ const SleepApneaSurvey: React.FC = () => {
               control={control}
               rules={{
                 validate: (value) =>
-                  value !== null || "This question is required",
+                  value !== null || 'This question is required',
               }}
               render={({ field }) => (
                 <div className="flex space-x-4">
                   <label
                     className={classNames(
-                      "flex items-center space-x-2 cursor-pointer p-3 rounded-lg border-2 transition-all",
+                      'flex items-center space-x-2 cursor-pointer p-3 rounded-lg border-2 transition-all',
                       {
-                        "border-green-500 bg-green-50": field.value === true,
-                        "border-gray-300 hover:border-gray-400":
+                        'border-green-500 bg-green-50': field.value === true,
+                        'border-gray-300 hover:border-gray-400':
                           field.value !== true,
-                        "opacity-50 cursor-not-allowed": isDisabled,
-                      },
+                        'opacity-50 cursor-not-allowed': isDisabled,
+                      }
                     )}
                   >
                     <input
@@ -2119,11 +2079,11 @@ const SleepApneaSurvey: React.FC = () => {
 
                     <div
                       className={classNames(
-                        "w-4 h-4 rounded-full border-2 flex items-center justify-center",
+                        'w-4 h-4 rounded-full border-2 flex items-center justify-center',
                         {
-                          "border-green-500 bg-green-500": field.value === true,
-                          "border-gray-300": field.value !== true,
-                        },
+                          'border-green-500 bg-green-500': field.value === true,
+                          'border-gray-300': field.value !== true,
+                        }
                       )}
                     >
                       {field.value === true && (
@@ -2135,13 +2095,13 @@ const SleepApneaSurvey: React.FC = () => {
 
                   <label
                     className={classNames(
-                      "flex items-center space-x-2 cursor-pointer p-3 rounded-lg border-2 transition-all",
+                      'flex items-center space-x-2 cursor-pointer p-3 rounded-lg border-2 transition-all',
                       {
-                        "border-red-500 bg-red-50": field.value === false,
-                        "border-gray-300 hover:border-gray-400":
+                        'border-red-500 bg-red-50': field.value === false,
+                        'border-gray-300 hover:border-gray-400':
                           field.value !== false,
-                        "opacity-50 cursor-not-allowed": isDisabled,
-                      },
+                        'opacity-50 cursor-not-allowed': isDisabled,
+                      }
                     )}
                   >
                     <input
@@ -2154,11 +2114,11 @@ const SleepApneaSurvey: React.FC = () => {
 
                     <div
                       className={classNames(
-                        "w-4 h-4 rounded-full border-2 flex items-center justify-center",
+                        'w-4 h-4 rounded-full border-2 flex items-center justify-center',
                         {
-                          "border-red-500 bg-red-500": field.value === false,
-                          "border-gray-300": field.value !== false,
-                        },
+                          'border-red-500 bg-red-500': field.value === false,
+                          'border-gray-300': field.value !== false,
+                        }
                       )}
                     >
                       {field.value === false && (
@@ -2204,15 +2164,15 @@ const SleepApneaSurvey: React.FC = () => {
         name="age"
         control={control}
         rules={{
-          required: "Age is required",
-          min: { value: 1, message: "Please enter a valid age" },
-          max: { value: 120, message: "Please enter a valid age" },
+          required: 'Age is required',
+          min: { value: 1, message: 'Please enter a valid age' },
+          max: { value: 120, message: 'Please enter a valid age' },
         }}
         render={({ field }) => (
           <input
             type="number"
             placeholder="Enter your age"
-            value={field.value || ""}
+            value={field.value || ''}
             onChange={(e) => {
               const value = e.target.value ? parseInt(e.target.value) : null;
               field.onChange(value);
@@ -2251,15 +2211,15 @@ const SleepApneaSurvey: React.FC = () => {
           name="neckSize"
           control={control}
           rules={{
-            required: "Neck size is required",
-            min: { value: 1, message: "Please enter a valid neck size" },
+            required: 'Neck size is required',
+            min: { value: 1, message: 'Please enter a valid neck size' },
           }}
           render={({ field }) => (
             <input
               type="number"
               step="0.1"
               placeholder="Enter neck size"
-              value={field.value || ""}
+              value={field.value || ''}
               onChange={(e) => {
                 const value = e.target.value
                   ? parseFloat(e.target.value)
@@ -2285,7 +2245,7 @@ const SleepApneaSurvey: React.FC = () => {
                 field.onChange(e.target.value);
                 setTimeout(
                   () => handleNeckCalculation(undefined, e.target.value),
-                  0,
+                  0
                 );
               }}
               className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -2310,9 +2270,9 @@ const SleepApneaSurvey: React.FC = () => {
   ));
 
   const ContactFields: React.FC = React.memo(() => {
-    const [fullName, setFullName] = useState<string>("");
-    const [email, setEmail] = useState<string>("");
-    const [phone, setPhone] = useState<string>("");
+    const [fullName, setFullName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [phone, setPhone] = useState<string>('');
     const [errors, setErrors] = useState<{
       fullName?: string;
       email?: string;
@@ -2325,7 +2285,7 @@ const SleepApneaSurvey: React.FC = () => {
     }>({});
 
     React.useEffect(() => {
-      setValue("fullName", fullName, {
+      setValue('fullName', fullName, {
         shouldDirty: false,
         shouldTouch: false,
         shouldValidate: false,
@@ -2333,7 +2293,7 @@ const SleepApneaSurvey: React.FC = () => {
     }, [fullName]);
 
     React.useEffect(() => {
-      setValue("email", email, {
+      setValue('email', email, {
         shouldDirty: false,
         shouldTouch: false,
         shouldValidate: false,
@@ -2341,7 +2301,7 @@ const SleepApneaSurvey: React.FC = () => {
     }, [email]);
 
     React.useEffect(() => {
-      setValue("phone", phone, {
+      setValue('phone', phone, {
         shouldDirty: false,
         shouldTouch: false,
         shouldValidate: false,
@@ -2352,37 +2312,37 @@ const SleepApneaSurvey: React.FC = () => {
       const newErrors = { ...errors };
 
       switch (field) {
-        case "fullName":
+        case 'fullName':
           if (!value.trim()) {
-            newErrors.fullName = "Full name is required";
+            newErrors.fullName = 'Full name is required';
           } else if (value.length < 2) {
-            newErrors.fullName = "Name must be at least 2 characters";
+            newErrors.fullName = 'Name must be at least 2 characters';
           } else if (!/^[a-zA-Z\s]+$/.test(value)) {
-            newErrors.fullName = "Name can only contain letters and spaces";
+            newErrors.fullName = 'Name can only contain letters and spaces';
           } else {
             delete newErrors.fullName;
           }
           break;
-        case "email":
+        case 'email':
           if (!value.trim()) {
-            newErrors.email = "Email is required";
+            newErrors.email = 'Email is required';
           } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
-            newErrors.email = "Please enter a valid email address";
+            newErrors.email = 'Please enter a valid email address';
           } else {
             delete newErrors.email;
           }
           break;
-        case "phone":
+        case 'phone':
           if (!value.trim()) {
-            newErrors.phone = "Phone number is required";
+            newErrors.phone = 'Phone number is required';
           } else if (value.length < 10) {
-            newErrors.phone = "Phone number must be at least 10 digits";
+            newErrors.phone = 'Phone number must be at least 10 digits';
           } else if (
             !/^[\+]?[1-9][\d]{0,15}$|^[\(]?[\d]{3}[\)]?[\s\-]?[\d]{3}[\s\-]?[\d]{4}$/.test(
-              value,
+              value
             )
           ) {
-            newErrors.phone = "Please enter a valid phone number";
+            newErrors.phone = 'Please enter a valid phone number';
           } else {
             delete newErrors.phone;
           }
@@ -2393,10 +2353,10 @@ const SleepApneaSurvey: React.FC = () => {
     };
 
     const getFieldStatus = (field: string, value: string) => {
-      if (!touched[field as keyof typeof touched]) return "default";
-      if (errors[field as keyof typeof errors]) return "error";
-      if (value.trim()) return "success";
-      return "default";
+      if (!touched[field as keyof typeof touched]) return 'default';
+      if (errors[field as keyof typeof errors]) return 'error';
+      if (value.trim()) return 'success';
+      return 'default';
     };
 
     return (
@@ -2438,18 +2398,18 @@ const SleepApneaSurvey: React.FC = () => {
                 onChange={(e) => setFullName(e.target.value)}
                 onBlur={() => {
                   setTouched((prev) => ({ ...prev, fullName: true }));
-                  validateField("fullName", fullName);
+                  validateField('fullName', fullName);
                 }}
                 className={classNames(
-                  "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 pl-10",
+                  'w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 pl-10',
                   {
-                    "border-gray-300 focus:ring-blue-500 focus:border-blue-500":
-                      getFieldStatus("fullName", fullName) === "default",
-                    "border-red-300 focus:ring-red-500 focus:border-red-500 bg-red-50":
-                      getFieldStatus("fullName", fullName) === "error",
-                    "border-green-300 focus:ring-green-500 focus:border-green-500 bg-green-50":
-                      getFieldStatus("fullName", fullName) === "success",
-                  },
+                    'border-gray-300 focus:ring-blue-500 focus:border-blue-500':
+                      getFieldStatus('fullName', fullName) === 'default',
+                    'border-red-300 focus:ring-red-500 focus:border-red-500 bg-red-50':
+                      getFieldStatus('fullName', fullName) === 'error',
+                    'border-green-300 focus:ring-green-500 focus:border-green-500 bg-green-50':
+                      getFieldStatus('fullName', fullName) === 'success',
+                  }
                 )}
               />
 
@@ -2466,7 +2426,7 @@ const SleepApneaSurvey: React.FC = () => {
                   />
                 </svg>
               </div>
-              {getFieldStatus("fullName", fullName) === "success" && (
+              {getFieldStatus('fullName', fullName) === 'success' && (
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <svg
                     className="h-5 w-5 text-green-500"
@@ -2513,18 +2473,18 @@ const SleepApneaSurvey: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 onBlur={() => {
                   setTouched((prev) => ({ ...prev, email: true }));
-                  validateField("email", email);
+                  validateField('email', email);
                 }}
                 className={classNames(
-                  "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 pl-10",
+                  'w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 pl-10',
                   {
-                    "border-gray-300 focus:ring-blue-500 focus:border-blue-500":
-                      getFieldStatus("email", email) === "default",
-                    "border-red-300 focus:ring-red-500 focus:border-red-500 bg-red-50":
-                      getFieldStatus("email", email) === "error",
-                    "border-green-300 focus:ring-green-500 focus:border-green-500 bg-green-50":
-                      getFieldStatus("email", email) === "success",
-                  },
+                    'border-gray-300 focus:ring-blue-500 focus:border-blue-500':
+                      getFieldStatus('email', email) === 'default',
+                    'border-red-300 focus:ring-red-500 focus:border-red-500 bg-red-50':
+                      getFieldStatus('email', email) === 'error',
+                    'border-green-300 focus:ring-green-500 focus:border-green-500 bg-green-50':
+                      getFieldStatus('email', email) === 'success',
+                  }
                 )}
               />
 
@@ -2539,7 +2499,7 @@ const SleepApneaSurvey: React.FC = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
               </div>
-              {getFieldStatus("email", email) === "success" && (
+              {getFieldStatus('email', email) === 'success' && (
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <svg
                     className="h-5 w-5 text-green-500"
@@ -2586,18 +2546,18 @@ const SleepApneaSurvey: React.FC = () => {
                 onChange={(e) => setPhone(e.target.value)}
                 onBlur={() => {
                   setTouched((prev) => ({ ...prev, phone: true }));
-                  validateField("phone", phone);
+                  validateField('phone', phone);
                 }}
                 className={classNames(
-                  "w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 pl-10",
+                  'w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 pl-10',
                   {
-                    "border-gray-300 focus:ring-blue-500 focus:border-blue-500":
-                      getFieldStatus("phone", phone) === "default",
-                    "border-red-300 focus:ring-red-500 focus:border-red-500 bg-red-50":
-                      getFieldStatus("phone", phone) === "error",
-                    "border-green-300 focus:ring-green-500 focus:border-green-500 bg-green-50":
-                      getFieldStatus("phone", phone) === "success",
-                  },
+                    'border-gray-300 focus:ring-blue-500 focus:border-blue-500':
+                      getFieldStatus('phone', phone) === 'default',
+                    'border-red-300 focus:ring-red-500 focus:border-red-500 bg-red-50':
+                      getFieldStatus('phone', phone) === 'error',
+                    'border-green-300 focus:ring-green-500 focus:border-green-500 bg-green-50':
+                      getFieldStatus('phone', phone) === 'success',
+                  }
                 )}
               />
 
@@ -2610,7 +2570,7 @@ const SleepApneaSurvey: React.FC = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
               </div>
-              {getFieldStatus("phone", phone) === "success" && (
+              {getFieldStatus('phone', phone) === 'success' && (
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <svg
                     className="h-5 w-5 text-green-500"
@@ -2659,7 +2619,7 @@ const SleepApneaSurvey: React.FC = () => {
             className="absolute inset-0"
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563eb' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
-              backgroundSize: "40px 40px",
+              backgroundSize: '40px 40px',
             }}
           ></div>
         </div>
@@ -2942,7 +2902,7 @@ const SleepApneaSurvey: React.FC = () => {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234F46E5' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                  backgroundSize: "30px 30px",
+                  backgroundSize: '30px 30px',
                 }}
               ></div>
             </div>
@@ -3147,3 +3107,4 @@ const SleepApneaSurvey: React.FC = () => {
 };
 
 export default SleepApneaSurvey;
+
