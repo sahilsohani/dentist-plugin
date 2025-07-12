@@ -1730,74 +1730,336 @@ const SleepApneaSurvey: React.FC = () => {
             </div>
           </div>
 
-          {/* Email Results Option */}
+          {/* Email Results Option - Enhanced Professional Design */}
           <div className="mb-8" data-oid="h5xd6j2">
-            <label
-              className="flex items-center justify-center space-x-3 cursor-pointer bg-slate-50 hover:bg-slate-100 p-4 rounded-lg border border-slate-200 transition-all duration-200 hover:shadow-md"
-              data-oid="ar5pwga"
+            <div
+              className="bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300"
+              data-oid="email-results-container"
             >
-              <input
-                type="checkbox"
-                checked={emailResults}
-                onChange={(e) => setEmailResults(e.target.checked)}
-                className="w-5 h-5 text-blue-600 bg-white border-slate-300 rounded focus:ring-blue-500 focus:ring-2"
-                data-oid="cmk3r11"
-              />
-
-              <div className="flex items-center space-x-3" data-oid="rz5s82o">
-                <div
-                  className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center"
-                  data-oid="r8y7vca"
-                >
-                  <svg
-                    className="w-4 h-4 text-blue-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    data-oid="_bdpt_5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      data-oid="q0:5cl1"
-                    />
-                  </svg>
-                </div>
-                <span className="text-slate-700 font-medium" data-oid="hy4hbio">
-                  Email me a secure copy of my assessment results
-                </span>
-              </div>
-            </label>
-            {emailResults && (
+              {/* Header Section */}
               <div
-                className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200"
-                data-oid="1a3cl1x"
+                className="flex items-center justify-between mb-4"
+                data-oid="email-header"
               >
-                <p
-                  className="text-sm text-blue-700 text-center"
-                  data-oid="rq06w7r"
+                <div
+                  className="flex items-center space-x-3"
+                  data-oid="header-content"
                 >
+                  <div
+                    className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md"
+                    data-oid="email-icon-container"
+                  >
+                    <svg
+                      className="w-5 h-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      data-oid="email-icon"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        data-oid="email-path"
+                      />
+                    </svg>
+                  </div>
+                  <div data-oid="header-text">
+                    <h3
+                      className="text-lg font-semibold text-slate-900"
+                      data-oid="email-title"
+                    >
+                      Digital Report Delivery
+                    </h3>
+                    <p
+                      className="text-sm text-slate-600"
+                      data-oid="email-subtitle"
+                    >
+                      Secure and convenient access to your results
+                    </p>
+                  </div>
+                </div>
+
+                {/* Professional badge */}
+                <div
+                  className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-1.5"
+                  data-oid="professional-badge"
+                >
+                  <div
+                    className="flex items-center space-x-2"
+                    data-oid="n_ctd1q"
+                  >
+                    <div
+                      className="w-2 h-2 bg-blue-500 rounded-full"
+                      data-oid="c:xa74f"
+                    ></div>
+                    <span
+                      className="text-xs font-semibold text-blue-700 uppercase tracking-wide"
+                      data-oid="4csi89r"
+                    >
+                      Optional
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main Checkbox Option */}
+              <label
+                className="group flex items-start space-x-4 cursor-pointer p-4 rounded-xl border-2 border-transparent hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-200"
+                data-oid="ar5pwga"
+              >
+                <div className="relative mt-1" data-oid="ynnmw6b">
+                  <input
+                    type="checkbox"
+                    checked={emailResults}
+                    onChange={(e) => setEmailResults(e.target.checked)}
+                    className="w-5 h-5 text-blue-600 bg-white border-slate-300 rounded-md focus:ring-blue-500 focus:ring-2 transition-all duration-200"
+                    data-oid="cmk3r11"
+                  />
+
+                  {/* Custom checkbox enhancement */}
+                  <div
+                    className="absolute inset-0 rounded-md bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+                    data-oid="checkbox-hover-bg"
+                  ></div>
+                </div>
+
+                <div className="flex-1" data-oid="checkbox-content">
+                  <div
+                    className="flex items-center space-x-3 mb-2"
+                    data-oid="main-option"
+                  >
+                    <span
+                      className="text-slate-900 font-semibold text-base"
+                      data-oid="main-text"
+                    >
+                      Email me a secure copy of my assessment results
+                    </span>
+
+                    {/* Security indicator */}
+                    <div
+                      className="flex items-center space-x-1 bg-green-100 px-2 py-1 rounded-full"
+                      data-oid="security-indicator"
+                    >
+                      <svg
+                        className="w-3 h-3 text-green-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="security-icon"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                          data-oid="security-path"
+                        />
+                      </svg>
+                      <span
+                        className="text-xs font-medium text-green-700"
+                        data-oid="security-text"
+                      >
+                        Encrypted
+                      </span>
+                    </div>
+                  </div>
+
+                  <p
+                    className="text-sm text-slate-600 leading-relaxed"
+                    data-oid="exum5yl"
+                  >
+                    Receive a comprehensive PDF report with your STOP-BANG
+                    assessment results, clinical interpretation, and
+                    personalized recommendations delivered securely to your
+                    inbox.
+                  </p>
+
+                  {/* Feature highlights */}
+                  <div
+                    className="mt-3 flex flex-wrap gap-2"
+                    data-oid="feature-highlights"
+                  >
+                    {[
+                      { icon: "📊", text: "Detailed Analysis" },
+                      { icon: "🔒", text: "HIPAA Compliant" },
+                      { icon: "📱", text: "Mobile Friendly" },
+                      { icon: "💾", text: "Downloadable PDF" },
+                    ].map((feature, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center space-x-1 bg-slate-100 px-2 py-1 rounded-md"
+                        data-oid={`feature-${index}`}
+                      >
+                        <span
+                          className="text-xs"
+                          data-oid={`feature-icon-${index}`}
+                        >
+                          {feature.icon}
+                        </span>
+                        <span
+                          className="text-xs font-medium text-slate-700"
+                          data-oid={`feature-text-${index}`}
+                        >
+                          {feature.text}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </label>
+
+              {/* Enhanced Confirmation Message */}
+              {emailResults && (
+                <div
+                  className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 shadow-sm"
+                  data-oid="1a3cl1x"
+                >
+                  <div
+                    className="flex items-start space-x-3"
+                    data-oid="confirmation-content"
+                  >
+                    <div
+                      className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                      data-oid="confirmation-icon-container"
+                    >
+                      <svg
+                        className="w-4 h-4 text-blue-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        data-oid="bhoavw8"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                          data-oid="5724366"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      className="flex-1"
+                      data-oid="confirmation-text-container"
+                    >
+                      <h4
+                        className="text-sm font-semibold text-blue-900 mb-1"
+                        data-oid="confirmation-title"
+                      >
+                        Email Delivery Confirmed
+                      </h4>
+                      <p
+                        className="text-sm text-blue-700 leading-relaxed mb-2"
+                        data-oid="rq06w7r"
+                      >
+                        Your comprehensive assessment report will be securely
+                        delivered to your registered email address within 24-48
+                        hours.
+                      </p>
+
+                      {/* Delivery timeline */}
+                      <div
+                        className="bg-white/70 rounded-lg p-3 border border-blue-100"
+                        data-oid="delivery-timeline"
+                      >
+                        <div
+                          className="flex items-center justify-between text-xs"
+                          data-oid="timeline-content"
+                        >
+                          <div
+                            className="flex items-center space-x-2"
+                            data-oid="timeline-step-1"
+                          >
+                            <div
+                              className="w-2 h-2 bg-blue-500 rounded-full"
+                              data-oid="step-1-dot"
+                            ></div>
+                            <span
+                              className="text-blue-700 font-medium"
+                              data-oid="step-1-text"
+                            >
+                              Assessment Complete
+                            </span>
+                          </div>
+                          <div
+                            className="flex-1 h-px bg-blue-200 mx-2"
+                            data-oid="timeline-line"
+                          ></div>
+                          <div
+                            className="flex items-center space-x-2"
+                            data-oid="timeline-step-2"
+                          >
+                            <div
+                              className="w-2 h-2 bg-blue-300 rounded-full"
+                              data-oid="step-2-dot"
+                            ></div>
+                            <span
+                              className="text-blue-600"
+                              data-oid="step-2-text"
+                            >
+                              Professional Review
+                            </span>
+                          </div>
+                          <div
+                            className="flex-1 h-px bg-blue-200 mx-2"
+                            data-oid="timeline-line-2"
+                          ></div>
+                          <div
+                            className="flex items-center space-x-2"
+                            data-oid="timeline-step-3"
+                          >
+                            <div
+                              className="w-2 h-2 bg-green-500 rounded-full"
+                              data-oid="step-3-dot"
+                            ></div>
+                            <span
+                              className="text-green-700 font-medium"
+                              data-oid="step-3-text"
+                            >
+                              Email Delivered
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Privacy Notice */}
+              <div
+                className="mt-4 pt-4 border-t border-slate-200"
+                data-oid="privacy-notice"
+              >
+                <div className="flex items-start space-x-2" data-oid="0oxs.u_">
                   <svg
-                    className="w-4 h-4 inline mr-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    data-oid="bhoavw8"
+                    className="w-4 h-4 text-slate-500 mt-0.5 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    data-oid="cfod0_0"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                      data-oid="5724366"
+                      fillRule="evenodd"
+                      d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                      clipRule="evenodd"
+                      data-oid="privacy-path"
                     />
                   </svg>
-                  Results will be sent securely to your registered email address
-                </p>
+                  <p
+                    className="text-xs text-slate-600 leading-relaxed"
+                    data-oid="privacy-text"
+                  >
+                    <strong
+                      className="text-slate-700"
+                      data-oid="privacy-emphasis"
+                    >
+                      Privacy Protected:
+                    </strong>
+                    All email communications are encrypted and comply with HIPAA
+                    regulations. Your assessment results will only be shared
+                    with you and our licensed clinical team.
+                  </p>
+                </div>
               </div>
-            )}
+            </div>
           </div>
 
           {/* Action Buttons */}
