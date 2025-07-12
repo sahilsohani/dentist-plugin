@@ -637,30 +637,76 @@ const SleepApneaSurvey: React.FC = () => {
                 {/* Main risk level card */}
                 <div
                   className={classNames(
-                    "relative overflow-hidden rounded-2xl p-6 border-2 transition-all duration-300",
+                    "relative overflow-hidden rounded-2xl p-8 border-2 transition-all duration-300 shadow-lg",
                     results.riskLevel === "Low Risk"
-                      ? "bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200 shadow-emerald-100/50"
+                      ? "bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-300 shadow-emerald-200/30"
                       : results.riskLevel === "Intermediate Risk"
-                        ? "bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 shadow-amber-100/50"
-                        : "bg-gradient-to-br from-red-50 to-red-100 border-red-200 shadow-red-100/50",
+                        ? "bg-gradient-to-br from-amber-50 to-amber-100 border-amber-300 shadow-amber-200/30"
+                        : "bg-gradient-to-br from-red-50 to-red-100 border-red-300 shadow-red-200/30",
                   )}
                   data-oid="izjri_y"
                 >
-                  {/* Background pattern */}
+                  {/* Enhanced medical background pattern */}
                   <div
-                    className="absolute top-0 right-0 w-32 h-32 opacity-10"
+                    className="absolute top-0 right-0 w-40 h-40 opacity-8"
                     data-oid="zxja0z-"
                   >
                     <svg
-                      viewBox="0 0 100 100"
+                      viewBox="0 0 120 120"
                       className="w-full h-full"
                       data-oid="8k6vnv1"
                     >
+                      {/* Medical cross pattern */}
+                      <defs data-oid="k35:5hf">
+                        <pattern
+                          id="medical-pattern"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                          data-oid="geq1z-5"
+                        >
+                          <circle
+                            cx="10"
+                            cy="10"
+                            r="1"
+                            fill="currentColor"
+                            opacity="0.3"
+                            data-oid="jf5qpf:"
+                          />
+
+                          <path
+                            d="M8 10h4M10 8v4"
+                            stroke="currentColor"
+                            strokeWidth="0.5"
+                            opacity="0.2"
+                            data-oid="dnu_608"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width="120"
+                        height="120"
+                        fill="url(#medical-pattern)"
+                        className={classNames(
+                          results.riskLevel === "Low Risk"
+                            ? "text-emerald-600"
+                            : results.riskLevel === "Intermediate Risk"
+                              ? "text-amber-600"
+                              : "text-red-600",
+                        )}
+                        data-oid="tlv2prt"
+                      />
+
                       <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="currentColor"
+                        cx="60"
+                        cy="60"
+                        r="35"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        opacity="0.15"
                         className={classNames(
                           results.riskLevel === "Low Risk"
                             ? "text-emerald-600"
@@ -674,114 +720,290 @@ const SleepApneaSurvey: React.FC = () => {
                   </div>
 
                   <div className="relative z-10" data-oid="0t-7rav">
+                    {/* Clinical header with medical terminology */}
                     <div
-                      className="flex items-center justify-between mb-3"
+                      className="flex items-start justify-between mb-6"
                       data-oid="zyt.t8n"
                     >
                       <div
-                        className="flex items-center space-x-3"
+                        className="flex items-start space-x-4"
                         data-oid="7x:zv9n"
                       >
+                        {/* Enhanced clinical indicator */}
                         <div
                           className={classNames(
-                            "w-4 h-4 rounded-full shadow-sm",
+                            "w-12 h-12 rounded-xl flex items-center justify-center shadow-lg border-2",
                             results.riskLevel === "Low Risk"
-                              ? "bg-emerald-500"
+                              ? "bg-emerald-500 border-emerald-400"
                               : results.riskLevel === "Intermediate Risk"
-                                ? "bg-amber-500"
-                                : "bg-red-500",
+                                ? "bg-amber-500 border-amber-400"
+                                : "bg-red-500 border-red-400",
                           )}
                           data-oid="g_leqa2"
-                        ></div>
+                        >
+                          {results.riskLevel === "Low Risk" ? (
+                            <svg
+                              className="w-6 h-6 text-white"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              data-oid="k3ty_26"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clipRule="evenodd"
+                                data-oid="xydr209"
+                              />
+                            </svg>
+                          ) : results.riskLevel === "Intermediate Risk" ? (
+                            <svg
+                              className="w-6 h-6 text-white"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              data-oid="z1u1acm"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                clipRule="evenodd"
+                                data-oid="hlbsqg_"
+                              />
+                            </svg>
+                          ) : (
+                            <svg
+                              className="w-6 h-6 text-white"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              data-oid="nwdbyvi"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                clipRule="evenodd"
+                                data-oid="q5lt69n"
+                              />
+                            </svg>
+                          )}
+                        </div>
+
                         <div
                           className="flex flex-col"
                           data-oid="risk-text-container"
                         >
-                          <span
+                          {/* Clinical risk classification */}
+                          <div className="mb-2" data-oid="jnjznjj">
+                            <span
+                              className={classNames(
+                                "text-2xl font-bold leading-tight tracking-tight",
+                                results.riskLevel === "Low Risk"
+                                  ? "text-emerald-900"
+                                  : results.riskLevel === "Intermediate Risk"
+                                    ? "text-amber-900"
+                                    : "text-red-900",
+                              )}
+                              data-oid="q8dtnzq"
+                            >
+                              {results.riskLevel}
+                            </span>
+                            <div
+                              className={classNames(
+                                "inline-block ml-3 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider",
+                                results.riskLevel === "Low Risk"
+                                  ? "bg-emerald-200 text-emerald-800"
+                                  : results.riskLevel === "Intermediate Risk"
+                                    ? "bg-amber-200 text-amber-800"
+                                    : "bg-red-200 text-red-800",
+                              )}
+                              data-oid="fm2lsy1"
+                            >
+                              STOP-BANG {results.score}/8
+                            </div>
+                          </div>
+
+                          <p
                             className={classNames(
-                              "text-xl font-bold leading-tight",
+                              "text-lg font-semibold leading-tight mb-2",
                               results.riskLevel === "Low Risk"
                                 ? "text-emerald-800"
                                 : results.riskLevel === "Intermediate Risk"
                                   ? "text-amber-800"
                                   : "text-red-800",
                             )}
-                            data-oid="q8dtnzq"
+                            data-oid=".7:ahqi"
+                            key="olk-KaGJ"
                           >
-                            {results.riskLevel}
-                          </span>
-                          <p
+                            Obstructive Sleep Apnea Risk Classification
+                          </p>
+
+                          {/* Clinical probability statement */}
+                          <div
                             className={classNames(
-                              "text-sm font-medium leading-tight",
+                              "text-sm font-medium leading-relaxed",
                               results.riskLevel === "Low Risk"
                                 ? "text-emerald-700"
                                 : results.riskLevel === "Intermediate Risk"
                                   ? "text-amber-700"
                                   : "text-red-700",
                             )}
-                            data-oid=".7:ahqi"
-                            key="olk-KaGJ"
+                            data-oid="uh:rbhd"
                           >
-                            for Obstructive Sleep Apnea
-                          </p>
+                            {results.riskLevel === "Low Risk" && (
+                              <span data-oid="yc2m0n1">
+                                <strong data-oid="0:kl3v7">
+                                  Clinical Assessment:
+                                </strong>{" "}
+                                Low probability of moderate-to-severe OSA.
+                                Estimated prevalence: &lt;15% in similar patient
+                                populations.
+                              </span>
+                            )}
+                            {results.riskLevel === "Intermediate Risk" && (
+                              <span data-oid="_hq1y.w">
+                                <strong data-oid="w24qax6">
+                                  Clinical Assessment:
+                                </strong>{" "}
+                                Intermediate probability of moderate-to-severe
+                                OSA. Estimated prevalence: 15-50% in similar
+                                patient populations.
+                              </span>
+                            )}
+                            {results.riskLevel === "High Risk" && (
+                              <span data-oid="a1itn20">
+                                <strong data-oid="rwq1f.1">
+                                  Clinical Assessment:
+                                </strong>{" "}
+                                High probability of moderate-to-severe OSA.
+                                Estimated prevalence: &gt;50% in similar patient
+                                populations.
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </div>
 
-                      {/* Risk level icon */}
+                      {/* Professional medical badge */}
                       <div
                         className={classNames(
-                          "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
+                          "flex flex-col items-center text-center p-4 rounded-xl border-2 bg-white/70 backdrop-blur-sm min-w-[120px]",
                           results.riskLevel === "Low Risk"
-                            ? "bg-emerald-200"
+                            ? "border-emerald-200"
                             : results.riskLevel === "Intermediate Risk"
-                              ? "bg-amber-200"
-                              : "bg-red-200",
+                              ? "border-amber-200"
+                              : "border-red-200",
                         )}
                         data-oid="_eu_wsi"
                       >
-                        {results.riskLevel === "Low Risk" ? (
+                        <div
+                          className={classNames(
+                            "w-8 h-8 rounded-full flex items-center justify-center mb-2",
+                            results.riskLevel === "Low Risk"
+                              ? "bg-emerald-100 text-emerald-600"
+                              : results.riskLevel === "Intermediate Risk"
+                                ? "bg-amber-100 text-amber-600"
+                                : "bg-red-100 text-red-600",
+                          )}
+                          data-oid="hrhu4.i"
+                        >
                           <svg
-                            className="w-4 h-4 text-emerald-600"
+                            className="w-4 h-4"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="k3ty_26"
+                            data-oid="ra-7twv"
                           >
                             <path
                               fillRule="evenodd"
-                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                               clipRule="evenodd"
-                              data-oid="xydr209"
+                              data-oid="4alsqx1"
                             />
                           </svg>
-                        ) : results.riskLevel === "Intermediate Risk" ? (
+                        </div>
+                        <div
+                          className="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1"
+                          data-oid="lr_j2s2"
+                        >
+                          Clinical Grade
+                        </div>
+                        <div
+                          className={classNames(
+                            "text-sm font-bold",
+                            results.riskLevel === "Low Risk"
+                              ? "text-emerald-800"
+                              : results.riskLevel === "Intermediate Risk"
+                                ? "text-amber-800"
+                                : "text-red-800",
+                          )}
+                          data-oid="f3j6c12"
+                        >
+                          {results.riskLevel === "Low Risk"
+                            ? "Grade I"
+                            : results.riskLevel === "Intermediate Risk"
+                              ? "Grade II"
+                              : "Grade III"}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Enhanced clinical summary */}
+                    <div
+                      className={classNames(
+                        "bg-white/80 backdrop-blur-sm rounded-xl p-4 border-l-4",
+                        results.riskLevel === "Low Risk"
+                          ? "border-l-emerald-500"
+                          : results.riskLevel === "Intermediate Risk"
+                            ? "border-l-amber-500"
+                            : "border-l-red-500",
+                      )}
+                      data-oid="p9ugszo"
+                    >
+                      <div
+                        className="flex items-start space-x-3"
+                        data-oid="wcnt0h3"
+                      >
+                        <div
+                          className={classNames(
+                            "w-5 h-5 rounded-full flex items-center justify-center mt-0.5",
+                            results.riskLevel === "Low Risk"
+                              ? "bg-emerald-100 text-emerald-600"
+                              : results.riskLevel === "Intermediate Risk"
+                                ? "bg-amber-100 text-amber-600"
+                                : "bg-red-100 text-red-600",
+                          )}
+                          data-oid="5m7.nsn"
+                        >
                           <svg
-                            className="w-4 h-4 text-amber-600"
+                            className="w-3 h-3"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            data-oid="z1u1acm"
+                            data-oid="ngvpo57"
                           >
                             <path
                               fillRule="evenodd"
-                              d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                               clipRule="evenodd"
-                              data-oid="hlbsqg_"
+                              data-oid="02j4kra"
                             />
                           </svg>
-                        ) : (
-                          <svg
-                            className="text-red-600 h-[17px] w-auto"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            data-oid="nwdbyvi"
+                        </div>
+                        <div data-oid="cjhwyr-">
+                          <h4
+                            className="text-sm font-semibold text-slate-900 mb-1"
+                            data-oid="i1:wkgk"
                           >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                              clipRule="evenodd"
-                              data-oid="q5lt69n"
-                            />
-                          </svg>
-                        )}
+                            Medical Interpretation
+                          </h4>
+                          <p
+                            className="text-xs text-slate-700 leading-relaxed"
+                            data-oid="2ye4bcl"
+                          >
+                            {results.riskLevel === "Low Risk" &&
+                              "Based on validated STOP-BANG criteria, this assessment indicates a statistically lower likelihood of clinically significant sleep-disordered breathing requiring immediate intervention."}
+                            {results.riskLevel === "Intermediate Risk" &&
+                              "This assessment suggests moderate probability for OSA warranting clinical evaluation. Further diagnostic testing may be indicated to determine severity and treatment options."}
+                            {results.riskLevel === "High Risk" &&
+                              "This assessment indicates high probability for moderate-to-severe OSA. Prompt clinical evaluation and sleep study are strongly recommended for definitive diagnosis and treatment planning."}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
