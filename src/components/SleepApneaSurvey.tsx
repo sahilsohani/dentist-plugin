@@ -1165,8 +1165,8 @@ const SleepApneaSurvey: React.FC = () => {
                       All responses are encrypted and shared confidentially with
                       our licensed clinical team to provide personalized care
                       recommendations and ensure comprehensive treatment
-                      planning. Your information is protected under HIPAA
-                      regulations.
+                      planning. Your information is handled according to our
+                      established privacy protocols.
                     </p>
                   </div>
                 </div>
@@ -1249,7 +1249,7 @@ const SleepApneaSurvey: React.FC = () => {
                       Digital Report Delivery
                     </h3>
                     <p className="text-sm text-slate-600">
-                      Secure and convenient access to your results
+                      Convenient access to your results
                     </p>
                   </div>
                 </div>
@@ -1282,7 +1282,7 @@ const SleepApneaSurvey: React.FC = () => {
                 <div className="flex-1">
                   <div className="flex items-center space-x-3 mb-2">
                     <span className="text-slate-900 font-semibold text-base">
-                      Email me a secure copy of my assessment results
+                      Email me a copy of my assessment results
                     </span>
 
                     {/* Security indicator */}
@@ -1307,15 +1307,15 @@ const SleepApneaSurvey: React.FC = () => {
                   <p className="text-sm text-slate-600 leading-relaxed">
                     Receive a comprehensive PDF report with your STOP-BANG
                     assessment results, clinical interpretation, and
-                    personalized recommendations delivered securely to your
+                    personalized recommendations delivered privately to your
                     inbox.
                   </p>
 
                   {/* Feature highlights */}
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {[
+                    {[ 
                       { icon: '📊', text: 'Detailed Analysis' },
-                      { icon: '🔒', text: 'HIPAA Compliant' },
+                      { icon: '🔒', text: 'Privacy Focused' },
                       { icon: '📱', text: 'Mobile Friendly' },
                       { icon: '💾', text: 'Downloadable PDF' },
                     ].map((feature, index) => (
@@ -1355,8 +1355,8 @@ const SleepApneaSurvey: React.FC = () => {
                         Email Delivery Confirmed
                       </h4>
                       <p className="text-sm text-blue-700 leading-relaxed mb-2">
-                        Your comprehensive assessment report will be securely
-                        delivered to your registered email address within 24-48
+                        Your comprehensive assessment report will be delivered
+                        privately to your registered email address within 24-48
                         hours.
                       </p>
 
@@ -1408,8 +1408,9 @@ const SleepApneaSurvey: React.FC = () => {
                     <strong className="text-slate-700">
                       Privacy Protected:
                     </strong>
-                    All email communications are encrypted and comply with HIPAA
-                    regulations. Your assessment results will only be shared
+                    All email communications are encrypted and handled in
+                    accordance with our privacy policies. Your assessment
+                    results will only be shared
                     with you and our licensed clinical team.
                   </p>
                 </div>
@@ -1618,7 +1619,7 @@ const SleepApneaSurvey: React.FC = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>All actions are secure and HIPAA compliant</span>
+                  <span>All actions follow our privacy protocols</span>
                 </div>
               </div>
             </div>
@@ -2380,7 +2381,7 @@ const SleepApneaSurvey: React.FC = () => {
               Contact Information
             </h3>
             <p className="text-gray-600 text-sm">
-              Your details are kept confidential and secure
+              Your details are kept confidential
             </p>
           </div>
         </div>
@@ -2689,11 +2690,11 @@ const SleepApneaSurvey: React.FC = () => {
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      HIPAA Protected
+                      Privacy Focused
                     </h3>
                     <p className="text-sm text-gray-600">
-                      Your health information is encrypted and protected
-                      according to federal privacy standards.
+                      Your health information is encrypted and protected in line
+                      with our privacy standards.
                     </p>
                   </div>
                 </div>
@@ -2776,7 +2777,7 @@ const SleepApneaSurvey: React.FC = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>HIPAA Compliant Platform</span>
+                    <span>Privacy-Conscious Platform</span>
                   </div>
                   <div className="flex items-center space-x-1">
                     <svg
@@ -2947,7 +2948,7 @@ const SleepApneaSurvey: React.FC = () => {
                     </svg>
                   </div>
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">
-                    HIPAA Compliant
+                    Privacy Standards
                   </h4>
                   <p className="text-xs text-gray-600">
                     Your data is protected
@@ -3046,14 +3047,14 @@ const SleepApneaSurvey: React.FC = () => {
                       />
                     </svg>
                     <span className="font-medium">
-                      Secure Medical Assessment Platform
+                      Medical Assessment Platform
                     </span>
                   </div>
 
                   <p className="text-xs text-gray-600 max-w-lg mx-auto">
                     This assessment will be reviewed by licensed dental
                     professionals. Results and recommendations will be provided
-                    within 24-48 hours via secure communication.
+                    within 24-48 hours via confidential communication.
                   </p>
 
                   <div className="flex items-center justify-center space-x-4 text-xs text-gray-500">
@@ -3083,7 +3084,7 @@ const SleepApneaSurvey: React.FC = () => {
                           clipRule="evenodd"
                         />
                       </svg>
-                      HIPAA Compliant
+                      Privacy Focused
                     </span>
                     <span className="flex items-center">
                       <svg

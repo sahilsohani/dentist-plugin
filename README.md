@@ -25,7 +25,7 @@ Each "Yes" answer scores 1 point, with higher scores indicating increased sleep 
 - **Complete Sleep Apnea Assessment**: All 8 validated screening questions
 - **Built-in BMI Calculator**: Supports both metric (cm/kg) and imperial (in/lb) units
 - **Automatic Calculations**: Age and neck circumference assessments computed automatically
-- **Contact Information Collection**: Secure collection of patient details
+- **Contact Information Collection**: Confidential collection of patient details
 - **Real-time Validation**: Comprehensive form validation with helpful error messages
 
 ### 🎨 User Experience
